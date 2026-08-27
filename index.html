@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Korkmaz Hukuk Bürosu</title>
+<meta name="description" content="Denizli merkezli Korkmaz Hukuk Bürosu — gayrimenkul, iş, aile, ticaret ve ceza hukuku alanlarında danışmanlık ve dava takibi.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Korkmaz Hukuk Bürosu",
+  "founder": { "@type": "Person", "name": "Berkay Korkmaz" },
+  "areaServed": "Denizli, Türkiye",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Saraylar Mahallesi 496 Sokak No:13 D:1 Sağlıkhan İşhanı",
+    "addressLocality": "Merkezefendi/Denizli",
+    "addressRegion": "Denizli",
+    "postalCode": "20020",
+    "addressCountry": "TR"
+  },
+  "telephone": "+90 507 194 55 50",
+  "email": "info@avkorkmaz.com",
+  "priceRange": "$$",
+  "knowsAbout": ["Gayrimenkul Hukuku", "İş Hukuku", "Aile Hukuku", "Ticaret ve Şirketler Hukuku", "Ceza Hukuku"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#182430;
+    --ink-soft:#2b3b4c;
+    --paper:#EDE8DD;
+    --paper-high:#F8F5EE;
+    --paper-line:#DAD3C3;
+    --bronze:#9C6B2E;
+    --bronze-deep:#7A5322;
+    --text:#22303e;
+    --text-muted:#5a6472;
+    --text-on-ink:#EDE8DD;
+    --text-on-ink-muted:#a9b6c2;
+    --focus:#9C6B2E;
+    --card-shadow: 0 1px 0 rgba(24,36,48,0.05);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#0f171f;
+      --ink-soft:#1c2733;
+      --paper:#141b23;
+      --paper-high:#1a232c;
+      --paper-line:#2c3946;
+      --bronze:#c9975a;
+      --bronze-deep:#e0b17c;
+      --text:#e7e2d6;
+      --text-muted:#9aa5b1;
+      --text-on-ink:#e7e2d6;
+      --text-on-ink-muted:#8f9ba7;
+      --focus:#c9975a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#0f171f;
+    --ink-soft:#1c2733;
+    --paper:#141b23;
+    --paper-high:#1a232c;
+    --paper-line:#2c3946;
+    --bronze:#c9975a;
+    --bronze-deep:#e0b17c;
+    --text:#e7e2d6;
+    --text-muted:#9aa5b1;
+    --text-on-ink:#e7e2d6;
+    --text-on-ink-muted:#8f9ba7;
+    --focus:#c9975a;
+  }
+
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text);
+    font-family:"Work Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  h1,h2,h3,.display{
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-weight:600;
+    text-wrap:balance;
+    color:var(--text);
+    margin:0;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding-inline:28px;}
+  .eyebrow{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:12.5px;
+    letter-spacing:0.11em;
+    text-transform:uppercase;
+    color:var(--bronze-deep);
+  }
+  :focus-visible{outline:2px solid var(--focus); outline-offset:3px;}
+
+  /* header */
+  header{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--paper-line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-block:16px;
+  }
+  .wordmark{
+    font-family:"Newsreader", serif; font-weight:600; font-size:19px;
+    letter-spacing:0.01em; white-space:nowrap;
+  }
+  .wordmark span{color:var(--bronze-deep);}
+  .navlinks{display:flex; gap:30px; align-items:center; list-style:none; margin:0; padding:0;}
+  .navlinks a{
+    font-size:14.5px; font-weight:500; text-decoration:none; color:var(--text-muted);
+    transition:color .15s;
+  }
+  .navlinks a:hover{color:var(--text);}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:"Work Sans", sans-serif; font-weight:600; font-size:14.5px;
+    padding:11px 20px; border-radius:2px; text-decoration:none;
+    border:1px solid transparent; cursor:pointer;
+  }
+  .btn-primary{background:var(--bronze); color:var(--ink);}
+  .btn-primary:hover{background:var(--bronze-deep);}
+  .btn-outline{border-color:var(--paper-line); color:var(--text);}
+  .btn-outline:hover{border-color:var(--bronze-deep);}
+  .menu-toggle{display:none;}
+
+  /* hero */
+  .hero{position:relative; overflow:hidden; background:var(--ink);}
+  .terraces{position:absolute; inset:0; z-index:0; opacity:.55;}
+  .hero-inner{position:relative; z-index:1; padding-block:96px 88px;}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:end;}
+  .hero h1{
+    color:var(--text-on-ink);
+    font-size:clamp(34px,4.6vw,54px);
+    line-height:1.08;
+  }
+  .hero h1 em{font-style:italic; color:var(--bronze);}
+  .hero .lede{
+    margin-top:22px; max-width:52ch;
+    color:var(--text-on-ink-muted); font-size:17px;
+  }
+  .hero .cta-row{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .hero .btn-primary{background:var(--bronze); color:var(--ink);}
+  .hero .btn-primary:hover{background:var(--bronze-deep);}
+  .hero .btn-outline{border-color:#3c4c5c; color:var(--text-on-ink);}
+  .hero .btn-outline:hover{border-color:var(--bronze);}
+  .hero-side{
+    border-left:1px solid #33424f; padding-left:32px;
+  }
+  .hero-side .eyebrow{color:var(--bronze);}
+  .hero-side ul{list-style:none; margin:16px 0 0; padding:0; display:flex; flex-direction:column; gap:14px;}
+  .hero-side li{
+    color:var(--text-on-ink-muted); font-size:14.5px; padding-top:14px;
+    border-top:1px solid #2a3946;
+  }
+  .hero-side li:first-child{border-top:none; padding-top:0;}
+  .hero-side strong{display:block; color:var(--text-on-ink); font-weight:600; font-size:15.5px; margin-bottom:2px;}
+
+  /* sections */
+  section{padding-block:76px;}
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(26px,3vw,34px); margin-top:10px;}
+  .section-head p{color:var(--text-muted); margin-top:14px; font-size:15.5px;}
+
+  .about{background:var(--paper-high); border-block:1px solid var(--paper-line);}
+  .about-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:64px; align-items:start;}
+  .about p{color:var(--text-muted); font-size:15.5px; margin-top:16px;}
+  .about p:first-of-type{margin-top:14px;}
+  .quote{
+    margin-top:28px; padding-left:20px; border-left:2px solid var(--bronze);
+    font-family:"Newsreader", serif; font-size:19px; font-style:italic; color:var(--text);
+  }
+  .principles{display:flex; flex-direction:column; gap:0;}
+  .principle{
+    display:grid; grid-template-columns:64px 1fr; gap:18px;
+    padding-block:22px; border-top:1px solid var(--paper-line);
+  }
+  .principle:first-child{border-top:none; padding-top:0;}
+  .principle .num{
+    font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--bronze-deep);
+    padding-top:4px;
+  }
+  .principle h3{font-size:17px; font-weight:600; font-family:"Work Sans",sans-serif;}
+  .principle p{margin-top:6px; font-size:14.5px; color:var(--text-muted);}
+
+  /* practice areas */
+  .areas-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--paper-line); border:1px solid var(--paper-line);}
+  .area-card{background:var(--paper); padding:30px 26px; display:flex; flex-direction:column; min-height:230px;}
+  .area-card .mark{
+    font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--bronze-deep);
+    letter-spacing:.06em;
+  }
+  .area-card h3{margin-top:14px; font-size:19px; line-height:1.25;}
+  .area-card p{margin-top:10px; font-size:14px; color:var(--text-muted); flex:1;}
+  .area-card .tag{
+    margin-top:16px; font-size:12.5px; color:var(--text-muted);
+    font-family:"IBM Plex Mono", monospace;
+  }
+
+  /* local seo band */
+  .local{background:var(--ink); color:var(--text-on-ink);}
+  .local .section-head p{color:var(--text-on-ink-muted);}
+  .local .eyebrow{color:var(--bronze);}
+  .local-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:36px;}
+  .local-item h3{color:var(--text-on-ink); font-size:17px; font-family:"Work Sans",sans-serif; font-weight:600;}
+  .local-item p{margin-top:8px; color:var(--text-on-ink-muted); font-size:14.5px;}
+  .local-item .loc-list{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--bronze);
+    border:1px solid #33424f; padding:5px 10px; border-radius:2px;
+  }
+
+  /* articles */
+  .articles-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;}
+  .articles-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:40px;}
+  .article-card{border-top:1px solid var(--paper-line); padding-top:20px;}
+  .article-card .eyebrow{display:flex; gap:10px; align-items:center;}
+  .article-card .eyebrow .dot{width:4px;height:4px;background:var(--bronze-deep);border-radius:50%;}
+  .article-card h3{margin-top:12px; font-size:19px; line-height:1.3;}
+  .article-card p{margin-top:10px; color:var(--text-muted); font-size:14.5px;}
+  .article-card .readmore{
+    margin-top:14px; display:inline-flex; align-items:center; gap:6px;
+    font-size:13.5px; font-weight:600; color:var(--bronze-deep); text-decoration:none;
+  }
+  .article-note{
+    margin-top:40px; padding:18px 20px; background:var(--paper-high);
+    border:1px dashed var(--paper-line); font-size:14px; color:var(--text-muted);
+  }
+
+  /* contact */
+  .contact{background:var(--paper-high); border-block:1px solid var(--paper-line);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
+  .field{display:flex; flex-direction:column; gap:6px; margin-bottom:18px;}
+  .field label{font-size:13px; font-weight:600; color:var(--text-muted);}
+  .field input, .field textarea, .field select{
+    font:inherit; font-size:15px; padding:11px 13px;
+    background:var(--paper); border:1px solid var(--paper-line); color:var(--text);
+    border-radius:2px;
+  }
+  .field textarea{resize:vertical; min-height:100px;}
+  .contact-info{display:flex; flex-direction:column; gap:26px;}
+  .info-row{display:flex; gap:16px; border-top:1px solid var(--paper-line); padding-top:18px;}
+  .info-row:first-child{border-top:none; padding-top:0;}
+  .info-row .label{
+    font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--bronze-deep);
+    width:100px; flex-shrink:0; padding-top:2px;
+  }
+  .info-row .val{font-size:15px;}
+  .info-row .val small{display:block; color:var(--text-muted); font-size:13px; margin-top:2px;}
+  .map-box{
+    margin-top:8px; height:220px; border:1px solid var(--paper-line);
+    overflow:hidden;
+  }
+  .map-box iframe{width:100%; height:100%; display:block; border:0;}
+
+  footer{background:var(--ink); color:var(--text-on-ink-muted); padding-block:52px 28px;}
+  .footer-grid{display:grid; grid-template-columns:1.4fr .8fr .8fr .8fr; gap:40px;}
+  .footer-grid h4{
+    font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--text-on-ink); margin-bottom:14px; font-weight:500;
+  }
+  .footer-grid ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; font-size:14px;}
+  .footer-grid a{text-decoration:none; color:var(--text-on-ink-muted);}
+  .footer-grid a:hover{color:var(--bronze);}
+  .footer-word{font-family:"Newsreader", serif; font-size:20px; color:var(--text-on-ink); font-weight:600;}
+  .footer-word span{color:var(--bronze);}
+  .footer-desc{margin-top:12px; font-size:13.5px; max-width:32ch;}
+  .footer-bottom{
+    margin-top:44px; padding-top:22px; border-top:1px solid #2a3946;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:12.5px;
+  }
+
+  @media (max-width: 860px){
+    .navlinks{display:none;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-side{border-left:none; border-top:1px solid #33424f; padding-left:0; padding-top:24px;}
+    .about-grid{grid-template-columns:1fr; gap:36px;}
+    .areas-grid{grid-template-columns:repeat(2,1fr);}
+    .local-grid{grid-template-columns:1fr; gap:28px;}
+    .articles-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr; gap:40px;}
+    .footer-grid{grid-template-columns:1fr 1fr; gap:28px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="wordmark">KORKMAZ <span>HUKUK BÜROSU</span></div>
+    <ul class="navlinks">
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#alanlar">Çalışma Alanları</a></li>
+      <li><a href="#makaleler">Makaleler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#iletisim">Randevu Alın</a>
+  </div>
+</header>
+
+<section class="hero">
+  <svg class="terraces" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,500 L0,340 Q150,300 300,340 T600,330 T900,350 T1200,320 L1200,500 Z" fill="#1f2e3c"/>
+    <path d="M0,500 L0,400 Q180,370 360,400 T720,390 T1080,410 L1200,400 L1200,500 Z" fill="#233648"/>
+    <path d="M0,500 L0,450 Q220,430 440,450 T880,445 T1200,455 L1200,500 Z" fill="#28405400"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Denizli · Avukatlık ve Hukuki Danışmanlık</p>
+        <h1>Denizli'de <em>hakkınızı</em><br>bilen bir büro.</h1>
+        <p class="lede">Korkmaz Hukuk Bürosu, gayrimenkul, iş, aile, ticaret ve ceza hukuku alanlarında Denizli'de yaşayan bireylere ve işletmelere açık, anlaşılır ve takipçi bir hukuki danışmanlık sunar.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#iletisim">Ön Görüşme Talep Edin</a>
+          <a class="btn btn-outline" href="#alanlar">Çalışma Alanlarını İnceleyin</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <p class="eyebrow">Büromuz</p>
+        <ul>
+          <li><strong>Denizli merkezli</strong>Merkezefendi'de, şehir merkezinde hizmet.</li>
+          <li><strong>Şeffaf süreç</strong>Her aşamada anlaşılır bilgilendirme ve net ücretlendirme.</li>
+          <li><strong>Güncel içerik</strong>Haklarınızı öğrenebileceğiniz düzenli makaleler.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="hakkimizda">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">Hakkımızda</p>
+      <h2 class="display" style="margin-top:10px; font-size:30px;">Av. Berkay Korkmaz</h2>
+      <p>Korkmaz Hukuk Bürosu, Denizli'de müvekkillerine gayrimenkul, iş, aile, ticaret/şirketler ve ceza hukuku alanlarında danışmanlık ve dava takibi hizmeti veren bir hukuk bürosudur.</p>
+      <p>Büromuzun kuruluş amacı; hukuki süreçleri müvekkillerimiz için anlaşılır kılmak, sürecin her adımında şeffaf iletişim kurmak ve Denizli'nin yerel dinamiklerine hâkim, ulaşılabilir bir danışmanlık sunmaktır.</p>
+      <p class="quote">"Hukuki bir sorunla karşılaşan herkesin, süreci anlayarak ve güvenle ilerleyebileceği bir danışmanlık hakkı vardır."</p>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="num">01</div>
+        <div><h3>İlk Görüşmede Netlik</h3><p>Dosyanızı dinleyip olası süreç ve seçenekleri ilk görüşmede açıkça anlatırız.</p></div>
+      </div>
+      <div class="principle">
+        <div class="num">02</div>
+        <div><h3>Yazılı ve Takip Edilebilir Süreç</h3><p>Gelişmeleri düzenli olarak paylaşır, dosyanızın nerede olduğunu her zaman bilmenizi sağlarız.</p></div>
+      </div>
+      <div class="principle">
+        <div class="num">03</div>
+        <div><h3>Yerel Bilgi Birikimi</h3><p>Denizli Adliyesi ve bölge uygulamalarına aşina bir yaklaşımla dosyanızı yürütürüz.</p></div>
+      </div>
+      <div class="principle">
+        <div class="num">04</div>
+        <div><h3>Erişilebilir İletişim</h3><p>Sorularınız için makul sürede geri dönüş yapar, süreci sizin için karmaşıklaştırmayız.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="alanlar">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Çalışma Alanları</p>
+      <h2>Denizli'de sekiz alanda hukuki destek.</h2>
+      <p>Her alan için hem danışmanlık hem de dava/takip hizmeti sunuyoruz. Aşağıdaki kartlar, sitenizde ayrı birer sayfaya bağlanacak şekilde tasarlanmıştır.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="areas-grid">
+      <div class="area-card">
+        <span class="mark">01 — GAYRİMENKUL / İŞ HUKUKU</span>
+        <h3>Gayrimenkul ve İş Hukuku</h3>
+        <p>Tapu ve kira uyuşmazlıkları, kat mülkiyeti, kamulaştırma; işe iade, kıdem-ihbar tazminatı ve iş sözleşmesi uyuşmazlıkları.</p>
+        <span class="tag">Denizli · Konut &amp; İşyeri</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">02 — AİLE HUKUKU</span>
+        <h3>Aile Hukuku</h3>
+        <p>Boşanma (anlaşmalı ve çekişmeli), velayet, nafaka, mal paylaşımı ve aile içi uyuşmazlıkların çözümünde danışmanlık.</p>
+        <span class="tag">Denizli Aile Mahkemeleri</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">03 — TİCARET / ŞİRKETLER HUKUKU</span>
+        <h3>Ticaret ve Şirketler Hukuku</h3>
+        <p>Şirket kuruluşu, ortaklık sözleşmeleri, ticari alacak takibi ve Denizli'nin sanayi/ticaret bölgelerine yönelik uyuşmazlık yönetimi.</p>
+        <span class="tag">KOBİ &amp; Ticari İşletmeler</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">04 — CEZA HUKUKU</span>
+        <h3>Ceza Hukuku</h3>
+        <p>Soruşturma ve kovuşturma aşamalarında savunma, şüpheli/sanık ve mağdur vekilliği, itiraz ve temyiz süreçleri.</p>
+        <span class="tag">Denizli Ağır Ceza &amp; Asliye</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">05 — İCRA VE İFLAS HUKUKU</span>
+        <h3>İcra ve İflas Hukuku</h3>
+        <p>Alacak takibi, icra takipleri, haciz işlemleri, itirazın iptali/kaldırılması ve iflas süreçlerinin yönetimi.</p>
+        <span class="tag">Denizli İcra Daireleri</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">06 — İDARE HUKUKU</span>
+        <h3>İdare Hukuku</h3>
+        <p>Kamu kurumlarına karşı davalar, idari işlemlerin iptali, imar ve ruhsat uyuşmazlıkları, disiplin cezalarına itiraz.</p>
+        <span class="tag">İdare Mahkemesi</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">07 — MİRAS HUKUKU</span>
+        <h3>Miras Hukuku</h3>
+        <p>Veraset ilamı, miras paylaşımı, tenkis ve mirasın reddi davaları, vasiyetname uyuşmazlıklarının çözümü.</p>
+        <span class="tag">Veraset &amp; İntikal</span>
+      </div>
+      <div class="area-card">
+        <span class="mark">08 — SİGORTA / TAZMİNAT HUKUKU</span>
+        <h3>Sigorta ve Tazminat Hukuku</h3>
+        <p>Trafik kazası, iş kazası ve malpraktis davaları; sigorta şirketlerine karşı maddi ve manevi tazminat talepleri.</p>
+        <span class="tag">Kaza &amp; Tazminat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="local">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Neden Denizli'de Bizi Tercih Etmelisiniz</p>
+      <h2>Bölgenizde, sizin diliniz ve sizin gündeminizle.</h2>
+    </div>
+    <div class="local-grid">
+      <div class="local-item">
+        <h3>Konum ve Erişim</h3>
+        <p>Merkezefendi/Denizli'de, şehir içinden kolay ulaşım sağlanan merkezi bir noktada ofis.</p>
+        <div class="loc-list">
+          <span class="chip">Merkezefendi</span><span class="chip">Pamukkale</span><span class="chip">Denizli Adliyesi</span>
+        </div>
+      </div>
+      <div class="local-item">
+        <h3>Bölgesel Bilgi</h3>
+        <p>Denizli'nin tekstil ve sanayi ağırlıklı ticari yapısını, gayrimenkul piyasasını ve yerel uygulamaları yakından takip ediyoruz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="makaleler">
+  <div class="wrap">
+    <div class="articles-head">
+      <div class="section-head" style="margin-bottom:0;">
+        <p class="eyebrow">Makaleler ve Bilgi Notları</p>
+        <h2>Hukuki konularda güncel ve anlaşılır içerik.</h2>
+      </div>
+      <a class="btn btn-outline" href="#">Tüm Makaleler</a>
+    </div>
+    <div class="articles-grid">
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>İcra ve İflas Hukuku</p>
+        <h3>İcra Takibi Geldi, Ne Yapmalıyım?</h3>
+        <p>Ödeme emrinin anlamı, yedi günlük kritik itiraz süresi ve borcu kabul eden/etmeyen kişiler için adım adım rehber.</p>
+        <a class="readmore" href="icra-takibi-geldi-ne-yapmaliyim.html">Devamını Oku →</a>
+      </article>
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>Gayrimenkul Hukuku</p>
+        <h3>Kiracı Tahliyesinde Sık Yapılan 5 Hata</h3>
+        <p>Denizli'de kiracı-ev sahibi uyuşmazlıklarında en sık karşılaşılan hukuki hatalar ve doğru başvuru yolları.</p>
+        <a class="readmore" href="#">Devamını Oku →</a>
+      </article>
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>Ticaret Hukuku</p>
+        <h3>Denizli'de Şirket Kurarken Dikkat Edilmesi Gerekenler</h3>
+        <p>Şirket türü seçimi, sözleşme hazırlığı ve yerel ticaret siciline ilişkin pratik bir rehber.</p>
+        <a class="readmore" href="#">Devamını Oku →</a>
+      </article>
+    </div>
+    <p class="article-note">Bu üç kart örnek/taslak içeriktir — sitenizin yayına alınmasından önce kendi yazdığınız makalelerle değiştirilmelidir. Düzenli yayın, yerel arama sıralaması için en etkili adımlardan biridir.</p>
+  </div>
+</section>
+
+<section class="contact" id="iletisim">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">İletişime Geçin</p>
+      <h2 style="margin-top:10px; font-size:26px;">Ön görüşme talebinizi iletin.</h2>
+      <form id="contactForm" name="iletisim" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:28px;">
+        <input type="hidden" name="form-name" value="iletisim">
+        <p style="position:absolute; left:-9999px;">
+          <label>Bu alanı boş bırakın: <input name="bot-field"></label>
+        </p>
+        <div class="field">
+          <label for="ad">Ad Soyad</label>
+          <input id="ad" name="ad" type="text" placeholder="Adınız Soyadınız" required>
+        </div>
+        <div class="field">
+          <label for="tel">Telefon</label>
+          <input id="tel" name="telefon" type="tel" placeholder="05xx xxx xx xx" required>
+        </div>
+        <div class="field">
+          <label for="konu">İlgili Alan</label>
+          <select id="konu" name="ilgili_alan">
+            <option>Gayrimenkul / İş Hukuku</option>
+            <option>Aile Hukuku</option>
+            <option>Ticaret / Şirketler Hukuku</option>
+            <option>Ceza Hukuku</option>
+            <option>İcra ve İflas Hukuku</option>
+            <option>İdare Hukuku</option>
+            <option>Miras Hukuku</option>
+            <option>Sigorta / Tazminat Hukuku</option>
+            <option>Diğer</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mesaj">Kısaca konunuz</label>
+          <textarea id="mesaj" name="mesaj" placeholder="Talebinizi kısaca özetleyin"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Talebi Gönder</button>
+        <p id="formStatus" style="margin-top:14px; font-size:14px; display:none;"></p>
+      </form>
+    </div>
+    <div class="contact-info">
+      <div class="info-row">
+        <span class="label">ADRES</span>
+        <span class="val">Saraylar Mahallesi 496 Sokak No:13 D:1 Sağlıkhan İşhanı, 20020 Merkezefendi/Denizli</span>
+      </div>
+      <div class="info-row">
+        <span class="label">TELEFON</span>
+        <span class="val"><a href="tel:+905071945550" style="color:inherit; text-decoration:none;">+90 507 194 55 50</a></span>
+      </div>
+      <div class="info-row">
+        <span class="label">E-POSTA</span>
+        <span class="val">info@avkorkmaz.com</span>
+      </div>
+      <div class="info-row">
+        <span class="label">ÇALIŞMA SAATLERİ</span>
+        <span class="val">Hafta içi, 09:00 – 18:00</span>
+      </div>
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25226.610277745982!2d29.04541687431641!3d37.7823925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c73f1995f4b85f%3A0x1c6dd8c7ea7a5426!2sKorkmaz%20Hukuk%20B%C3%BCrosu!5e0!3m2!1str!2str!4v1787564640344!5m2!1str!2str" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Korkmaz Hukuk Bürosu konumu"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-word">KORKMAZ <span>HUKUK</span></div>
+      <p class="footer-desc">Denizli merkezli, sekiz hukuk alanında danışmanlık ve dava takibi.</p>
+    </div>
+    <div>
+      <h4>Alanlar</h4>
+      <ul>
+        <li><a href="#alanlar">Gayrimenkul / İş Hukuku</a></li>
+        <li><a href="#alanlar">Aile Hukuku</a></li>
+        <li><a href="#alanlar">Ticaret / Şirketler Hukuku</a></li>
+        <li><a href="#alanlar">Ceza Hukuku</a></li>
+        <li><a href="#alanlar">İcra ve İflas Hukuku</a></li>
+        <li><a href="#alanlar">İdare Hukuku</a></li>
+        <li><a href="#alanlar">Miras Hukuku</a></li>
+        <li><a href="#alanlar">Sigorta / Tazminat Hukuku</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Büro</h4>
+      <ul>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#makaleler">Makaleler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>İletişim</h4>
+      <ul>
+        <li>info@avkorkmaz.com</li>
+        <li>+90 507 194 55 50</li>
+        <li>Saraylar Mah. 496 Sk. No:13 D:1<br>Merkezefendi/Denizli</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 Korkmaz Hukuk Bürosu. Tüm hakları saklıdır.</span>
+    <span>Bu sayfa bir tasarım taslağıdır.</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams(data).toString()
+      }).then(function(){
+        status.style.display = 'block';
+        status.style.color = 'var(--bronze-deep)';
+        status.textContent = 'Teşekkürler, talebiniz iletildi. En kısa sürede size dönüş yapacağız.';
+        form.reset();
+      }).catch(function(){
+        status.style.display = 'block';
+        status.style.color = '#b3423d';
+        status.textContent = 'Bir sorun oluştu, lütfen doğrudan info@avkorkmaz.com adresine yazın.';
+      });
+    });
+  })();
+</script>
+</body>
+</html>
