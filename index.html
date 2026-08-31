@@ -614,11 +614,6 @@
     var form = document.getElementById('contactForm');
     var status = document.getElementById('formStatus');
     if(!form) return;
-    var recaptchaScript = document.createElement('script');
-    recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
-    recaptchaScript.async = true;
-    recaptchaScript.defer = true;
-    document.head.appendChild(recaptchaScript);
     form.addEventListener('submit', function(e){
       e.preventDefault();
       var adAlani = form.querySelector('[name="ad"]');
