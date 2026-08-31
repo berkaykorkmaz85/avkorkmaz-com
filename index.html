@@ -506,8 +506,9 @@
     <div>
       <p class="eyebrow">İletişime Geçin</p>
       <h2 style="margin-top:10px; font-size:26px;">Ön görüşme talebinizi iletin.</h2>
-      <form id="contactForm" name="iletisim" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:28px;">
+      <form id="contactForm" name="iletisim" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" style="margin-top:28px;">
         <input type="hidden" name="form-name" value="iletisim">
+        <input type="hidden" name="subject" id="formSubject" value="Yeni İletişim Talebi">
         <p style="position:absolute; left:-9999px;">
           <label>Bu alanı boş bırakın: <input name="bot-field"></label>
         </p>
@@ -537,6 +538,7 @@
           <label for="mesaj">Kısaca konunuz</label>
           <textarea id="mesaj" name="mesaj" placeholder="Talebinizi kısaca özetleyin"></textarea>
         </div>
+        <div data-netlify-recaptcha="true" style="margin:6px 0 16px;"></div>
         <button class="btn btn-primary" type="submit">Talebi Gönder</button>
         <p id="formStatus" style="margin-top:14px; font-size:14px; display:none;"></p>
       </form>
@@ -612,8 +614,19 @@
     var form = document.getElementById('contactForm');
     var status = document.getElementById('formStatus');
     if(!form) return;
+    var recaptchaScript = document.createElement('script');
+    recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
+    recaptchaScript.async = true;
+    recaptchaScript.defer = true;
+    document.head.appendChild(recaptchaScript);
     form.addEventListener('submit', function(e){
       e.preventDefault();
+      var adAlani = form.querySelector('[name="ad"]');
+      var subjectAlani = document.getElementById('formSubject');
+      if(subjectAlani){
+        var adDeger = adAlani && adAlani.value ? adAlani.value.trim() : '';
+        subjectAlani.value = adDeger ? ('Yeni İletişim Talebi — ' + adDeger) : 'Yeni İletişim Talebi';
+      }
       var data = new FormData(form);
       fetch('/', {
         method: 'POST',
