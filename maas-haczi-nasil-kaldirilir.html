@@ -5,14 +5,6 @@
 <title>Maaş Haczi Nasıl Kaldırılır? Maaşın Ne Kadarına Haciz Konur? | Korkmaz Hukuk Bürosu — Denizli</title>
 <meta name="description" content="Maaşın ne kadarına haciz konur, maaş haczi nasıl kaldırılır? Dörtte bir kuralı, emekli maaşı ve nafaka istisnaları — Korkmaz Hukuk Bürosu'ndan güncel, adım adım rehber.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2X00GQCW3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V2X00GQCW3');
-</script>
 <link rel="canonical" href="https://avkorkmaz.com/maas-haczi-nasil-kaldirilir.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Maaş Haczi Nasıl Kaldırılır? — Korkmaz Hukuk Bürosu">
@@ -216,5 +208,45 @@
   </div>
 </footer>
 
+<!-- Çerez onayı (KVKK) + onaya bağlı Google Analytics -->
+<style>
+  #cookieBanner{position:fixed;left:0;right:0;bottom:0;z-index:1000;background:var(--ink);color:var(--text-on-ink);border-top:1px solid var(--bronze);padding:16px 22px;display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;font-family:"Work Sans",ui-sans-serif,system-ui,sans-serif;font-size:13.5px;line-height:1.55;box-shadow:0 -4px 24px rgba(0,0,0,.28);}
+  #cookieBanner[hidden]{display:none!important;}
+  #cookieBanner p{margin:0;max-width:64ch;color:var(--text-on-ink-muted);}
+  #cookieBanner .cookie-actions{display:flex;gap:10px;flex-shrink:0;}
+  #cookieBanner button{font-family:inherit;font-weight:600;font-size:13.5px;padding:9px 20px;border-radius:2px;cursor:pointer;border:1px solid transparent;}
+  #cookieAccept{background:var(--bronze);color:var(--ink);}
+  #cookieAccept:hover{background:var(--bronze-deep);}
+  #cookieReject{background:transparent;color:var(--text-on-ink);border-color:#3c4c5c;}
+  #cookieReject:hover{border-color:var(--bronze);}
+  @media(max-width:640px){#cookieBanner{flex-direction:column;align-items:stretch;text-align:center;}#cookieBanner .cookie-actions{justify-content:center;}}
+</style>
+<div id="cookieBanner" hidden role="dialog" aria-label="Çerez tercihi">
+  <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz.</p>
+  <div class="cookie-actions">
+    <button id="cookieReject" type="button">Reddet</button>
+    <button id="cookieAccept" type="button">Kabul Et</button>
+  </div>
+</div>
+<script>
+(function(){
+  var GID='G-V2X00GQCW3';
+  function loadGA(){
+    if(window.__gaLoaded)return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GID;
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);} window.gtag=gtag;
+    gtag('js',new Date()); gtag('config',GID);
+  }
+  var c=null; try{c=localStorage.getItem('cookieConsent');}catch(e){}
+  if(c==='accepted'){loadGA();return;}
+  if(c==='rejected'){return;}
+  var b=document.getElementById('cookieBanner'); if(!b)return; b.hidden=false;
+  document.getElementById('cookieAccept').onclick=function(){try{localStorage.setItem('cookieConsent','accepted');}catch(e){} loadGA(); b.hidden=true;};
+  document.getElementById('cookieReject').onclick=function(){try{localStorage.setItem('cookieConsent','rejected');}catch(e){} b.hidden=true;};
+})();
+</script>
 </body>
 </html>
