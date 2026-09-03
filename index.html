@@ -2,6 +2,10 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Korkmaz Hukuk Bürosu</title>
 <meta name="description" content="Denizli'de icra-iflas, gayrimenkul, iş, aile ve ceza hukuku alanında avukatlık ve hukuki danışmanlık. Av. Berkay Korkmaz — Korkmaz Hukuk Bürosu, Denizli.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +23,7 @@
   "name": "Korkmaz Hukuk Bürosu",
   "url": "https://avkorkmaz.com/",
   "image": "https://avkorkmaz.com/berkay-korkmaz.jpg",
+  "logo": "https://avkorkmaz.com/favicon-512.png",
   "founder": {
     "@type": "Person",
     "name": "Av. Berkay Korkmaz",
@@ -384,13 +389,18 @@
     .credentials>div{grid-template-columns:1fr;gap:3px;}
     .about .principles{grid-template-columns:1fr !important;}
   }
+
+  .wordmark{display:inline-flex; align-items:center; gap:10px;}
+  .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
+  :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="wordmark" href="index.html" style="text-decoration:none" aria-label="Ana sayfa">KORKMAZ <span>HUKUK BÜROSU</span></a>
+    <a class="wordmark" href="index.html" style="text-decoration:none" aria-label="Ana sayfa"><img src="/bk-logo.png" alt="Korkmaz Hukuk Bürosu amblemi" class="wordmark-logo">KORKMAZ <span>HUKUK BÜROSU</span></a>
     <ul class="navlinks">
       <li><a href="#hakkimizda">Hakkımızda</a></li>
       <li><a href="#alanlar">Çalışma Alanları</a></li>

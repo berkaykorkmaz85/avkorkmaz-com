@@ -2,6 +2,10 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>İcra Takibi Geldi, Ne Yapmalıyım? | Korkmaz Hukuk Bürosu — Denizli</title>
 <meta name="description" content="Denizli'de icra takibi (ödeme emri) mi aldınız? 7 günlük kritik itiraz süresi, borcu kabul/ret ve itiraz yolları — Denizli avukatından adım adım rehber.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,6 +119,11 @@
   footer a:hover{color:var(--bronze);}
   .footer-word{font-family:"Newsreader", serif; font-size:17px; color:var(--text-on-ink); font-weight:600;}
   .footer-word span{color:var(--bronze);}
+
+  .wordmark{display:inline-flex; align-items:center; gap:10px;}
+  .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
+  :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
 </style>
 <script type="application/ld+json">
 {
@@ -147,7 +156,7 @@
 
 <header>
   <div class="nav">
-    <a class="wordmark" href="index.html" style="text-decoration:none" aria-label="Ana sayfa">KORKMAZ <span>HUKUK BÜROSU</span></a>
+    <a class="wordmark" href="index.html" style="text-decoration:none" aria-label="Ana sayfa"><img src="/bk-logo.png" alt="Korkmaz Hukuk Bürosu amblemi" class="wordmark-logo">KORKMAZ <span>HUKUK BÜROSU</span></a>
     <ul class="navlinks">
       <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
       <li><a href="index.html#alanlar">Çalışma Alanları</a></li>
