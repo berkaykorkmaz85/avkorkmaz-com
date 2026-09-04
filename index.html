@@ -189,6 +189,14 @@
   }
   :focus-visible{outline:2px solid var(--focus); outline-offset:3px;}
 
+  /* ── Genel cila ── */
+  html{scroll-behavior:smooth;}
+  section[id]{scroll-margin-top:100px;}            /* sabit header çıpayı örtmesin */
+  ::selection{background:var(--bronze); color:#fff;}
+  .btn{transition:background .18s, border-color .18s, color .18s, transform .12s;}
+  .btn:active{transform:translateY(1px);}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
   /* header */
   header{
     position:sticky; top:0; z-index:20;
@@ -418,6 +426,8 @@
 
   .wordmark{display:inline-flex; align-items:center; gap:10px;}
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
+  /* Orta genişlikte nav kalabalığını önle: logoda sadece "KORKMAZ" kalsın */
+  @media(min-width:861px) and (max-width:1024px){ .wordmark span{display:none;} .navlinks{gap:18px;} }
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
 
