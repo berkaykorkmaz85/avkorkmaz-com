@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,9 +208,24 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#en-kritik-fark-bu-borclar-iik-ya-degil-6183-e-tabi">En kritik fark: Bu borçlar İİK’ya değil, 6183’e tabi</a></li>
+      <li><a href="#trafik-cezasinda-iki-ayri-asamayi-karistirmayin">Trafik cezasında iki ayrı aşamayı karıştırmayın</a></li>
+      <li><a href="#odeme-emri-geldi-15-gun-ve-sadece-3-sebep">Ödeme emri geldi: 15 gün ve sadece 3 sebep</a></li>
+      <li><a href="#devletin-elindeki-guclu-araclar">Devletin elindeki güçlü araçlar</a></li>
+      <li><a href="#odeyemiyorsaniz-tecil-taksit-ve-yapilandirma">Ödeyemiyorsanız: tecil, taksit ve yapılandırma</a></li>
+      <li><a href="#zamanasimi">Zamanaşımı</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Trafik cezanız, MTV’niz ya da vergi borcunuz birikti ve bir gün “ödeme emri” geldi veya banka hesabınıza bloke kondu. Burada bilmeniz gereken en önemli şey şu: bu borçlar, sıradan bir alacaklının açtığı icra takibi gibi işlemez. Devletin (amme) alacakları ayrı bir kanuna — 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun’a — tabidir ve icra dairesi yerine vergi/tahsil dairesi eliyle tahsil edilir.</p>
     <p>Bu ayrım, itiraz sürelerinizi, başvuracağınız mercii ve haklarınızı doğrudan belirler. Bu rehberde, bir devlet borcu icraya düştüğünde ne olacağını ve ne yapmanız gerektiğini en sade haliyle anlatıyoruz.</p>
-    <h2>En kritik fark: Bu borçlar İİK’ya değil, 6183’e tabi</h2>
+    <h2 id="en-kritik-fark-bu-borclar-iik-ya-degil-6183-e-tabi">En kritik fark: Bu borçlar İİK’ya değil, 6183’e tabi</h2>
     <div style="overflow-x:auto">
     <table class="data">
       <thead><tr><th>Konu</th><th>Özel alacak (senet, kira, ticari)</th><th>Devlet alacağı (trafik, vergi, MTV)</th></tr></thead>
@@ -214,36 +237,36 @@
       </tbody>
     </table>
     </div>
-    <h2>Trafik cezasında iki ayrı aşamayı karıştırmayın</h2>
+    <h2 id="trafik-cezasinda-iki-ayri-asamayi-karistirmayin">Trafik cezasında iki ayrı aşamayı karıştırmayın</h2>
     <p>Trafik cezaları için iki farklı itiraz anı vardır ve bunları ayırmak çok önemlidir:</p>
     <ul><li><strong>1) Cezanın kendisine itiraz: </strong>Ceza tutanağını haksız buluyorsanız, tebliğden itibaren 15 gün içinde sulh ceza hâkimliğine başvurarak cezaya itiraz edebilirsiniz. Bu aşamada ceza henüz kesinleşmemiştir.</li><li><strong>2) Ödeme emri (tahsil) aşaması: </strong>Cezaya süresinde itiraz etmez veya itirazınız reddolursa ceza kesinleşir; sonra ödeme emri gelir. Danıştay’a göre kesinleşmeyen cezaya ödeme emri düzenlenemez.</li></ul>
     <p>Yani ödeme emri geldiyse, çoğu zaman cezaya itiraz aşaması geçmiş demektir; artık tahsil aşamasındaki haklarınıza (aşağıdaki 15 günlük vergi mahkemesi yolu) bakmanız gerekir.</p>
-    <h2>Ödeme emri geldi: 15 gün ve sadece 3 sebep</h2>
+    <h2 id="odeme-emri-geldi-15-gun-ve-sadece-3-sebep">Ödeme emri geldi: 15 gün ve sadece 3 sebep</h2>
     <p>Vergi, MTV veya kesinleşmiş trafik cezası için ödeme emri tebliğ edildiyse, tebliğden itibaren 15 gün içinde ödeme emrini düzenleyen dairenin bulunduğu yerdeki vergi mahkemesinde dava açabilirsiniz. Ancak bu davada ileri sürebileceğiniz sebepler kanunen sınırlıdır:</p>
     <ol><li>“Böyle bir borcum yok” (borç bana ait değil / hiç doğmadı),</li><li>“Borç kısmen veya tamamen ödendi”,</li><li>“Borç zamanaşımına uğradı”.</li></ol>
     <p>Bu üç sebep dışında bir gerekçeyle ödeme emrine dava açmak sonuç vermez. Bu yüzden dilekçenizi doğru sebebe dayandırmak önemlidir.</p>
     <div class="callout"><p><strong>Çok önemli: Dava açmak haczi kendiliğinden durdurmaz</strong></p>
     <p>Ödeme emrine karşı dava açmanız, e-haczi otomatik olarak durdurmaz. Dava sürerken vergi dairesi banka hesaplarınıza e-haciz uygulayabilir. Haczin durması için davada ayrıca “yürütmenin durdurulması” talep edilmeli ve mahkemece kabul edilmelidir.</p></div>
-    <h2>Devletin elindeki güçlü araçlar</h2>
+    <h2 id="devletin-elindeki-guclu-araclar">Devletin elindeki güçlü araçlar</h2>
     <ul><li><strong>E-haciz: </strong>Vergi dairesi, banka hesaplarınıza elektronik olarak, mahkeme kararı olmadan haciz koyabilir.</li><li><strong>Araç muayene ve satış engeli: </strong>Ödenmemiş MTV ve trafik cezaları varken aracın fenni muayenesi yapılamaz ve satış/devir işlemi tamamlanamaz.</li><li><strong>Gecikme zammı: </strong>Ödenmeyen borca, kanunda belirlenen oranda gecikme zammı işler; borç bekledikçe büyür.</li></ul>
-    <h2>Ödeyemiyorsanız: tecil, taksit ve yapılandırma</h2>
+    <h2 id="odeyemiyorsaniz-tecil-taksit-ve-yapilandirma">Ödeyemiyorsanız: tecil, taksit ve yapılandırma</h2>
     <p>Borcu tek seferde ödeyemiyorsanız çaresiz değilsiniz:</p>
     <ul><li><strong>Tecil ve taksitlendirme (6183 m.48): </strong>İlgili daireye başvurarak borcu belirli koşullarla taksitlendirebilir, tecil faiziyle ödeyebilirsiniz.</li><li><strong>Yapılandırma kanunları: </strong>Devlet zaman zaman borçların yeniden yapılandırılmasına imkân tanıyan kanunlar çıkarır; böyle bir dönem varsa gecikme zamları avantajlı hâle gelebilir.</li></ul>
     <p>Taksit/tecil talebi, çoğu zaman haciz baskısını da hafifletir; ancak koşullarını kaçırmamak önemlidir.</p>
-    <h2>Zamanaşımı</h2>
+    <h2 id="zamanasimi">Zamanaşımı</h2>
     <p>Devlet alacaklarında da tahsil zamanaşımı vardır; kural olarak alacak, vadesini izleyen takvim yılından itibaren 5 yıl içinde tahsil edilmezse zamanaşımına uğrar. Ancak bazı işlemler bu süreyi keser/durdurur. Zamanaşımı iddianız varsa, bunu ödeme emrine karşı açacağınız davada ileri sürebilirsiniz.</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>İcra dairesi zannetmek: </strong>Bu borçlar 6183’e tabidir; muhatap ve süreler farklıdır.</li><li><strong>Cezaya itiraz ile ödeme emrini karıştırmak: </strong>İkisi ayrı aşama, ayrı merci, ayrı süredir.</li><li><strong>Dava açtım diye rahatlamak: </strong>Yürütmeyi durdurma istenmezse e-haciz sürebilir.</li><li><strong>15 günü kaçırmak: </strong>Ödeme emrine dava süresi kısadır; geçince tahsil kesinleşir.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Borcun türünü belirledim (trafik cezası / MTV / vergi) ve hangi dairede olduğunu tespit ettim.</li><li>Elimdeki belgenin ‘ceza tebligatı’ mı yoksa ‘ödeme emri’ mi olduğunu ayırt ettim.</li><li>Ödeme emriyse 15 günlük vergi mahkemesi süresini ve dayanacağım sebebi belirledim.</li><li>Dava açacaksam yürütmenin durdurulmasını da talep ettim.</li><li>Ödeyemeyeceksem tecil/taksit veya yapılandırma imkânını araştırdım.</li><li>Emin olmadığım noktada bir avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Trafik/vergi borcum için icra dairesine mi gideceğim? </strong>Hayır. Bu borçlar 6183 sayılı Kanun’a tabidir; muhatabınız vergi/tahsil dairesi, itiraz yeriniz vergi mahkemesidir.</p>
     <p><strong>Ödeme emrine ne kadar sürede itiraz edebilirim? </strong>Tebliğden itibaren 15 gün içinde vergi mahkemesinde dava açabilirsiniz; sadece ‘borç yok’, ‘ödendi’ veya ‘zamanaşımı’ sebeplerine dayanabilirsiniz.</p>
     <p><strong>Dava açarsam hesabıma haciz gelmez mi? </strong>Dava tek başına e-haczi durdurmaz; ayrıca yürütmenin durdurulması istenmeli ve kabul edilmelidir.</p>
     <p><strong>Borcu ödemezsem aracımı satabilir miyim? </strong>Ödenmemiş MTV/trafik cezası varken araç muayenesi yapılamaz ve satış/devir tamamlanamaz.</p>
     <p><strong>Tek seferde ödeyemiyorum, ne yapabilirim? </strong>Tecil/taksitlendirme (6183 m.48) başvurusu yapabilir, varsa yapılandırma imkânından yararlanabilirsiniz.</p>
     <p><strong>Avukat şart mı? </strong>Basit ödeme/taksit işlerini kendiniz yürütebilirsiniz; ancak ödeme emrine dava, zamanaşımı ve yürütmeyi durdurma teknik olduğundan avukatla ilerlemek daha güvenlidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Trafik cezası ve vergi borcu icraya düştüğünde en sık yapılan hata, bunu sıradan bir icra takibi sanmaktır. Oysa muhatabınız, süreleriniz ve haklarınız farklıdır. Ödeme emri geldiyse 15 günlük süreyi ve dayanabileceğiniz sınırlı sebepleri iyi bilmek, ödeyemiyorsanız tecil/yapılandırma yollarını değerlendirmek gerekir. Emin olamadığınız noktada bir avukattan destek almak, hem hak hem para kaybını önler.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

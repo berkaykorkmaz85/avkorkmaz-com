@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,13 +207,24 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#genel-kural-duz-istifada-kidem-yoktur">Genel kural: düz istifada kıdem yoktur</a></li>
+      <li><a href="#istifa-etseniz-bile-kidem-alabileceginiz-durumlar">İstifa etseniz bile kıdem alabileceğiniz durumlar</a></li>
+      <li><a href="#hakli-nedenle-istifada-dikkat-edilmesi-gerekenler">Haklı nedenle istifada dikkat edilmesi gerekenler</a></li>
+      <li><a href="#nasil-talep-edilir">Nasıl talep edilir?</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İşten ayrılmayı düşünüyorsunuz ama aklınızdaki soru net: “İstifa edersem kıdem tazminatımı yakar mıyım?” Kısa cevap: kural olarak evet, kendi isteğiyle istifa eden kıdem alamaz. Ancak bu kuralın önemli istisnaları vardır ve çoğu kişi tam da bu istisnaları bilmediği için hakkını kaybeder.</p>
     <p>Bu rehberde istifa hâlinde kıdem tazminatının ne olduğunu, hangi durumlarda istifa etseniz bile kıdem alabileceğinizi ve nelere dikkat etmeniz gerektiğini anlatıyoruz.</p>
-    <h2>Genel kural: düz istifada kıdem yoktur</h2>
+    <h2 id="genel-kural-duz-istifada-kidem-yoktur">Genel kural: düz istifada kıdem yoktur</h2>
     <p>Kıdem tazminatı, iş sözleşmesinin kanunda sayılan belirli sebeplerle sona ermesine bağlıdır. İşçinin herhangi bir haklı sebep göstermeden, kendi isteğiyle işten ayrılması (düz istifa) bu sebepler arasında değildir. Bu nedenle sırf “ayrılmak istiyorum” diyerek istifa eden işçi, kural olarak kıdem tazminatına hak kazanamaz.</p>
     <div class="callout"><p><strong>Ama istifanın SEBEBİ her şeyi değiştirir</strong></p>
     <p>Kıdem hakkını belirleyen şey, çoğu zaman ‘istifa ettiniz mi’ değil, ‘neden ayrıldığınız’dır. Haklı bir nedeniniz varsa, ayrılmanız hukuken ‘istifa’ değil ‘haklı nedenle fesih’ sayılır ve kıdeme hak kazanırsınız. Bu yüzden ayrılmadan önce nedeninizi doğru tespit etmek kritik önemdedir.</p></div>
-    <h2>İstifa etseniz bile kıdem alabileceğiniz durumlar</h2>
+    <h2 id="istifa-etseniz-bile-kidem-alabileceginiz-durumlar">İstifa etseniz bile kıdem alabileceğiniz durumlar</h2>
     <h3>1) Haklı nedenle istifa (İş Kanunu m.24)</h3>
     <p>İşverenden kaynaklanan haklı bir sebep varsa, işçi sözleşmeyi haklı nedenle feshedip kıdem tazminatına hak kazanır. Başlıca örnekler:</p>
     <ul><li>Ücretin (maaş, fazla mesai, ikramiye) hiç veya eksik/geç ödenmesi;</li><li>Sigorta priminin hiç yatırılmaması ya da düşük ücretten gösterilmesi;</li><li>İşyerinde mobbing, hakaret, tehdit veya tacize maruz kalma;</li><li>Çalışma koşullarının işçi aleyhine esaslı biçimde değiştirilmesi (ücret düşürme, görev/yer değişikliği vb.);</li><li>Sağlığı tehdit eden koşullar.</li></ul>
@@ -218,19 +237,19 @@
     <p>Erkek işçi, muvazzaf askerlik nedeniyle işten ayrılırsa kıdem tazminatı alır.</p>
     <h3>4) Emeklilik (veya yaş dışı şartların tamamlanması)</h3>
     <p>Emekliliğe hak kazanan ya da emeklilik için yaş dışındaki prim/sigortalılık şartlarını tamamlayıp bunu belgeleyen işçi, bu nedenle ayrılırsa kıdem tazminatına hak kazanır.</p>
-    <h2>Haklı nedenle istifada dikkat edilmesi gerekenler</h2>
+    <h2 id="hakli-nedenle-istifada-dikkat-edilmesi-gerekenler">Haklı nedenle istifada dikkat edilmesi gerekenler</h2>
     <ul><li><strong>Sebebi yazılı ve net bildirin: </strong>Ayrılırken gerçek sebebi (ör. ‘ücretim ödenmediği için’) yazılı olarak belirtin; ‘kişisel nedenlerle’ demeyin.</li><li><strong>Belgeleri toplayın: </strong>Ödeme kayıtları, banka hesap dökümü, SGK hizmet dökümü, yazışmalar haklılığınızı ispatlar.</li><li><strong>Süreye dikkat: </strong>Haklı nedenle fesih, sebebi öğrendikten sonra makul/kanuni süre içinde kullanılmalıdır.</li></ul>
     <div class="callout"><p><strong>‘İstifa dilekçesi’ tuzağına dikkat</strong></p>
     <p>İşveren bazen, aslında haklı nedenle ayrılan işçiye ‘kişisel nedenlerle istifa ediyorum’ yazan bir dilekçe imzalatmak ister. Böyle bir dilekçe, kıdem hakkınızı zayıflatabilir. Gerçek sebebinizi gizleyen bir metni imzalamadan önce mutlaka düşünün ve gerekirse danışın.</p></div>
-    <h2>Nasıl talep edilir?</h2>
+    <h2 id="nasil-talep-edilir">Nasıl talep edilir?</h2>
     <p>Haklı nedenle ayrıldıysanız ve işveren kıdemi ödemiyorsa: önce yazılı talep, sonuç alınmazsa arabuluculuk (işçi-işveren alacaklarında dava öncesi zorunludur) ve gerekirse iş mahkemesinde dava yolu izlenir. İşçi alacaklarında zamanaşımı sürelerine dikkat edilmelidir. (Tazminatınızı hesaplamak için sitemizdeki “Kıdem Tazminatı Nasıl Hesaplanır?” rehberindeki hesap aracını kullanabilirsiniz.)</p>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Kendi isteğimle istifa ettim, kıdem alabilir miyim? </strong>Kural olarak hayır. Ancak haklı bir nedeniniz (ödenmeyen ücret, sigortasızlık, mobbing vb.) veya evlilik/askerlik/emeklilik gibi özel bir hâl varsa alabilirsiniz.</p>
     <p><strong>Ücretim ödenmiyor, istifa edersem kıdem yanar mı? </strong>Hayır. Ücretin ödenmemesi haklı fesih sebebidir; bu nedenle ayrılırsanız kıdem tazminatına hak kazanırsınız. Sebebi yazılı bildirin ve belgeleyin.</p>
     <p><strong>Evlilik nedeniyle ayrılırsam? </strong>Kadın işçi, evlilikten itibaren bir yıl içinde bu nedenle ayrılırsa kıdem tazminatı alır.</p>
     <p><strong>İhbar tazminatı da alır mıyım? </strong>İşçi kendisi fesheder/istifa ederse kural olarak ihbar tazminatı almaz; hatta bildirimsiz ayrılırsa işverene ihbar ödemesi gündeme gelebilir. İhbar, çoğunlukla işverenin bildirimsiz çıkarmasında işçiye ödenir.</p>
     <p><strong>‘Kişisel nedenlerle’ istifa yazdım, hakkımı kaybettim mi? </strong>Zorlaşır ama her zaman bitmez; gerçek sebebi belgelerle ortaya koyabilirseniz haklılığınızı ileri sürebilirsiniz. Vakit kaybetmeden danışın.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İstifa ile kıdem tazminatı meselesinde belirleyici olan, ayrılmanın gerçek sebebidir. Düz istifada kıdem alınamazken; ödenmeyen ücret, sigortasızlık, mobbing gibi haklı sebeplerle ya da evlilik/askerlik/emeklilik hâllerinde istifa etseniz bile kıdeme hak kazanırsınız. Ayrılmadan önce sebebinizi doğru tespit etmek ve belgelemek, binlerce liralık hakkınızı korur. Emin değilseniz, adım atmadan önce bir avukata danışın.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

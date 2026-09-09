@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,34 +207,47 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#icra-taahhudu-nedir">İcra taahhüdü nedir?</a></li>
+      <li><a href="#taahhut-gecerli-olsun-diye-aranan-sartlar">Taahhüt geçerli olsun diye aranan şartlar</a></li>
+      <li><a href="#taahhudu-bozarsam-ne-olur-tazyik-hapsi">Taahhüdü bozarsam ne olur? Tazyik hapsi</a></li>
+      <li><a href="#tazyik-hapsinden-nasil-kurtulunur">Tazyik hapsinden nasıl kurtulunur?</a></li>
+      <li><a href="#taahhut-vermeden-once-dikkat">Taahhüt vermeden önce dikkat</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İcra dairesinde alacaklıyla anlaşıp “borcumu şu tarihlerde şu taksitlerle ödeyeceğim” dediniz ve bir taahhüt imzaladınız. Peki bu taahhüt sizi tam olarak neye bağlar? Ödeyemezseniz başınıza ne gelir? “Tazyik hapsi” denilen şey nedir? İcra taahhüdü, doğru verildiğinde borçluyu koruyan bir nefes alma imkânı; yanlış anlaşıldığında ise hapis riski doğuran ciddi bir taahhüttür.</p>
     <p>Bu rehberde icra taahhüdünün ne olduğunu, geçerli sayılması için gereken şartları, bozulması hâlinde uygulanan tazyik hapsini ve bu hapisten kurtulmanın yolunu en sade haliyle anlatıyoruz.</p>
-    <h2>İcra taahhüdü nedir?</h2>
+    <h2 id="icra-taahhudu-nedir">İcra taahhüdü nedir?</h2>
     <p>İcra taahhüdü, borçlunun icra dairesinde, borcunu belirli bir ödeme planına göre ödeyeceğini beyan etmesidir (İİK m.111). En yaygın hâli, borçlunun taksitle ödeme teklif etmesi ve alacaklının bunu kabul etmesidir. Taahhüt geçerli şekilde verildiğinde, planına uyduğunuz sürece hakkınızda yeni haciz işlemleri yapılmaz; yani borcu yapılandırarak nefes alırsınız.</p>
-    <h2>Taahhüt geçerli olsun diye aranan şartlar</h2>
+    <h2 id="taahhut-gecerli-olsun-diye-aranan-sartlar">Taahhüt geçerli olsun diye aranan şartlar</h2>
     <p>Her söz taahhüt sayılmaz. Taahhüdün bağlayıcı olması ve ihlali hâlinde tazyik hapsine dayanak oluşturabilmesi için bazı koşullar aranır:</p>
     <ul><li><strong>İcra dairesinde/tutanağa geçirilerek yapılması: </strong>Taahhüt, icra dosyasında usulüne uygun tutanakla alınmalıdır.</li><li><strong>Alacaklının kabulü: </strong>Taksit teklifinin alacaklı tarafça kabul edilmesi gerekir.</li><li><strong>Borç miktarının net olması: </strong>Toplam borç; asıl alacak, işlemiş faiz, masraf ve vekâlet ücreti kalemleriyle açık ve belirli olmalıdır.</li><li><strong>Ödeme tarih ve tutarlarının belirli olması: </strong>Hangi tarihte ne kadar ödeneceği tereddütsüz yazılmalıdır.</li></ul>
     <div class="callout"><p><strong>Borç dökümü net değilse taahhüt geçersiz olabilir</strong></p>
     <p>Uygulamada tazyik hapsi taleplerinin reddedilmesinin en sık sebebi, taahhüt anında toplam borcun kalemleriyle (asıl alacak, faiz, masraf, vekâlet ücreti) net biçimde ortaya konmamış olmasıdır. Borç dökümü belirsizse taahhüt geçersiz sayılabilir. Bu yüzden taahhüt vermeden önce toplam borcun ayrıntılı dökümünü isteyin.</p></div>
-    <h2>Taahhüdü bozarsam ne olur? Tazyik hapsi</h2>
+    <h2 id="taahhudu-bozarsam-ne-olur-tazyik-hapsi">Taahhüdü bozarsam ne olur? Tazyik hapsi</h2>
     <p>Geçerli bir icra taahhüdünü haklı bir sebep olmaksızın yerine getirmeyen borçlu hakkında, alacaklının şikâyeti üzerine icra ceza mahkemesi tazyik hapsine karar verebilir (İİK m.340). Tazyik hapsi bir “ceza” değil, borçluyu ödemeye zorlamak için öngörülen bir baskı (zorlama) hapsidir; bu yüzden adı ‘tazyik’tir.</p>
     <div class="callout"><p><strong>İlgili mevzuat — İİK m.340 (Taahhüdü ihlâl hâlinde ceza)</strong></p>
     <p>“111 inci madde mucibince veya alacaklının muvafakati ile icra dairesinde kararlaştırılan borcu ödeme şartını, makbul bir sebep olmaksızın ihlâl eden borçlunun, alacaklının şikâyeti üzerine, üç aya kadar tazyik hapsine karar verilir. Hapsin tatbikine başlandıktan sonra borçlu borcun tamamını veya o tarihe kadar icra veznesine yatırmak zorunda olduğu meblağı öderse tahliye edilir; borçlunun, taahhüdünü yerine getirmesi hâlinde de tahliye olunur.”</p></div>
     <div class="callout"><p><strong>Tazyik hapsi hakkında bilinmesi gerekenler</strong></p>
     <ul><li>Süresi 3 ayı geçemez.</li><li>Bir baskı aracıdır: borç ödendiği anda hapis sona erer / infaz edilmez.</li><li>Adli sicil (sabıka) kaydına işlemez.</li><li>Şikâyet süreye tabidir; alacaklı, ihlali öğrendiğinden itibaren belirli süre içinde başvurmalıdır.</li></ul></div>
-    <h2>Tazyik hapsinden nasıl kurtulunur?</h2>
+    <h2 id="tazyik-hapsinden-nasil-kurtulunur">Tazyik hapsinden nasıl kurtulunur?</h2>
     <p>En kesin yol borcu ödemektir: tazyik hapsi bir baskı hapsi olduğundan, borç (taahhüt kapsamındaki tutar) ödendiğinde hapis kararı kalkar ya da infaz edilmez. Bunun dışında, taahhüdün geçerlilik şartlarını taşımadığı (özellikle borç dökümünün belirsiz olması), şikâyet süresinin kaçırıldığı veya ödememenin haklı bir sebebe dayandığı hâllerde tazyik hapsi talebi reddedilebilir. Bu değerlendirme teknik olduğundan, tazyik hapsi şikâyetiyle karşılaşan borçlunun bir avukatla ilerlemesi güçlü şekilde önerilir.</p>
-    <h2>Taahhüt vermeden önce dikkat</h2>
+    <h2 id="taahhut-vermeden-once-dikkat">Taahhüt vermeden önce dikkat</h2>
     <ul><li><strong>Ödeyebileceğiniz bir plan yapın: </strong>Gerçekçi olmayan taksitler, ihlal ve hapis riskini büyütür.</li><li><strong>Toplam borcun dökümünü isteyin: </strong>Faiz ve masraflar dâhil net tutarı görmeden imzalamayın.</li><li><strong>Ödemeleri belgeleyin: </strong>Her taksiti banka üzerinden, dosya numarası açıklamalı ödeyin ve saklayın.</li><li><strong>Aksama olacaksa önceden çözüm arayın: </strong>Ödeyemeyeceğinizi anladığınızda alacaklıyla yeniden görüşmek, ihlalden iyidir.</li></ul>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Gerçekçi olmayan taahhüt vermek: </strong>Ödenemeyen plan, tazyik hapsi riskini doğurur.</li><li><strong>Borç dökümünü kontrol etmemek: </strong>Belirsiz borçta taahhüt geçersiz olabilir; ama buna güvenip ödememek risklidir.</li><li><strong>Taahhüdü ‘sadece söz’ sanmak: </strong>Usulüne uygun taahhüt, hapisle sonuçlanabilen bağlayıcı bir işlemdir.</li><li><strong>Şikâyetle karşılaşınca hareketsiz kalmak: </strong>Süre ve savunma hakları için hemen avukata danışın.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>İcra taahhüdünü bozarsam kesin hapse girer miyim? </strong>Otomatik değildir. Alacaklının şikâyeti ve taahhüdün geçerli olması gerekir. Geçerliyse en fazla 3 aya kadar tazyik hapsi gündeme gelebilir; borç ödendiğinde hapis kalkar.</p>
     <p><strong>Tazyik hapsi sabıka kaydına işler mi? </strong>Hayır. Tazyik hapsi bir ceza değil, ödemeye zorlayan baskı hapsidir; adli sicile işlemez.</p>
     <p><strong>Borcu ödersem hapisten kurtulur muyum? </strong>Evet. Taahhüt kapsamındaki borç ödendiğinde tazyik hapsi kalkar veya infaz edilmez.</p>
     <p><strong>Taahhüt hangi durumda geçersiz olur? </strong>Özellikle toplam borç (asıl alacak+faiz+masraf+vekâlet) net değilse veya usulüne uygun alınmamışsa geçersiz sayılabilir.</p>
     <p><strong>Kısmi ödeme yaptım, yine hapis olur mu? </strong>Taahhüde tam uyulmadığında ihlal doğabilir; ancak somut durum, şikâyet süresi ve taahhüdün geçerliliği belirleyicidir. Avukata danışın.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İcra taahhüdü, borcu yapılandırıp nefes almanın iyi bir yolu olabilir; ancak hafife alınacak bir işlem değildir. Geçerli bir taahhüdü haklı sebep olmadan bozmak, 3 aya kadar tazyik hapsiyle sonuçlanabilir. Bu yüzden taahhüdü ödeyebileceğiniz bir planla ve borcun net dökümünü görerek verin; ödeme güçlüğü doğduğunda beklemeden çözüm arayın. Tazyik hapsi şikâyetiyle karşılaşırsanız, hem süre hem savunma hakları bakımından bir avukata danışmanız en güvenli yoldur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

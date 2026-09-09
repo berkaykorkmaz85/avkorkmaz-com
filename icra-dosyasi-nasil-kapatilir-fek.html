@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,18 +207,32 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#once-su-terimi-cozelim-fek-ne-demek">Önce şu terimi çözelim: “fek” ne demek?</a></li>
+      <li><a href="#odeme-borcu-bitirir-ama-dosyayi-kapatmaz">Ödeme borcu bitirir ama dosyayı kapatmaz</a></li>
+      <li><a href="#icra-dosyasini-kapatma-ve-haczi-kaldirma-adim-adim">İcra dosyasını kapatma ve haczi kaldırma: adım adım</a></li>
+      <li><a href="#haciz-turune-gore-kaldirma">Haciz türüne göre kaldırma</a></li>
+      <li><a href="#borc-odenmeden-dosya-kapanir-mi">Borç ödenmeden dosya kapanır mı?</a></li>
+      <li><a href="#odedim-ama-haciz-dosya-duruyor-neden">“Ödedim ama haciz/dosya duruyor” — neden?</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Borcunuzu ödediniz ama e-Devlet’te icra dosyası hâlâ görünüyor; ya da aracınızın/hesabınızın üzerindeki haciz kalkmadı. Çok yaygın bir durumdur ve sebebi basittir: ödeme, borcu bitirir ama dosyayı ve haczi kendiliğinden kapatmaz. Bunun için ayrı bir işlem yapmanız gerekir.</p>
     <p>Bu rehberde icra dosyasının nasıl kapatıldığını, “haczin kaldırılması (fek)” işleminin ne olduğunu ve ödemeden sonra atmanız gereken adımları en sade haliyle anlatıyoruz.</p>
-    <h2>Önce şu terimi çözelim: “fek” ne demek?</h2>
+    <h2 id="once-su-terimi-cozelim-fek-ne-demek">Önce şu terimi çözelim: “fek” ne demek?</h2>
     <p>Hukukta sık geçen “fek” kelimesi, gündelik dilde “kaldırma / çözme / kaldırılması” anlamına gelir. Yani “haczin feki” demek, kısaca “haczin kaldırılması” demektir. Bir başka deyişle: aracınızın, hesabınızın ya da taşınmazınızın üzerindeki haciz şerhinin silinmesi işlemine hukukçular “fek” der. Bu yazıda ikisini birlikte kullanacağız: haczin kaldırılması (fek).</p>
-    <h2>Ödeme borcu bitirir ama dosyayı kapatmaz</h2>
+    <h2 id="odeme-borcu-bitirir-ama-dosyayi-kapatmaz">Ödeme borcu bitirir ama dosyayı kapatmaz</h2>
     <p>En çok yaşanan kafa karışıklığı budur. Borcu icra dosyasına ödediğinizde alacak sona erer; ancak dosya “derdest” (açık) kalmaya ve konulan hacizler kayıtlarda durmaya devam eder. Dosyanın kapanması ve hacizlerin silinmesi için icra müdürlüğüne talepte bulunmanız gerekir.</p>
     <div class="callout"><p><strong>Ödediğinizi belgeleyin</strong></p>
     <p>Borcu doğru dosyaya (icra veznesine ya da dosyanın banka hesabına) ödeyin ve dekontu mutlaka saklayın. Birden fazla dosyanız varsa, hangi dosyaya ödediğinizi kontrol edin. Faiz, masraf ve vekâlet ücreti dâhil güncel borç tutarını icra müdürlüğünden teyit ederek ödemek, ‘eksik ödeme’ nedeniyle dosyanın açık kalmasını önler.</p></div>
-    <h2>İcra dosyasını kapatma ve haczi kaldırma: adım adım</h2>
+    <h2 id="icra-dosyasini-kapatma-ve-haczi-kaldirma-adim-adim">İcra dosyasını kapatma ve haczi kaldırma: adım adım</h2>
     <ol><li>Güncel borç tutarını (faiz + masraf + vekâlet ücreti dâhil) icra müdürlüğünden öğrenin.</li><li>Borcun tamamını doğru dosyaya ödeyin; dekontu saklayın.</li><li>İcra müdürlüğüne dilekçe verip dosya üzerindeki haczin/blokenin/şerhin kaldırılmasını (fek) ve dosyanın işlemden kaldırılmasını talep edin.</li><li>İcra müdürlüğü, ilgili kuruma (trafik/EGM, tapu, banka) haczin kaldırılması için müzekkere yazar.</li><li>Müzekkerenin ilgili kayda işlediğini (e-Devlet’ten) kontrol edin; işlenmemişse takip edin.</li></ol>
     <p>Alacaklı taraf borcun ödendiğini icra dairesine bildirirse (haciz feki talebi/muvafakat), süreç daha da hızlanır. Belgeler tamsa haczin kaldırılması çoğu zaman birkaç gün içinde tamamlanır.</p>
-    <h2>Haciz türüne göre kaldırma</h2>
+    <h2 id="haciz-turune-gore-kaldirma">Haciz türüne göre kaldırma</h2>
     <div style="overflow-x:auto">
     <table class="data">
       <thead><tr><th>Haciz nerede?</th><th>Kaldırma için ne olur?</th></tr></thead>
@@ -222,19 +244,19 @@
       </tbody>
     </table>
     </div>
-    <h2>Borç ödenmeden dosya kapanır mı?</h2>
+    <h2 id="borc-odenmeden-dosya-kapanir-mi">Borç ödenmeden dosya kapanır mı?</h2>
     <p>Bazı hâllerde dosya, borç tamamen ödenmese de kapanabilir ya da işlemden kalkabilir: alacaklının takipten feragat etmesi, tarafların sulh olması (anlaşması), borcun zamanaşımına uğraması veya dosyanın uzun süre işlemsiz kalıp düşmesi gibi. Bu durumlar teknik değerlendirme gerektirir; emin değilseniz bir avukata danışın.</p>
-    <h2>“Ödedim ama haciz/dosya duruyor” — neden?</h2>
+    <h2 id="odedim-ama-haciz-dosya-duruyor-neden">“Ödedim ama haciz/dosya duruyor” — neden?</h2>
     <ul><li><strong>Fek talebi verilmemiştir: </strong>Ödeme tek başına haczi kaldırmaz; ayrı talep gerekir.</li><li><strong>Eksik ödeme yapılmıştır: </strong>Faiz/masraf/vekâlet ücreti hesaba katılmadıysa dosya açık kalır.</li><li><strong>Müzekkere henüz işlememiştir: </strong>Fek yazısı gitmiş olsa da ilgili kayda (EGM/tapu) işlemesi 1-2 gün gecikebilir.</li><li><strong>Yanlış dosyaya ödenmiştir: </strong>Birden fazla dosya varsa ödeme başka dosyaya gitmiş olabilir.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Güncel borç tutarını (faiz+masraf+vekâlet) icra müdürlüğünden öğrendim.</li><li>Borcu doğru dosyaya ödeyip dekontu sakladım.</li><li>İcra müdürlüğüne haczin kaldırılması (fek) ve dosya kapatma dilekçesi verdim.</li><li>İlgili kuruma (EGM/tapu/banka) müzekkere yazıldığını teyit ettim.</li><li>e-Devlet’ten haczin düştüğünü kontrol ettim.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Fek ne demek? </strong>Kısaca ‘kaldırma/çözme’ demektir. ‘Haczin feki’, haczin kaldırılması anlamına gelir.</p>
     <p><strong>Borcu ödedim, haciz neden kalkmadı? </strong>Ödeme haczi otomatik kaldırmaz. İcra müdürlüğünden haczin kaldırılmasını (fek) ayrıca talep etmelisiniz.</p>
     <p><strong>Dosya ne kadar sürede kapanır? </strong>Belgeler tamsa fek işlemi çoğu zaman birkaç gün içinde tamamlanır; müzekkerenin ilgili kayda işlemesi 1-3 günü bulabilir.</p>
     <p><strong>Ödeme dışında dosya nasıl kapanır? </strong>Alacaklının feragati, tarafların sulhü, zamanaşımı veya dosyanın düşmesi hâllerinde de kapanabilir.</p>
     <p><strong>Fek için avukat şart mı? </strong>Basit bir ödeme+fek işlemini çoğu kişi kendi yapabilir; ancak eksik ödeme, birden fazla dosya veya itiraz varsa avukatla ilerlemek daha güvenlidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İcra dosyasını kapatmanın anahtarı iki adımdır: borcu doğru ve tam ödemek, ardından icra müdürlüğünden haczin kaldırılmasını (fek) ve dosyanın kapatılmasını talep etmek. ‘Fek’ kelimesi kulağa teknik gelse de anlamı basittir: haczin kaldırılması. Adımları doğru izlerseniz kayıtlarınız kısa sürede temizlenir; tereddüt ettiğiniz noktada bir avukattan destek alabilirsiniz.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

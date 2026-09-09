@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,11 +208,27 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#neden-tebligati-beklemeden-ogrenmelisiniz">Neden tebligatı beklemeden öğrenmelisiniz?</a></li>
+      <li><a href="#iki-yol-var-hangisi-size-uygun">İki yol var: hangisi size uygun?</a></li>
+      <li><a href="#yol-1-e-devlet-ten-hizli-sorgu-1-dakika">Yol 1 — e-Devlet’ten hızlı sorgu (1 dakika)</a></li>
+      <li><a href="#yol-2-uyap-vatandas-ile-ayrintili-sorgu">Yol 2 — UYAP Vatandaş ile ayrıntılı sorgu</a></li>
+      <li><a href="#ekranda-ne-goreceksiniz-alanlarin-anlami">Ekranda ne göreceksiniz? (Alanların anlamı)</a></li>
+      <li><a href="#takip-mi-dava-mi-kisa-ama-onemli-fark">Takip mi, dava mı? Kısa ama önemli fark</a></li>
+      <li><a href="#takip-cikti-kesinlesmis-mi-h-l-itiraz-edebilir-miyim">Takip çıktı — kesinleşmiş mi, hâlâ itiraz edebilir miyim?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>“Acaba adıma açılmış bir icra takibi var mı?” Bu soru, bir gün telefonunuza gelen mesajdan, kapıya bırakılan bir kâğıttan ya da hesabınıza konan bir blokeden sonra aklınıza düşer. İyi haber şu: bunu öğrenmek için kimseyi aramanıza, adliyeye gitmenize gerek yok. e-Devlet üzerinden, birkaç dakikada, kendi TC kimlik numaranızla öğrenebilirsiniz.</p>
     <p>Bu rehberde iki yolu da (hızlı e-Devlet sorgusu ve daha ayrıntılı UYAP Vatandaş sorgusu) adım adım gösteriyor; ekranda gördüğünüz bilgilerin ne anlama geldiğini ve takip çıkarsa ilk 7 günün neden kritik olduğunu anlatıyoruz.</p>
-    <h2>Neden tebligatı beklemeden öğrenmelisiniz?</h2>
+    <h2 id="neden-tebligati-beklemeden-ogrenmelisiniz">Neden tebligatı beklemeden öğrenmelisiniz?</h2>
     <p>Bir icra takibinde en değerli şey zamandır. Size “ödeme emri” tebliğ edildiğinde, itiraz için genellikle yalnızca 7 günlük bir süreniz olur. Bu süre kaçarsa takip kesinleşir; artık borca itiraz edemez, doğrudan haciz ve e-haciz (banka, maaş, araç) aşamasıyla karşılaşabilirsiniz. Bu yüzden şüphelendiğiniz anda beklemeden sorgulamak, elinizi güçlü tutar.</p>
-    <h2>İki yol var: hangisi size uygun?</h2>
+    <h2 id="iki-yol-var-hangisi-size-uygun">İki yol var: hangisi size uygun?</h2>
     <div style="overflow-x:auto">
     <table class="data">
       <thead><tr><th>Sorgu yolu</th><th>Ne verir?</th><th>Kimin için?</th></tr></thead>
@@ -214,36 +238,36 @@
       </tbody>
     </table>
     </div>
-    <h2>Yol 1 — e-Devlet’ten hızlı sorgu (1 dakika)</h2>
+    <h2 id="yol-1-e-devlet-ten-hizli-sorgu-1-dakika">Yol 1 — e-Devlet’ten hızlı sorgu (1 dakika)</h2>
     <ol><li>turkiye.gov.tr adresine TC kimlik numaranız ve e-Devlet şifrenizle girin.</li><li>Üstteki arama kutusuna “İcra Dosyası Sorgulama” yazın ve Adalet Bakanlığı’na ait hizmeti açın.</li><li>Karşınıza adınıza kayıtlı açık ve kapalı tüm icra dosyaları listelenir.</li></ol>
     <p><strong>Not: </strong>e-Devlet şifreniz yoksa en yakın PTT şubesinden kimlikle alabilirsiniz. Mobil imza veya e-imza ile de giriş yapılabilir.</p>
-    <h2>Yol 2 — UYAP Vatandaş ile ayrıntılı sorgu</h2>
+    <h2 id="yol-2-uyap-vatandas-ile-ayrintili-sorgu">Yol 2 — UYAP Vatandaş ile ayrıntılı sorgu</h2>
     <ol><li>e-Devlet’e girin; arama kutusuna “UYAP Vatandaş” yazıp hizmete girin (“Uygulamaya Git”).</li><li>Açılan UYAP Vatandaş portalında “Sorgulama İşlemleri” bölümüne geçin.</li><li>“Dosya Sorgulama” sekmesinde Yargı Türü olarak “İcra”, Mahkeme/Daire için “Tümü” seçin.</li><li>“Dosya Sorgula” deyin; adınıza kayıtlı icra dosyaları, tutar ve içerikleriyle birlikte listelenir.</li></ol>
     <p>UYAP Vatandaş’tan; dosyanın içindeki evrakları, ödeme geçmişini ve borcun güncel bakiyesini de görebilirsiniz. Bu yönüyle e-Devlet’in özet listesinden daha kapsamlıdır.</p>
-    <h2>Ekranda ne göreceksiniz? (Alanların anlamı)</h2>
+    <h2 id="ekranda-ne-goreceksiniz-alanlarin-anlami">Ekranda ne göreceksiniz? (Alanların anlamı)</h2>
     <ul><li><strong>Dosya numarası ve icra dairesi: </strong>Takibin hangi ildeki hangi icra müdürlüğünde olduğunu gösterir. İşlem yaparken bu numara şarttır.</li><li><strong>Alacaklı / alacaklı vekili: </strong>Sizden alacaklı olduğunu iddia eden kişi/kurum ve avukatı.</li><li><strong>Takip türü: </strong>İlamsız (senede/faturaya dayalı) mı, ilamlı (mahkeme kararına dayalı) mı olduğunu belirtir. İtiraz yolunuz buna göre değişir.</li><li><strong>Durum: </strong>“Açık”, “Kapalı”, “Derdest” gibi ibareler dosyanın canlı olup olmadığını gösterir.</li><li><strong>Borç kalemleri: </strong>Asıl alacak + işlemiş faiz + vekâlet ücreti + takip masrafları toplamı. Ödeyecekseniz güncel bakiyeyi mutlaka teyit edin.</li></ul>
     <div class="callout"><p><strong>Çok sorulan durum: “Borcun NEDEN çıktığını göremiyorum”</strong></p>
     <p>Sorgu ekranı size dosyanın varlığını ve tutarını gösterir; ama borcun hangi sözleşmeden, senetten ya da faturadan kaynaklandığı çoğu zaman görünmez. Bu son derece normaldir. Borcun dayanağını öğrenmek için:</p>
     <ul><li>İcra dairesinden dosyayı bizzat inceleyebilir ya da dosya fotokopisi talep edebilirsiniz;</li><li>Bir avukat aracılığıyla dosyanın tamamına (dayanak belge dâhil) ulaşabilirsiniz.</li></ul>
     <p>Dayanağı görmeden ödeme yapmak veya itirazdan vazgeçmek acele bir karardır; önce borcun gerçekten size ait olup olmadığını netleştirin.</p></div>
-    <h2>Takip mi, dava mı? Kısa ama önemli fark</h2>
+    <h2 id="takip-mi-dava-mi-kisa-ama-onemli-fark">Takip mi, dava mı? Kısa ama önemli fark</h2>
     <p>İnsanlar sık karıştırır: “İcra takibi” bir mahkeme davası değildir. Takip, alacaklının parasını tahsil etmek için icra dairesinde başlattığı bir süreçtir. Siz itiraz ederseniz iş mahkemeye taşınabilir (örneğin itirazın iptali davası), ama başlangıçta karşınızda bir hâkim değil, icra müdürlüğü vardır. Bu ayrım, hangi süreye ve hangi mercie başvuracağınızı belirler.</p>
-    <h2>Takip çıktı — kesinleşmiş mi, hâlâ itiraz edebilir miyim?</h2>
+    <h2 id="takip-cikti-kesinlesmis-mi-h-l-itiraz-edebilir-miyim">Takip çıktı — kesinleşmiş mi, hâlâ itiraz edebilir miyim?</h2>
     <p>Kritik nokta: itiraz süresi, takibi ekranda görmenizle değil, size “ödeme emri” tebliğ edilmesiyle başlar. Yani e-Devlet’te dosyayı gördünüz ama ödeme emri henüz elinize (adresinize/e-tebligata) ulaşmadıysa, süre başlamamış olabilir. Ödeme emri tebliğ edildiyse, ilamsız takipte itiraz için genellikle 7 gününüz vardır. Emin değilseniz tebligat tarihini ve takip türünü kontrol edin; gecikmeden bir avukata danışın.</p>
     <div class="callout"><p><strong>e-Devlet’te görünmeyebilecek durumlar</strong></p>
     <ul><li>Yeni açılmış bir takip, sisteme işlenene kadar birkaç gün görünmeyebilir.</li><li>Çok eski/kapatılmış dosyalar farklı görünebilir veya listede sınırlı çıkabilir.</li><li>Bazı idari alacaklar (vergi, trafik cezası vb.) icra dairesi yerine kendi sistemlerinde (ör. GİB/e-haciz) izlenir; onları ilgili kurumdan da sorgulayın.</li></ul></div>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Panikle hemen ödemek: </strong>Borcun size ait ve doğru tutarda olduğunu teyit etmeden ödeme yapmak.</li><li><strong>Tebligatı ciddiye almamak: </strong>Ödeme emri geldiğinde 7 günlük itiraz süresini kaçırmak.</li><li><strong>Yanlış dosyaya bakmak: </strong>Birden fazla dosyanız olabilir; hepsini kontrol edin.</li><li><strong>Dayanağı sormamak: </strong>Borcun kaynağını görmeden süreç hakkında karar vermek.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>e-Devlet veya UYAP Vatandaş’tan tüm icra dosyalarımı listeledim.</li><li>Her dosyanın numarasını, icra dairesini ve alacaklısını not aldım.</li><li>Takip türünü (ilamlı/ilamsız) ve durumunu kontrol ettim.</li><li>Ödeme emri elime ulaştı mı, ulaştıysa tebligat tarihini belirledim.</li><li>Borcun bana ait ve doğru tutarda olup olmadığını (dayanağıyla) araştırdım.</li><li>İtiraz süresi işliyorsa (7 gün) vakit kaybetmeden bir avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Tebligat gelmeden icra takibini öğrenebilir miyim? </strong>Evet. e-Devlet ve UYAP Vatandaş, tebligatı beklemeden adınıza açılmış dosyaları gösterir.</p>
     <p><strong>Sorguda borç görünüyor ama neden çıktığını anlamadım, ne yapmalıyım? </strong>Borcun dayanağı ekranda çoğu zaman görünmez. İcra dairesinden dosyayı inceleyin ya da bir avukat aracılığıyla dosya içeriğine ulaşın.</p>
     <p><strong>İcra takibi ile dava aynı şey mi? </strong>Hayır. Takip icra dairesinde yürür; ancak itiraz edilirse süreç mahkemeye taşınabilir.</p>
     <p><strong>Başkasının borcu benim adıma çıkmış olabilir mi? </strong>Evet, hatalı ya da hileli takipler olabilir. Bu durumda süresi içinde itiraz etmek çok önemlidir; borç size ait değilse mutlaka avukata danışın.</p>
     <p><strong>e-Devlet’te hiçbir şey çıkmadı, tamamen rahat olabilir miyim? </strong>Büyük ölçüde evet; ancak yeni açılmış dosyalar birkaç gün gecikmeli görünebilir ve vergi/trafik gibi idari alacaklar ayrı sistemlerde izlenir.</p>
     <p><strong>Borcu öğrendim, hemen ödemeli miyim? </strong>Önce borcun size ait ve tutarın doğru olduğunu teyit edin. Ödeyecekseniz güncel bakiyeyi icra dosyasından alın ve dekontu saklayın.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Adınıza icra takibi olup olmadığını öğrenmek bugün birkaç dakikalık bir iştir. Önemli olan, çıkan sonucu doğru okumak: takibin türünü, tutarını ve en önemlisi itiraz sürenizin işleyip işlemediğini bilmek. Borcun size ait olmadığını düşünüyor ya da süreyi kaçırmaktan endişe ediyorsanız, beklemeden bir avukattan destek almak hem zaman hem para kaybını önler.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

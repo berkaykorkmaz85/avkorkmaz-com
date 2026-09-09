@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,34 +207,47 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#depozito-guvence-bedeli-nedir">Depozito (güvence bedeli) nedir?</a></li>
+      <li><a href="#depozito-ne-zaman-geri-alinir">Depozito ne zaman geri alınır?</a></li>
+      <li><a href="#ev-sahibi-depozitoyu-vermiyorsa-adim-adim">Ev sahibi depozitoyu vermiyorsa: adım adım</a></li>
+      <li><a href="#ev-sahibi-hangi-kesintileri-yapabilir">Ev sahibi hangi kesintileri yapabilir?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Evden çıktınız, anahtarı teslim ettiniz ama ev sahibi depozitoyu (güvence bedelini) geri vermiyor. Belki “boya-badana parası” diyor, belki hiç dönüş yapmıyor. Oysa depozito ev sahibinin cebinde kalan bir para değil; kanun onu belirli kurallara bağlar ve kiracının geri alma hakkını korur.</p>
     <p>Bu rehberde depozitonun ne olduğunu, kanunen nasıl tutulması gerektiğini, ne zaman ve nasıl geri alınacağını, ev sahibi vermediğinde izlenecek yolları en sade haliyle anlatıyoruz.</p>
-    <h2>Depozito (güvence bedeli) nedir?</h2>
+    <h2 id="depozito-guvence-bedeli-nedir">Depozito (güvence bedeli) nedir?</h2>
     <p>Depozito, kira süresince doğabilecek zararlara (hasar, ödenmeyen kira/faturalar) karşı ev sahibine verilen güvencedir. Konut ve çatılı iş yeri kiralarında kanun buna “güvence bedeli” der ve iki temel sınır koyar: tutarı ve nasıl saklanacağı.</p>
     <div class="callout"><p><strong>Depozito en fazla 3 aylık kira olabilir (TBK m.342)</strong></p>
     <p>Konut ve çatılı iş yeri kiralarında güvence bedeli en fazla üç aylık kira tutarında olabilir. Ayrıca para olarak verilen depozito, ev sahibinin cebine değil; kiracı adına, ev sahibinin onayı olmadan çekilemeyecek şekilde bir bankaya (vadeli hesaba) yatırılmalıdır. Uygulamada çoğu zaman elden verilse de, kanunun öngördüğü yol budur ve kiracı lehinedir.</p></div>
     <div class="callout"><p><strong>İlgili mevzuat — TBK m.342 (Kiracının güvence vermesi)</strong></p>
     <p>“Konut ve çatılı işyeri kiralarında sözleşmeyle kiracıya güvence verme borcu getirilmişse, bu güvence üç aylık kira bedelini aşamaz. Güvence olarak para veya kıymetli evrak verilmesi kararlaştırılmışsa kiracı, kiraya verenin onayı olmaksızın çekilmemek üzere, parayı vadeli bir tasarruf hesabına yatırır, kıymetli evrakı ise bir bankaya depo eder. Banka, güvenceleri ancak iki tarafın rızasıyla veya icra takibinin kesinleşmesiyle ya da kesinleşmiş mahkeme kararına dayanarak geri verebilir. Kiraya veren, kira sözleşmesinin sona ermesini izleyen üç ay içinde kiracıya karşı kira sözleşmesiyle ilgili bir dava açtığını veya icra ya da iflas yoluyla takibe giriştiğini bankaya yazılı olarak bildirmemişse banka, kiracının istemi üzerine güvenceyi geri vermekle yükümlüdür.”</p></div>
-    <h2>Depozito ne zaman geri alınır?</h2>
+    <h2 id="depozito-ne-zaman-geri-alinir">Depozito ne zaman geri alınır?</h2>
     <p>Kira sözleşmesi sona erip taşınmaz sağlam biçimde teslim edildiğinde, depozitonun iadesi gündeme gelir. Depozito usulüne uygun olarak bankada tutuluyorsa, kanun net bir yol çizer:</p>
     <p>Kira sözleşmesinin sona ermesinden itibaren ev sahibi üç ay içinde kiracıya karşı bir dava açtığını ya da icra takibi başlattığını bankaya yazılı olarak bildirmezse, banka kiracının talebiyle güvence bedelini iade etmek zorundadır. Yani ev sahibinin haklı bir alacak iddiası yoksa, bu süre sonunda para kiracıya döner.</p>
-    <h2>Ev sahibi depozitoyu vermiyorsa: adım adım</h2>
+    <h2 id="ev-sahibi-depozitoyu-vermiyorsa-adim-adim">Ev sahibi depozitoyu vermiyorsa: adım adım</h2>
     <ol><li>Önce yazılı olarak talep edin: iade için makul süre vererek (tercihen noter ihtarnamesiyle) depozitonun geri ödenmesini isteyin.</li><li>Depozito bankadaysa: kira bitiminden sonra 3 ay içinde ev sahibi dava/icra bildirmediyse, bankadan iadeyi talep edin.</li><li>Depozito elden verildiyse ve iade edilmiyorsa: alacağınız için icra takibi başlatın ya da alacak davası açın.</li><li>Deliləri toplayın: kira sözleşmesi, depozito ödendiğine dair dekont/makbuz, teslim tutanağı, çıkış fotoğrafları, yazışmalar.</li></ol>
     <div class="callout"><p><strong>Kanıt her şeydir: teslim tutanağı ve fotoğraf</strong></p>
     <p>Depozito anlaşmazlıklarının çoğu “ev hasarlı teslim edildi” iddiasından çıkar. Çıkışta evin durumunu gösteren tarihli fotoğraflar, karşılıklı imzalı bir teslim/çıkış tutanağı ve son fatura ödemelerinin dekontları, iade talebinizi çok güçlendirir. Mümkünse anahtarı tutanakla teslim edin.</p></div>
-    <h2>Ev sahibi hangi kesintileri yapabilir?</h2>
+    <h2 id="ev-sahibi-hangi-kesintileri-yapabilir">Ev sahibi hangi kesintileri yapabilir?</h2>
     <p>Ev sahibi depozitodan keyfî kesinti yapamaz. Kesinti ancak gerçek ve belgelenebilir zararlar için mümkündür: kiracının verdiği (olağan kullanımı aşan) hasarlar, ödenmemiş kira veya kiracıya ait ödenmemiş faturalar/aidatlar gibi. Normal yıpranma (olağan kullanım izleri) kesinti sebebi değildir; bunun için depozito tutulamaz.</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Teslim tutanağı almadan çıkmak: </strong>Evin sağlam teslim edildiğini ispat edemezsiniz.</li><li><strong>Depozitoyu belgelemeden vermek: </strong>Ödediğinizi gösteren dekont/makbuz olmadan iade istemek zorlaşır.</li><li><strong>Son kirayı depozitodan saymak: </strong>Depozito, son ayın kirası değildir; mahsup ancak taraflar anlaşırsa olur.</li><li><strong>Sözlü taleple yetinmek: </strong>Yazılı/ihtarlı talep, hem süreyi hem ispatı netleştirir.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Depozitoyu ödediğime dair belge (dekont/makbuz) elimde.</li><li>Çıkışta teslim tutanağı ve tarihli fotoğraflar aldım.</li><li>Son kira ve faturaların ödendiğini belgeledim.</li><li>İadeyi yazılı/ihtarlı olarak talep ettim.</li><li>Depozito bankadaysa 3 aylık süreyi ve iade şartını kontrol ettim.</li><li>İade edilmiyorsa icra/dava için avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Depozito en fazla ne kadar olabilir? </strong>Konut ve çatılı iş yeri kiralarında en fazla üç aylık kira tutarında olabilir (TBK m.342).</p>
     <p><strong>Depozitomu son ayın kirası olarak kullanabilir miyim? </strong>Kural olarak hayır. Depozito güvencedir; son kira yerine sayılması ancak ev sahibiyle anlaşırsanız mümkündür.</p>
     <p><strong>Ev sahibi ‘boya-badana’ için kesinti yapabilir mi? </strong>Olağan yıpranma için hayır. Ancak kiracının verdiği gerçek hasar için belgelenmek şartıyla kesinti yapılabilir.</p>
     <p><strong>Depozito bankada değil, elden verdim; ne olacak? </strong>İade edilmiyorsa alacağınız için icra takibi başlatabilir veya alacak davası açabilirsiniz; belgeleriniz belirleyici olur.</p>
     <p><strong>Ne kadar sürede geri alırım? </strong>Depozito bankadaysa, kira bitiminden sonra 3 ay içinde ev sahibi dava/icra bildirmezse banka iade eder. Aksi halde süre, izlenen hukuki yola göre değişir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Depozito, ev sahibinin keyfine bırakılmış bir para değildir; kanun hem tutarını sınırlar hem de iadesini güvenceye alır. Sağlam teslim, iyi belgelenmiş bir dosya ve yazılı talep, çoğu anlaşmazlığı sizin lehinize çözer. İade edilmediğinde icra veya dava yolu açıktır; tereddüt ettiğiniz noktada bir avukattan destek almak en güvenli yoldur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

@@ -161,6 +161,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -201,19 +209,37 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#itirazin-kaldirilmasi-nedir-neden-dava-degil-bir-talep">İtirazın kaldırılması nedir? Neden “dava değil, bir talep”?</a></li>
+      <li><a href="#hangi-belgelerle-istenebilir-iik-m-68">Hangi belgelerle istenebilir? (İİK m.68)</a></li>
+      <li><a href="#kesin-kaldirma-ve-gecici-kaldirma-hangisi-ne-zaman">Kesin kaldırma ve geçici kaldırma: hangisi ne zaman?</a></li>
+      <li><a href="#talebin-sartlari-ve-usulu">Talebin şartları ve usulü</a></li>
+      <li><a href="#sure-6-ay-itirazin-iptalindeki-1-yildan-farkli">Süre: 6 ay (itirazın iptalindeki 1 yıldan farklı)</a></li>
+      <li><a href="#itirazin-iptali-davasindan-farki">İtirazın iptali davasından farkı</a></li>
+      <li><a href="#talebin-kabulu-veya-reddi-h-linde-ne-olur">Talebin kabulü veya reddi hâlinde ne olur?</a></li>
+      <li><a href="#borctan-kurtulma-davasi-borclu-acisindan">Borçtan Kurtulma Davası (borçlu açısından)</a></li>
+      <li><a href="#masraf-ve-tazminat-riski-yuzde-20-tazminat-ve-yuzde-10-para-cezasi">Masraf ve tazminat riski: yüzde 20 tazminat ve yüzde 10 para cezası</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#ornek-talep-dilekcesi-taslak">Örnek Talep Dilekçesi (Taslak)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İlamsız icra takibinde borçlunun itirazı üzerine takip durduğunda, alacaklının elinde kanunun aradığı nitelikte bir belge varsa, uzun bir dava açmaksızın takibi yeniden işler hâle getirebilmesi mümkündür. İtirazın kaldırılması, alacaklıya bu imkânı sağlayan, itirazın iptali davasına nazaran daha hızlı ve şekli bir yoldur.</p>
     <p>Bu rehberde itirazın kaldırılmasının ne olduğu, hangi belgelerle ve hangi sürede istenebileceği, kesin ve geçici kaldırma ayrımı, itirazın iptali davasından farkı ile hem alacaklı hem borçlu bakımından doğuracağı sonuçlar ele alınmakta; ayrıca örnek bir talep dilekçesine yer verilmektedir.</p>
-    <h2>İtirazın kaldırılması nedir? Neden “dava değil, bir talep”?</h2>
+    <h2 id="itirazin-kaldirilmasi-nedir-neden-dava-degil-bir-talep">İtirazın kaldırılması nedir? Neden “dava değil, bir talep”?</h2>
     <p>İtirazın kaldırılması, borçlunun icra takibine itiraz etmesi üzerine, alacaklının takibini dayandırdığı belge İİK’da sayılan güçlü belgelerden biriyse (imzası ikrar edilmiş ya da noterlikçe onaylı bir senet; resmî dairelerin veya yetkili makamların usulüne uygun verdikleri makbuz/belge), bu belgeyi sunarak icra mahkemesinden borçlunun itirazının kaldırılmasını ve ilamsız takibe devam edebilmeyi sağlamasıdır.</p>
     <p>En önemli ayrım şudur: itirazın kaldırılması bir “dava” değil, icra mahkemesine yapılan bir taleptir. Alacaklı burada borcun tümünü baştan sona ispatlamaz; yalnızca elindeki İİK m.68 belgesiyle alacağın varlığını ve miktarını gösterir. Mahkeme işi esastan değil, şekli (belge üzerinden) inceler. İşte bu yüzden itirazın kaldırılması, itirazın iptali davasına göre çok daha hızlı ve basit bir yoldur.</p>
     <div class="callout"><p><strong>İİK m.68 (İtirazın kesin olarak kaldırılması)</strong></p>
     <p>Talebine itiraz edilen alacaklının takibi, imzası ikrar veya noterlikçe tasdik edilen borç ikrarını içeren bir senede yahut resmî dairelerin veya yetkili makamların yetkileri dahilinde ve usulüne göre verdikleri bir makbuz veya belgeye müstenitse, alacaklı itirazın kendisine tebliği tarihinden itibaren altı ay içinde itirazın kaldırılmasını isteyebilir. Bu süre içerisinde itirazın kaldırılması istenmediği takdirde yeniden ilâmsız takip yapılamaz.</p></div>
-    <h2>Hangi belgelerle istenebilir? (İİK m.68)</h2>
+    <h2 id="hangi-belgelerle-istenebilir-iik-m-68">Hangi belgelerle istenebilir? (İİK m.68)</h2>
     <p>İtirazın kaldırılmasının kalbi, alacaklının elindeki belgedir. Kanun bu belgeleri sınırlı sayıda sayar; başka bir belgeyle bu yola başvurulamaz. Kesin kaldırma istenebilecek belgeler kısaca şunlardır:</p>
     <ul><li>İmzası ikrar edilmiş (borçlunun kabul ettiği) adi senet;</li><li>Noterlikçe onaylanmış (tasdik edilmiş) senet;</li><li>Resmî daire veya yetkili makamların, yetkileri dahilinde ve usulüne uygun verdiği makbuz ya da belge;</li><li>Borçlunun resmî bir makam önünde yaptığı borç ikrarı.</li></ul>
     <div class="callout"><p><strong>Fatura veya sözleşme yeterli değildir</strong></p>
     <p>Elinizde yalnızca fatura, teklif, e-posta yazışması ya da adi bir sözleşme varsa itirazın kaldırılması yoluna gidilemez; çünkü bunlar İİK m.68 belgelerinden değildir. Bu durumda alacaklının genel mahkemede itirazın iptali davası açması gerekir. Yani doğru yolu, elinizdeki belgenin türü belirler.</p></div>
-    <h2>Kesin kaldırma ve geçici kaldırma: hangisi ne zaman?</h2>
+    <h2 id="kesin-kaldirma-ve-gecici-kaldirma-hangisi-ne-zaman">Kesin kaldırma ve geçici kaldırma: hangisi ne zaman?</h2>
     <p>İtirazın kaldırılması, borçlunun neye itiraz ettiğine göre ikiye ayrılır:</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -229,15 +255,15 @@
     <div class="callout"><p><strong>Borçlu için kritik uyarı: imzaya itirazı açıkça yazın</strong></p>
     <p>Borçlu, ödeme emrine itiraz ederken imzaya ayrıca ve açıkça itiraz etmemişse, senetteki imzayı kabul etmiş (ikrar etmiş) sayılır. Bu durumda alacaklı doğrudan itirazın kesin kaldırılmasını isteyebilir ve borçlu artık icra mahkemesinde imzayı inkâr edemez; etse bile mahkeme bu inkârı incelemeye alamaz. Kısacası tek bir cümlelik eksiklik, savunma hakkınızı baştan kapatabilir.</p></div>
     <p>Geçici kaldırmada usul de farklıdır. Borçlunun duruşmaya bizzat katılması gerekir; yerine yalnızca avukatın gelmesi yeterli değildir. Mahkeme, senetteki imzayı borçlunun resmî kurum ve noterdeki imzalarıyla karşılaştırır; gerekirse borçluya mahkemede yazı yazdırıp imza attırır (istiktâb), yine de kanaat oluşmazsa dosyayı bilirkişiye gönderir. İnceleme sonunda imza borçluya aitse itirazın geçici kaldırılmasına, değilse talebin reddine karar verilir.</p>
-    <h2>Talebin şartları ve usulü</h2>
+    <h2 id="talebin-sartlari-ve-usulu">Talebin şartları ve usulü</h2>
     <p>Alacaklının bu yolu kullanabilmesi için iki şey birlikte gerekir: (1) elinde İİK m.68/68a kapsamında bir belge bulunması ve (2) borçlunun itirazının kendisine tebliğinden itibaren süresi içinde icra mahkemesine başvurması. Alacağın varlığını ispat yükü alacaklıdadır; belgeyle bu ispatı yapamazsa talep reddedilir.</p>
     <p>Takip sırasında senedin aslını değil onaylı örneğini vermiş olan alacaklı, en geç icra mahkemesindeki ilk duruşmada senedin aslını ibraz etmek zorundadır. Borçlu ise icra dairesindeki itirazında bildirdiği sebeplerle bağlıdır; mahkemede kural olarak yalnızca bu sebepleri ve alacaklının sunduğu belgeden anlaşılan itirazları ileri sürebilir. Önemli bir istisna zamanaşımıdır: senetteki alacak zamanaşımına uğramışsa, borçlu bunu itirazında belirtmemiş olsa bile icra mahkemesinde ileri sürebilir.</p>
     <p>İtirazın kaldırılması bir alacak davası sayılmadığından, bu yol için zorunlu arabuluculuğa başvurma şartı yoktur; doğrudan icra hukuk mahkemesine başvurulur.</p>
-    <h2>Süre: 6 ay (itirazın iptalindeki 1 yıldan farklı)</h2>
+    <h2 id="sure-6-ay-itirazin-iptalindeki-1-yildan-farkli">Süre: 6 ay (itirazın iptalindeki 1 yıldan farklı)</h2>
     <p>İtirazın kaldırılması, borçlunun itirazının alacaklıya tebliğinden itibaren altı ay içinde istenmelidir. Bu süre kaçırılırsa aynı takip için yeniden ilamsız takip yapılamaz ve bu hızlı yol kapanır.</p>
     <div class="callout"><p><strong>En çok karıştırılan nokta: 6 ay mı, 1 yıl mı?</strong></p>
     <p>İtirazın kaldırılması için süre 6 aydır. İtirazın iptali davası için ise süre, itirazın tebliğinden itibaren 1 yıldır. İkisi farklıdır. 6 aylık süreyi kaçıran alacaklının hakkı tümüyle bitmez: süresi içinde olmak kaydıyla genel mahkemede itirazın iptali (ya da alacak) davası açabilir.</p></div>
-    <h2>İtirazın iptali davasından farkı</h2>
+    <h2 id="itirazin-iptali-davasindan-farki">İtirazın iptali davasından farkı</h2>
     <p>Bu iki yol sık karıştırılır; amaçları benzese de hukuki nitelikleri ve işleyişleri ayrıdır. Aşağıdaki tablo temel farkları özetlemektedir. Konunun ayrıntısı için “İtirazın İptali Davası Nedir?” başlıklı rehberimize de bakılabilir (bağlantı yazının sonundaki İlgili Rehberler bölümündedir).</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -252,15 +278,15 @@
     </table>
     </div>
     <p>Alacaklının elinde İİK m.68/68a belgesi varsa, iki yol arasında seçim hakkı vardır. Ancak itirazın iptali davası açılıp reddedilirse, artık icra mahkemesinde itirazın kaldırılması yoluna gidilemez; çünkü itirazın iptali davası kesinleşince kesin hüküm doğurur. Buna karşılık alacaklı itirazın kaldırılması yolundan vazgeçer veya talebi reddedilirse, 1 yıllık süre içinde olmak kaydıyla itirazın iptali davasını açabilir.</p>
-    <h2>Talebin kabulü veya reddi hâlinde ne olur?</h2>
+    <h2 id="talebin-kabulu-veya-reddi-h-linde-ne-olur">Talebin kabulü veya reddi hâlinde ne olur?</h2>
     <p>Talep kabul edilirse: icra mahkemesi itirazın kaldırılmasına karar verir; bu karar icra dosyasına sunulunca alacaklı ilamsız takibe kaldığı yerden devam eder ve borçlunun malvarlığı üzerine haciz talep edebilir.</p>
     <p>Talep reddedilirse: bu ret kesin hüküm oluşturmaz. Alacaklı, alacak zamanaşımına uğramadığı ve 1 yıllık süre içinde kaldığı sürece genel mahkemede itirazın iptali/alacak davası açabilir. Aynı şekilde borçlu da genel mahkemede menfi tespit (ya da geçici kaldırma sonrası borçtan kurtulma) davası açabilir. Bu davalarda verilen karar ise kesindir.</p>
-    <h2>Borçtan Kurtulma Davası (borçlu açısından)</h2>
+    <h2 id="borctan-kurtulma-davasi-borclu-acisindan">Borçtan Kurtulma Davası (borçlu açısından)</h2>
     <p>İtirazın geçici olarak kaldırılmasına karar verilen borçlu, borçlu olmadığı iddiasında ise borçtan kurtulma davası (İİK m.69) açabilir. Bu dava niteliği itibarıyla bir menfi tespit davasıdır; borçlu, borçlu olmadığını genel mahkemede esastan ileri sürüp ispatlama imkânı bulur.</p>
     <div class="callout"><p><strong>Borçtan kurtulma davası yedi günlük süreye tabidir</strong></p>
     <p>Borçtan kurtulma davasının, itirazın geçici kaldırılması kararının tefhim veya tebliğinden itibaren yedi gün içinde açılması gerekmektedir. Bu süre hak düşürücü niteliktedir. Söz konusu sürede dava açılmadığı takdirde itirazın geçici kaldırılması kesin kaldırmaya dönüşür; varsa geçici haciz de kesin hacze dönüşür ve takip kesinleşir.</p></div>
     <p>Borçtan kurtulma davası genel mahkemede (kural olarak asliye hukuk; taraflar tacir ve uyuşmazlık ticari ise asliye ticaret mahkemesinde) görülür ve esastan incelenir. Davanın borçlu lehine sonuçlanması hâlinde borçlu olmadığı kesin hükümle tespit edilir ve takip düşer; aksi hâlde takip kesinleşir. Sürenin kısalığı ve sonuçlarının ağırlığı dikkate alındığında, geçici kaldırma kararının tebliği üzerine gecikmeksizin bir avukata başvurulması yerinde olur.</p>
-    <h2>Masraf ve tazminat riski: yüzde 20 tazminat ve yüzde 10 para cezası</h2>
+    <h2 id="masraf-ve-tazminat-riski-yuzde-20-tazminat-ve-yuzde-10-para-cezasi">Masraf ve tazminat riski: yüzde 20 tazminat ve yüzde 10 para cezası</h2>
     <p>İtirazın kaldırılması yoluna başvurmadan veya bu talebe muhatap olduğunda itiraz etmeden önce, sürecin doğuracağı harç ve tazminat sonuçlarının göz önünde bulundurulması gerekir.</p>
     <h3>Harç maktudur</h3>
     <p>İtirazın kaldırılması bir dava olmadığından, alacak miktarı üzerinden nispi harç değil maktu harç alınır. İcra hukuk mahkemesinin özel statüsü gereği vekâlet ücreti de kural olarak maktu tarife üzerinden belirlenir.</p>
@@ -270,9 +296,9 @@
     <p>İtirazın iptali davasındaki icra inkâr tazminatından farklı olarak, buradaki yüzde 20 oranındaki tazminat için tarafın kötüniyetli olması aranmaz; talebin veya itirazın hukuken haksız çıkması ve alacağın belirli (likit) olması yeterlidir. Bu itibarla hem alacaklının hem borçlunun, haksız çıkma ihtimalini baştan değerlendirmesi gerekir.</p></div>
     <h3>Yüzde 10 para cezası (geçici kaldırmada — İİK m.68/a)</h3>
     <p>Geçici kaldırma yolunda borçlu bakımından ayrıca bir para cezası riski bulunmaktadır. Borçlu, sonuçlarını bildiren usulüne uygun tebligata rağmen duruşmaya bizzat gelmezse, icra mahkemesi başkaca bir inceleme yapmaksızın itirazın geçici kaldırılmasına ve takip konusu alacağın yüzde 10’u oranında para cezasına hükmeder. Aynı şekilde, yapılan inceleme sonucunda senetteki imzanın borçluya ait olduğunun, yani imzanın haksız yere inkâr edildiğinin anlaşılması hâlinde de bu yüzde 10 oranındaki para cezası gündeme gelir. Bu nedenle imzaya itiraz, ancak imzanın gerçekten borçluya ait olmadığı hâllerde başvurulması gereken bir yoldur.</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Fatura/sözleşmeyle bu yola gitmeye çalışmak: </strong>İİK m.68 belgesi yoksa talep reddedilir; doğru yol itirazın iptali davasıdır.</li><li><strong>6 ay ile 1 yılı karıştırmak: </strong>İtirazın kaldırılması 6 ay, itirazın iptali 1 yıldır; süreyi karıştırmak hak kaybına yol açar.</li><li><strong>İmzaya itirazı açıkça yazmamak (borçlu): </strong>Açıkça imzaya itiraz edilmezse imza ikrar edilmiş sayılır ve savunma baştan zayıflar.</li><li><strong>Geçici kaldırmada duruşmaya bizzat gitmemek (borçlu): </strong>Bizzat katılmamak, hem itirazın geçici kaldırılmasına hem %10 para cezasına yol açabilir.</li><li><strong>Borçtan kurtulma için 7 günü kaçırmak (borçlu): </strong>Süre geçince geçici kaldırma kesinleşir; hak düşürücü süredir.</li><li><strong>Yoldan vazgeçince tekrar denemek (alacaklı): </strong>İtirazın iptali davası açılıp reddedildikten sonra aynı alacak için itirazın kaldırılması yoluna dönülemez.</li></ul>
-    <h2>Örnek Talep Dilekçesi (Taslak)</h2>
+    <h2 id="ornek-talep-dilekcesi-taslak">Örnek Talep Dilekçesi (Taslak)</h2>
     <p>Aşağıdaki iskelet yalnızca genel çerçeveyi gösterir; her dosyanın kendine özgü koşullarına göre uyarlanmalı ve zorunlu unsurlar kontrol edilmelidir. Köşeli parantez içindeki alanlar ([……]) dosyaya göre doldurulur.</p>
     <div class="dilekce">
   <p class="mahkeme">…… İCRA HUKUK MAHKEMESİ HÂKİMLİĞİNE</p>
@@ -301,7 +327,7 @@
     <p class="ad">Av. Berkay Korkmaz</p>
   </div>
 </div>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>İtirazın kaldırılması bir dava mıdır, dava harcı öder miyim? </strong>Hayır, bir dava değil; icra mahkemesine yapılan bir taleptir. Bu yüzden nispi değil maktu harç alınır.</p>
     <p><strong>İtirazın kaldırılması ne kadar sürede istenmeli? </strong>Borçlunun itirazının alacaklıya tebliğinden itibaren 6 ay içinde. Bu süre kaçarsa aynı takip için yeniden ilamsız takip yapılamaz; 1 yıl içinde itirazın iptali davası açılabilir.</p>
     <p><strong>İtirazın kaldırılması ile itirazın iptali aynı anda istenebilir mi? </strong>Hayır; alacaklının seçim hakkı vardır. Ancak itirazın iptali davası açılıp reddedilirse artık itirazın kaldırılması yoluna gidilemez.</p>
@@ -309,7 +335,7 @@
     <p><strong>Talep kabul edilirse borçlunun itiraz hakkı tamamen biter mi? </strong>Takip yönünden itiraz kalkar ve takip devam eder. Ancak geçici kaldırmada borçlu 7 gün içinde borçtan kurtulma davası; kesin kaldırmada ise şartları varsa menfi tespit davası açabilir.</p>
     <p><strong>Borçlu bu talebe karşı kendini nasıl korur? </strong>İtiraz ederken (özellikle imzaya) açık ve doğru itiraz etmek, geçici kaldırma duruşmasına bizzat katılmak, elindeki İİK m.68 belgesiyle ödemeyi/def’ileri ispatlamak ve gerekirse 7 gün içinde borçtan kurtulma davası açmakla.</p>
     <p><strong>Fatura veya sözleşmeyle itirazın kaldırılması istenebilir mi? </strong>Hayır. Bunlar İİK m.68 belgelerinden değildir; bu durumda genel mahkemede itirazın iptali davası açılmalıdır.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İtirazın kaldırılması, icra (takip) hukukuna özgü, iddia–savunma–tazminat dengesi kendine has olan bir yoldur. Alacaklı için doğru belge varsa hızlı ve maliyeti düşük bir çözüm; borçlu için ise süreleri ve savunma imkânları iyi bilinmesi gereken bir süreçtir. Yanlış belge, kaçırılan bir süre ya da açıkça yapılmayan bir itiraz, iki taraf için de ağır sonuçlar doğurabilir. Bu nedenle sürecin baştan doğru kurgulanması ve mümkünse bir avukatla birlikte yürütülmesi, hem alacaklının hem borçlunun menfaatinedir.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

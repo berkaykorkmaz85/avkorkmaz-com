@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,9 +208,21 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#kidem-tazminati-hesaplama-araci-2026">Kıdem Tazminatı Hesaplama Aracı (2026)</a></li>
+      <li><a href="#kidem-tazminatinin-sartlari">Kıdem tazminatının şartları</a></li>
+      <li><a href="#kidem-nasil-hesaplanir-mantigi">Kıdem nasıl hesaplanır? (mantığı)</a></li>
+      <li><a href="#ornek-hesaplama">Örnek hesaplama</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İşten ayrıldınız ya da çıkarıldınız; ilk merak ettiğiniz genellikle aynıdır: “Ne kadar kıdem tazminatı alacağım?” Kıdem tazminatı, belirli şartları taşıyan işçinin çalıştığı her tam yıl için hak ettiği, kanunla güvence altına alınmış bir ödemedir. Doğru hesaplanması için ise birkaç ayrıntıyı bilmek gerekir: süre, “giydirilmiş” ücret, tavan ve kesintiler.</p>
     <p>Bu rehberde kıdem tazminatının şartlarını, nasıl hesaplandığını, 2026 tavanını ve hangi kesintinin yapıldığını hem sade hem ayrıntılı biçimde anlatıyor; ayrıca aşağıya kendi durumunuzu deneyebileceğiniz bir hesaplama aracı ekliyoruz.</p>
-    <h2>Kıdem Tazminatı Hesaplama Aracı (2026)</h2>
+    <h2 id="kidem-tazminati-hesaplama-araci-2026">Kıdem Tazminatı Hesaplama Aracı (2026)</h2>
     <p>Aşağıdaki alanlara bilgilerinizi girip “Hesapla” deyin. Sonuç yaklaşık bir tahmindir; kesin tutar için dosyanızın özel koşulları değerlendirilmelidir.</p>
     <div class="kt-calc">
   <div class="kt-row">
@@ -253,7 +273,7 @@
   });
 })();
 </script>
-    <h2>Kıdem tazminatının şartları</h2>
+    <h2 id="kidem-tazminatinin-sartlari">Kıdem tazminatının şartları</h2>
     <p>Kıdem tazminatına hak kazanmak için iki temel koşul birlikte aranır:</p>
     <ul><li><strong>En az 1 yıl çalışma: </strong>Aynı işverene bağlı olarak en az bir yıl kesintisiz çalışmış olmak gerekir.</li><li><strong>Kanunda sayılan bir sona erme sebebi: </strong>İş sözleşmesinin, kıdeme hak kazandıran bir nedenle bitmiş olması gerekir.</li></ul>
     <p>Kıdem tazminatına hak kazandıran başlıca durumlar: işveren tarafından haklı sebep olmadan işten çıkarılma; işçinin haklı nedenle istifası (ödenmeyen ücret, sigortasız çalıştırma, mobbing vb.); kadın işçinin evlilik nedeniyle bir yıl içinde ayrılması; askerlik; emeklilik (veya emekliliğe hak kazanıp yaş dışındaki şartları tamamlamış olmak) ve işçinin ölümü hâlinde mirasçılarına ödeme.</p>
@@ -262,7 +282,7 @@
     <p>Not: Kıdem tazminatı, 4857 sayılı Kanun yürürlükte olsa da hâlâ mülga 1475 sayılı İş Kanunu’nun bu 14. maddesine göre hesaplanır.</p></div>
     <div class="callout"><p><strong>Dikkat: her istifa kıdem kazandırmaz</strong></p>
     <p>Kendi isteğiyle, haklı bir sebep olmaksızın istifa eden işçi kural olarak kıdem tazminatı alamaz. Bu nedenle istifa etmeden önce, elinizde haklı bir fesih sebebi (ör. maaşın ödenmemesi, sigortanın eksik yatırılması) olup olmadığını değerlendirmek çok önemlidir. Ayrıntı için “İstifa edersem kıdem tazminatı alabilir miyim?” rehberimize bakabilirsiniz.</p></div>
-    <h2>Kıdem nasıl hesaplanır? (mantığı)</h2>
+    <h2 id="kidem-nasil-hesaplanir-mantigi">Kıdem nasıl hesaplanır? (mantığı)</h2>
     <p>Kıdem tazminatı, çalışılan her tam yıl için 30 günlük “giydirilmiş brüt ücret” tutarındadır; bir yıldan artan süreler için de orantılı (gün gün) ödeme yapılır. Formülü şöyle özetleyebiliriz:</p>
     <p><strong>Kıdem = Giydirilmiş brüt aylık ücret × (toplam gün ÷ 365)</strong></p>
     <h3>“Giydirilmiş ücret” ne demek?</h3>
@@ -281,23 +301,23 @@
     <p>Giydirilmiş aylık ücretiniz tavanın altındaysa hesap kendi ücretinizden; tavanın üzerindeyse tavandan yapılır.</p>
     <h3>Hangi kesinti yapılır?</h3>
     <p>Kıdem tazminatından yalnızca damga vergisi (binde 7,59) kesilir. İhbar tazminatından farklı olarak kıdem tazminatından gelir vergisi ve SGK primi kesilmez; bu yönüyle işçi lehine korunaklı bir ödemedir.</p>
-    <h2>Örnek hesaplama</h2>
+    <h2 id="ornek-hesaplama">Örnek hesaplama</h2>
     <div class="callout"><p><strong>Örnek: 5 yıl çalışan bir işçi</strong></p>
     <p>Çalışma süresi: 5 yıl (1825 gün)</p>
     <p>Son brüt ücret: 40.000 TL + düzenli ek menfaatler 5.000 TL = giydirilmiş 45.000 TL (tavanın altında)</p>
     <p><strong>Brüt kıdem: </strong>45.000 × (1825 ÷ 365) = 45.000 × 5 = 225.000 TL</p>
     <p><strong>Damga vergisi: </strong>225.000 × 0,00759 = 1.707,75 TL</p>
     <p><strong>Net kıdem (yaklaşık): </strong>223.292,25 TL</p></div>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Çıplak maaştan hesaplamak: </strong>Kıdem, yol/yemek/düzenli ikramiye eklenmiş ‘giydirilmiş’ ücret üzerinden hesaplanır.</li><li><strong>Haklı sebep olmadan istifa etmek: </strong>Bu durumda kural olarak kıdem tazminatı alınamaz.</li><li><strong>Tavanı gözden kaçırmak: </strong>Yüksek ücretlilerde hesap, güncel tavandan yapılır.</li><li><strong>İhbar ile kıdemi karıştırmak: </strong>İkisi ayrı tazminattır; ihbardan gelir vergisi de kesilir.</li><li><strong>İbraname/‘alacağım yok’ belgesini incelemeden imzalamak: </strong>Haklarınızı kaybetmemek için imzalamadan önce danışın.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Kaç yıl çalışınca kıdem tazminatı alınır? </strong>En az 1 yıl. Bir yıldan artan süreler için de orantılı ödeme yapılır.</p>
     <p><strong>Kıdem kaç maaş tutar? </strong>Her tam yıl için 30 günlük (yaklaşık bir aylık) giydirilmiş brüt ücret. 5 yıl çalışan yaklaşık 5 maaş kıdem alır.</p>
     <p><strong>İstifa edince kıdem alabilir miyim? </strong>Kural olarak hayır. Ancak haklı bir fesih sebebiniz varsa (ödenmeyen ücret, sigortasızlık vb.) veya evlilik/askerlik/emeklilik gibi özel hâllerde alabilirsiniz.</p>
     <p><strong>Kıdemden vergi kesilir mi? </strong>Yalnızca binde 7,59 damga vergisi kesilir; gelir vergisi ve SGK primi kesilmez.</p>
     <p><strong>Kıdem tavanı 2026’da ne kadar? </strong>Temmuz–Aralık 2026 için brüt aylık 73.729,84 TL (Ocak–Haziran 2026’da 64.948,77 TL idi).</p>
     <p><strong>İşveren ödemezse ne yaparım? </strong>Önce yazılı talep, sonuç alınmazsa arabuluculuk ve dava yoluna gidilir. İşçi alacaklarında zamanaşımı süresine dikkat edilmelidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Kıdem tazminatı, en az bir yıl çalışan ve kanunda sayılan bir sebeple işten ayrılan işçinin en önemli güvencesidir. Doğru tutara ulaşmak için süreyi, giydirilmiş ücreti, güncel tavanı ve kesintiyi birlikte değerlendirmek gerekir. Yukarıdaki araç size yaklaşık bir fikir verir; ancak giydirilmiş ücretin kapsamı ve fesih sebebi gibi noktalar tutarı ciddi biçimde değiştirebileceğinden, hak kaybı yaşamamak için bir avukata danışmanız en sağlıklı yoldur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

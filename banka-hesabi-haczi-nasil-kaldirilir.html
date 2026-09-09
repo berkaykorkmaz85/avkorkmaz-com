@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,11 +208,24 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#banka-hesabi-haczi-tam-olarak-ne-demek">Banka hesabı haczi tam olarak ne demek?</a></li>
+      <li><a href="#en-kritik-konu-her-para-haczedilemez">En kritik konu: Her para haczedilemez</a></li>
+      <li><a href="#banka-hesabi-haczini-kaldirmanin-yollari">Banka hesabı haczini kaldırmanın yolları</a></li>
+      <li><a href="#emekli-maasi-hesabina-haciz-olur-mu">Emekli maaşı hesabına haciz olur mu?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Kartınız çekmedi, havale gitmedi ya da internet bankacılığında “bloke” yazısını gördünüz. İlk tepki genellikle panik olur. Oysa banka hesabına konan haciz, çoğu durumda çözülebilir bir sorundur — ve en önemlisi, kanunun size tanıdığı bazı korumalar vardır. Özellikle maaş ve emekli maaşı hesaplarında, bankanın hesabınızdaki paranın tamamını icraya gönderme hakkı yoktur.</p>
     <p>Bu rehberde banka hesabı haczinin nasıl işlediğini, hangi paraların haczedilemeyeceğini ve blokenin nasıl kaldırılacağını en sade haliyle anlatıyoruz.</p>
-    <h2>Banka hesabı haczi tam olarak ne demek?</h2>
+    <h2 id="banka-hesabi-haczi-tam-olarak-ne-demek">Banka hesabı haczi tam olarak ne demek?</h2>
     <p>Bir borç için hakkınızda icra takibi kesinleşince, alacaklı icra dairesinden bankalara “haciz müzekkeresi” gönderilmesini ister. Banka, hesabınızdaki parayı bu talep kadar bloke eder ve icra dosyasına aktarır. Uygulamada bu çoğunlukla “e-haciz” yani elektronik haciz yoluyla, tüm bankalara aynı anda yapılır. Yani tek bir bankada değil, adınıza kayıtlı tüm hesaplarda bloke görebilirsiniz.</p>
-    <h2>En kritik konu: Her para haczedilemez</h2>
+    <h2 id="en-kritik-konu-her-para-haczedilemez">En kritik konu: Her para haczedilemez</h2>
     <p>Burada çoğu zaman gözden kaçan önemli bir ayrıntı var: hesabınızdaki paranın niteliği belirleyicidir. Özellikle maaş ve emekli maaşı için kanun sınır koyar.</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -221,7 +242,7 @@
     <p>Kanunen maaşın yalnızca dörtte biri haczedilebildiği hâlde, uygulamada bankalar bazen maaş hesabındaki bakiyenin tamamını bloke edebiliyor. Bu durumda yapılması gereken:</p>
     <ul><li>Hesabın maaş hesabı olduğunu belgeleyin (banka/işveren yazısı, maaş yatış geçmişi);</li><li>İcra dairesine başvurup dörtte biri aşan kısmın çözülmesini/iadesini isteyin;</li><li>İcra dairesi düzeltmezse icra (hukuk) mahkemesine şikâyet yoluna gidin.</li></ul>
     <p><strong>Önemli: </strong>Dörtte bir sınırı, kişinin ve ailesinin asgari geçimini koruyan bir kuraldır; yerleşik uygulamada bu tür şikâyetlerde süre işlemez. Yani gecikseniz bile hakkınızı arayabilirsiniz.</p></div>
-    <h2>Banka hesabı haczini kaldırmanın yolları</h2>
+    <h2 id="banka-hesabi-haczini-kaldirmanin-yollari">Banka hesabı haczini kaldırmanın yolları</h2>
     <h3>1) Borcu ödeyin ve blokenin kaldırılmasını (fek) isteyin</h3>
     <p>Borcu, haczi koyan icra dosyasına ödeyin ve dekontu saklayın. Dikkat: ödeme tek başına blokeyi kaldırmaz. İcra müdürlüğüne dilekçe verip haczin ve banka blokesinin kaldırılmasını (fek) istemeniz gerekir; icra dairesi bankaya “blokeyi çözün” yazısı gönderdiğinde hesabınız serbest kalır.</p>
     <h3>2) Tek seferde ödeyemiyorsanız: taksitle anlaşma</h3>
@@ -230,22 +251,22 @@
     <p>Size ödeme emri tebliğ edildiyse, tebliğden itibaren 7 gün içinde icra dairesine itiraz ederek (ilamsız takipte) takibi durdurabilirsiniz. Borç size ait değilse ya da zamanaşımına uğradıysa, itiraz ve şikâyet yollarını bir avukatla değerlendirin.</p>
     <h3>4) Haczedilemez para bloke edildiyse: şikâyet</h3>
     <p>Maaşın dörtte birini aşan kısım, emekli maaşı ya da nafaka gibi haczedilemeyecek paralar bloke edildiyse; önce icra dairesinden düzeltme, olmazsa icra mahkemesine şikâyet ile bu paraların çözülmesini isteyin.</p>
-    <h2>Emekli maaşı hesabına haciz olur mu?</h2>
+    <h2 id="emekli-maasi-hesabina-haciz-olur-mu">Emekli maaşı hesabına haciz olur mu?</h2>
     <p>Kural olarak emekli maaşı haczedilemez (5510 sayılı Kanun m.93). İki temel istisnası vardır: nafaka alacakları ve SGK’nın kendi alacakları. Bunun dışındaki borçlar için emekli maaşına ancak borçlunun muvafakatiyle haciz konabilir; üstelik bu muvafakatin geçerli olması için, yerleşik uygulamaya göre haciz konulduktan sonra icra dosyasında verilmiş olması gerekir. Kredi sözleşmesi imzalanırken önceden alınan “peşin muvafakat”ler bu korumayı ortadan kaldırmaz.</p>
     <div class="callout"><p><strong>Zaman kritik: bloke para icraya aktarılmadan harekete geçin</strong></p>
     <p>Bloke edilen para bir süre hesapta “bekler”, sonra icra dosyasına aktarılır. Haczedilemez bir para söz konusuysa, aktarım gerçekleşmeden itiraz/şikâyet ile müdahale etmek işinizi kolaylaştırır. Bu yüzden blokeyi fark ettiğiniz anda dosyayı ve paranın niteliğini kontrol edin.</p></div>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Maaş hesabı olduğunu belgelememek: </strong>Dörtte bir korumasından yararlanmak için hesabın maaş hesabı olduğunu ispat etmek gerekir.</li><li><strong>Ödeyip fek istememek: </strong>Borç bitse de bloke, ayrı bir talep yapılmadan çözülmez.</li><li><strong>Peşin muvafakata güvenmek: </strong>Emekli maaşı için kredi sırasında verilen önceden muvafakat çoğu zaman koruma sağlamaz.</li><li><strong>Süreyi kaçırmak: </strong>Ödeme emrine 7 günlük itiraz süresini geçirmek.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>e-Devlet/UYAP’tan hangi icra dosyasından haciz geldiğini tespit ettim.</li><li>Bloke edilen paranın niteliğini belirledim (maaş / emekli / normal mevduat / nafaka).</li><li>Maaş/emekli hesabıysa bunu belgeleyecek evrakı (banka-işveren yazısı, yatış geçmişi) hazırladım.</li><li>Borç bana ait ve doğru mu, itiraz süresi işliyor mu kontrol ettim.</li><li>Ödeyeceksem doğru dosyaya ödeyip icra dairesinden fek (bloke kaldırma) talep ettim.</li><li>Haczedilemez para bloke edildiyse şikâyet için avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Maaş hesabımdaki paranın tamamı bloke edildi, yasal mı? </strong>Kural olarak maaşın yalnızca dörtte biri haczedilir. Fazlası bloke edildiyse icra dairesinden düzeltme, olmazsa icra mahkemesinden şikâyet yoluyla çözülmesini isteyebilirsiniz.</p>
     <p><strong>Emekli maaşıma haciz gelebilir mi? </strong>Kural olarak hayır. İstisnaları nafaka ve SGK alacaklarıdır; diğer borçlar için ancak haciz sonrası verilen muvafakatle mümkündür.</p>
     <p><strong>Borcu ödedim, hesabım ne zaman açılır? </strong>Ödeme sonrası icra dosyasından blokenin kaldırılmasını (fek) istemeniz gerekir. Talep işleme alınıp bankaya yazı gidince hesabınız serbest kalır.</p>
     <p><strong>Birden çok bankada blokem var, neden? </strong>E-haciz genellikle tüm bankalara aynı anda gönderilir; bu yüzden birden fazla hesapta bloke görebilirsiniz. Borç ödenince/çözülünce hepsi için fek gerekir.</p>
     <p><strong>Hesabıma nafaka/sosyal yardım yatıyor, o da mı bloke oldu? </strong>Bu tür haczedilemez ödemeler bloke edildiyse, niteliğini belgeleyerek çözülmesini isteyebilirsiniz.</p>
     <p><strong>Avukat şart mı? </strong>Basit ödeme + fek işini çoğu kişi kendi yapabilir. Ama itiraz, şikâyet, haczedilemez para veya birden fazla dosya varsa avukatla ilerlemek daha güvenlidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Banka hesabı haczi ilk anda ürkütücü görünse de, doğru adımlarla çoğu zaman kısa sürede çözülür. Önce hangi dosyadan geldiğini ve paranın niteliğini belirleyin; borç doğruysa ödeyip fek isteyin, haczedilemez bir para bloke edildiyse itiraz/şikâyet yolunu kullanın. Emin olmadığınız noktada bir avukattan destek almak, hem paranızı hem zamanınızı korur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

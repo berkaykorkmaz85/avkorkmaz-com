@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,16 +207,32 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#once-en-kritik-ayrim-nasil-cikarildiniz">Önce en kritik ayrım: nasıl çıkarıldınız?</a></li>
+      <li><a href="#1-kidem-tazminati">1) Kıdem tazminatı</a></li>
+      <li><a href="#2-ihbar-tazminati">2) İhbar tazminatı</a></li>
+      <li><a href="#3-ise-iade-davasi">3) İşe iade davası</a></li>
+      <li><a href="#4-kullanilmayan-yillik-izin-ucreti">4) Kullanılmayan yıllık izin ücreti</a></li>
+      <li><a href="#5-issizlik-maasi-iskur">5) İşsizlik maaşı (İŞKUR)</a></li>
+      <li><a href="#6-fazla-mesai-ve-diger-alacaklar">6) Fazla mesai ve diğer alacaklar</a></li>
+      <li><a href="#ne-yapmaliyim-surec">Ne yapmalıyım? Süreç</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İşten çıkarıldığınızı öğrenmek sarsıcıdır; ama ilk şok geçtiğinde bilmeniz gereken şey şudur: işten çıkarılan bir işçinin çoğu zaman birden fazla parasal hakkı vardır ve bunların bir kısmı için kısa süreler işler. Doğru adımları bilen işçi, hak ettiği kıdem, ihbar ve diğer alacakları eksiksiz alabilir.</p>
     <p>Bu rehber, işten çıkarıldığınızda gündeme gelebilecek tüm hakları bir arada toplar: kıdem tazminatı, ihbar tazminatı, işe iade, kullanılmayan yıllık izin, işsizlik maaşı ve fazla mesai/diğer alacaklar. Her biri için sitemizdeki ayrıntılı rehberlere de yönlendireceğiz.</p>
-    <h2>Önce en kritik ayrım: nasıl çıkarıldınız?</h2>
+    <h2 id="once-en-kritik-ayrim-nasil-cikarildiniz">Önce en kritik ayrım: nasıl çıkarıldınız?</h2>
     <p>Haklarınızın kapsamı, çıkışın biçimine bağlıdır:</p>
     <ul><li><strong>Geçerli/haklı sebep gösterilmeden çıkarıldıysanız: </strong>Kıdem ve ihbar tazminatı ile (şartları varsa) işe iade gündeme gelir.</li><li><strong>‘Haklı sebep’ (ahlak ve iyiniyet kurallarına aykırılık) iddiasıyla çıkarıldıysanız: </strong>İşveren kıdem/ihbar ödemeden çıkarmaya çalışır; ancak bu iddia haksızsa dava ile hakkınızı alabilirsiniz.</li></ul>
     <div class="callout"><p><strong>İbranameyi ve ‘istifa’ dilekçesini incelemeden imzalamayın</strong></p>
     <p>Çıkış sırasında işveren bazen ‘tüm haklarımı aldım’ diyen bir ibraname ya da ‘kendi isteğimle ayrıldım’ diyen bir istifa dilekçesi imzalatmak ister. Bu belgeler tazminat haklarınızı ciddi biçimde zayıflatabilir. İçeriğini anlamadığınız hiçbir belgeyi imzalamayın; tereddüt ederseniz danışın.</p></div>
-    <h2>1) Kıdem tazminatı</h2>
+    <h2 id="1-kidem-tazminati">1) Kıdem tazminatı</h2>
     <p>En az bir yıl çalışmış ve kıdeme hak kazandıran bir sebeple işten ayrılmış işçiye, her tam yıl için 30 günlük giydirilmiş brüt ücret tutarında ödenir. Hesabın ayrıntısı ve 2026 tavanı için sitemizdeki “Kıdem Tazminatı Nasıl Hesaplanır?” rehberindeki hesap aracını kullanabilirsiniz.</p>
-    <h2>2) İhbar tazminatı</h2>
+    <h2 id="2-ihbar-tazminati">2) İhbar tazminatı</h2>
     <p>İşveren, iş sözleşmesini bildirim süresine uymadan (aniden) feshederse, işçiye ihbar tazminatı öder. Süre, çalışma süresine göre değişir:</p>
     <div class="callout"><p><strong>İlgili mevzuat — 4857 sayılı İş Kanunu m.17 (Bildirim süreleri)</strong></p>
     <p>“İş sözleşmeleri; a) İşi altı aydan az sürmüş olan işçi için, bildirimin diğer tarafa yapılmasından başlayarak iki hafta sonra, b) İşi altı aydan birbuçuk yıla kadar sürmüş olan işçi için, dört hafta sonra, c) İşi birbuçuk yıldan üç yıla kadar sürmüş olan işçi için, altı hafta sonra, d) İşi üç yıldan fazla sürmüş işçi için, sekiz hafta sonra feshedilmiş sayılır.”</p></div>
@@ -224,27 +248,27 @@
     </table>
     </div>
     <p>Not: İhbar tazminatından, kıdemden farklı olarak gelir vergisi ve damga vergisi kesilir.</p>
-    <h2>3) İşe iade davası</h2>
+    <h2 id="3-ise-iade-davasi">3) İşe iade davası</h2>
     <p>Belirli şartları taşıyan işçi (kural olarak en az 6 aylık kıdem, işyerinde en az 30 işçi ve belirsiz süreli sözleşme), geçerli sebep gösterilmeden çıkarıldıysa işe iade davası açabilir. Bu hakta süre çok kısadır:</p>
     <div class="callout"><p><strong>İşe iadede kritik süreler</strong></p>
     <p>İşe iade için fesih bildiriminin tebliğinden itibaren bir ay içinde önce arabulucuya başvurulmalı; arabuluculuk anlaşmazlıkla sonuçlanırsa, son tutanaktan itibaren iki hafta içinde iş mahkemesinde dava açılmalıdır. Bu süreler kaçırılırsa işe iade hakkı düşer. Dava kazanılırsa işe iade + boşta geçen süre ücreti ve iş güvencesi tazminatı gündeme gelir.</p></div>
-    <h2>4) Kullanılmayan yıllık izin ücreti</h2>
+    <h2 id="4-kullanilmayan-yillik-izin-ucreti">4) Kullanılmayan yıllık izin ücreti</h2>
     <p>İş sözleşmesi sona erdiğinde, hak edilip kullanılmayan yıllık izin günlerinin ücreti son ücret üzerinden ödenir. Yıllık izin alacağı, iş ilişkisi devam ederken zamanaşımına uğramaz; sözleşmenin bitiminde muaccel olur.</p>
-    <h2>5) İşsizlik maaşı (İŞKUR)</h2>
+    <h2 id="5-issizlik-maasi-iskur">5) İşsizlik maaşı (İŞKUR)</h2>
     <p>Kendi kusuru dışında işten ayrılan ve prim şartlarını sağlayan işçi, İŞKUR’a başvurarak işsizlik ödeneği alabilir. Başvuru, işten ayrılmayı izleyen kısa süre içinde (kural olarak 30 gün) yapılmalıdır; gecikme ödenek kaybına yol açabilir. Bu bir tazminat değil, sosyal güvenlik hakkıdır.</p>
-    <h2>6) Fazla mesai ve diğer alacaklar</h2>
+    <h2 id="6-fazla-mesai-ve-diger-alacaklar">6) Fazla mesai ve diğer alacaklar</h2>
     <p>Ödenmemiş fazla mesai, hafta tatili/UBGT (ulusal bayram-genel tatil) ücretleri, prim ve ikramiye gibi alacaklarınız da çıkışta talep edilebilir. Bu alacaklarda ispat (bordro, mesai kayıtları, tanık) önemlidir.</p>
-    <h2>Ne yapmalıyım? Süreç</h2>
+    <h2 id="ne-yapmaliyim-surec">Ne yapmalıyım? Süreç</h2>
     <ol><li>Çıkış belgelerinizi toplayın (fesih bildirimi, bordrolar, SGK hizmet dökümü, banka kayıtları).</li><li>İbraname/istifa gibi belgeleri incelemeden imzalamayın.</li><li>İşe iade düşünüyorsanız 1 aylık arabuluculuk süresini kaçırmayın.</li><li>İşçi alacakları için dava öncesi arabuluculuk zorunludur; oradan başlayın.</li><li>Zamanaşımı sürelerine dikkat ederek gerekiyorsa iş mahkemesinde dava açın.</li></ol>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>İbranameyi okumadan imzalamak: </strong>Haklarınızdan feragat etmiş sayılabilirsiniz.</li><li><strong>İşe iade süresini kaçırmak: </strong>1 ay + 2 hafta süreleri hak düşürücüdür.</li><li><strong>İşsizlik maaşı başvurusunu geciktirmek: </strong>30 günlük başvuru süresini kaçırmayın.</li><li><strong>Alacakları belgelemeden dava açmak: </strong>Fazla mesai vb. için kayıt ve tanık önemlidir.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>İşten çıkarıldım, hangi tazminatları alırım? </strong>Şartları varsa kıdem ve ihbar tazminatı; ayrıca kullanılmayan izin ücreti, fazla mesai gibi alacaklar ve işe iade hakkı gündeme gelebilir.</p>
     <p><strong>İhbar tazminatı ne kadar? </strong>Çalışma sürenize göre 2 ilâ 8 haftalık ücret tutarındadır (İş K. m.17).</p>
     <p><strong>İşe iade için ne kadar sürem var? </strong>Fesih tebliğinden itibaren 1 ay içinde arabuluculuk; anlaşma olmazsa son tutanaktan itibaren 2 hafta içinde dava.</p>
     <p><strong>İşsizlik maaşına nasıl başvururum? </strong>İşten ayrıldıktan sonra kural olarak 30 gün içinde İŞKUR’a (e-Devlet üzerinden de) başvurun; prim şartlarını sağlamanız gerekir.</p>
     <p><strong>İbranameyi imzaladım, hakkım bitti mi? </strong>Her zaman değil. İbranamenin geçerliliği sıkı şartlara bağlıdır; usulüne uygun değilse haklarınızı yine talep edebilirsiniz. Avukata danışın.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İşten çıkarılmak, hak kaybı anlamına gelmek zorunda değildir. Kıdem, ihbar, kullanılmayan izin, işe iade ve işsizlik maaşı gibi haklarınızı bilir ve sürelerine dikkat ederseniz, hak ettiğinizin tamamına ulaşabilirsiniz. En büyük risk, aceleyle belge imzalamak ve kısa süreleri kaçırmaktır. Adım atmadan önce bir avukata danışmak, en güvenli yoldur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

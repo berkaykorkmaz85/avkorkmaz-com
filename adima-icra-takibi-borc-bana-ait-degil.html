@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,16 +208,30 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#ilk-ve-en-onemli-kural-7-gun-icinde-itiraz">İlk ve en önemli kural: 7 gün içinde itiraz</a></li>
+      <li><a href="#itiraz-nasil-yapilir-adim-adim">İtiraz nasıl yapılır? (Adım adım)</a></li>
+      <li><a href="#neye-itiraz-ediyorsunuz-uc-farkli-itiraz">Neye itiraz ediyorsunuz? Üç farklı itiraz</a></li>
+      <li><a href="#peki-7-gunu-kacirdiysaniz-hakkiniz-bitmez">Peki 7 günü kaçırdıysanız? Hakkınız bitmez</a></li>
+      <li><a href="#takip-mi-dava-mi-surec-bundan-sonra-nasil-ilerler">Takip mi, dava mı? Süreç bundan sonra nasıl ilerler?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Elinize bir “ödeme emri” geçti ya da e-Devlet’te hiç tanımadığınız bir borç gördünüz. “Ben bu parayı hiç almadım, bu borç bana ait değil!” diyorsunuz. Haklı olabilirsiniz — hatalı, ödenmiş, zamanaşımına uğramış ya da tamamen sahte (kimlik bilgileriyle açılmış) takipler gerçektir. Ama burada tek bir şey her şeyi belirler: süre.</p>
     <p>Bu rehberde, borç size ait değilse ne yapmanız gerektiğini, itirazın nasıl yapıldığını ve o meşhur 7 günü kaçırırsanız hakkınızın tamamen bitip bitmediğini en sade haliyle anlatıyoruz.</p>
-    <h2>İlk ve en önemli kural: 7 gün içinde itiraz</h2>
+    <h2 id="ilk-ve-en-onemli-kural-7-gun-icinde-itiraz">İlk ve en önemli kural: 7 gün içinde itiraz</h2>
     <p>Size ilamsız icra takibinde bir “ödeme emri” tebliğ edildiyse, elinize ulaşmasından itibaren 7 gün içinde icra dairesine itiraz edebilirsiniz. İtiraz ettiğiniz anda takip durur. Alacaklı devam etmek isterse, artık top ona geçer: mahkemeye başvurup borcun gerçek olduğunu ispatlamak (itirazın iptali veya itirazın kaldırılması) zorundadır.</p>
     <div class="callout"><p><strong>En çok yanlış bilinen konu: itiraz için gerekçe/ispat şart değil</strong></p>
     <p>İlamsız takipte, süresi içinde “borca itiraz ediyorum” demeniz takibi durdurmak için yeterlidir. Başta belge sunmak, borcun neden size ait olmadığını ispatlamak zorunda değilsiniz. İspat yükü, süreci mahkemeye taşıyan alacaklıya geçer. Bu, en çok yanlış bilinen ve mağduriyete yol açan konudur — “elimde belge yok, itiraz edemem” diye düşünüp süreyi kaçırmayın.</p></div>
-    <h2>İtiraz nasıl yapılır? (Adım adım)</h2>
+    <h2 id="itiraz-nasil-yapilir-adim-adim">İtiraz nasıl yapılır? (Adım adım)</h2>
     <ol><li>Ödeme emrinin tebliğ tarihini belirleyin; 7 günlük süreyi buna göre hesaplayın.</li><li>Takibin hangi icra dairesinde, hangi dosya numarasıyla olduğunu not edin (e-Devlet/UYAP’tan da bakılabilir).</li><li>İcra dairesine hitaben kısa bir itiraz dilekçesi verin: “…sayılı takip dosyasındaki borca (ve varsa faize, imzaya) itiraz ediyorum” demeniz yeterli.</li><li>İtirazı süresinde ve doğru daireye verin; alındı/kayıt bilgisini saklayın.</li></ol>
     <p>İtiraz, kural olarak takibi başlatan icra dairesine yapılır. Süre ve usul hataları hak kaybına yol açabileceğinden, emin değilseniz bir avukattan destek alın.</p>
-    <h2>Neye itiraz ediyorsunuz? Üç farklı itiraz</h2>
+    <h2 id="neye-itiraz-ediyorsunuz-uc-farkli-itiraz">Neye itiraz ediyorsunuz? Üç farklı itiraz</h2>
     <p>Duruma göre itirazınızın türü değişir; doğru türü seçmek önemlidir.</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -221,7 +243,7 @@
       </tbody>
     </table>
     </div>
-    <h2>Peki 7 günü kaçırdıysanız? Hakkınız bitmez</h2>
+    <h2 id="peki-7-gunu-kacirdiysaniz-hakkiniz-bitmez">Peki 7 günü kaçırdıysanız? Hakkınız bitmez</h2>
     <p>Süreyi kaçırıp takip kesinleşse bile, borcun size ait olmadığını mahkemede ileri sürmenin yolları vardır:</p>
     <ul><li><strong>Menfi tespit davası: </strong>“Ben bu borcu borçlu değilim” demek için açılır. Şartları varsa icranın durdurulması da istenebilir.</li><li><strong>İstirdat (geri alma) davası: </strong>Borçlu olmadığınız hâlde ödeme yaptıysanız, ödediğiniz parayı geri almak için açılır (kural olarak ödeme tarihinden itibaren belirli süre içinde).</li></ul>
     <p>Bu davalar teknik ve süreye bağlıdır; bu nedenle süreyi kaçırdıysanız vakit kaybetmeden bir avukata danışmanız önemlidir.</p>
@@ -229,20 +251,20 @@
     <p>Kimlik bilgileriniz kullanılarak (sahte abonelik, sahte senet, başkası adına kredi vb.) adınıza borç çıkarıldığını düşünüyorsanız iki şeyi birlikte yapın:</p>
     <ul><li>Süresinde borca (ve senede dayanıyorsa imzaya) itiraz edin;</li><li>Cumhuriyet Başsavcılığı’na suç duyurusunda bulunun ve olayı belgeleyin.</li></ul>
     <p>İmza sahteyse, imza incelemesi (bilirkişi) süreçte belirleyici olabilir. Bu tür dosyalar için avukat desteği güçlü şekilde önerilir.</p></div>
-    <h2>Takip mi, dava mı? Süreç bundan sonra nasıl ilerler?</h2>
+    <h2 id="takip-mi-dava-mi-surec-bundan-sonra-nasil-ilerler">Takip mi, dava mı? Süreç bundan sonra nasıl ilerler?</h2>
     <p>Siz borca itiraz edince takip durur. Alacaklı gerçekten alacaklı olduğunu düşünüyorsa, itirazınızı aşmak için mahkemeye başvurur. Bu iki yol vardır: elinde İİK’da sayılan güçlü bir belge varsa icra mahkemesinde “itirazın kaldırılması”, yoksa genel mahkemede “itirazın iptali” davası. Bu davalarda borcun gerçekliğini ispat yükü alacaklıdadır. (İtirazın iptali davasının ayrıntıları için bu konudaki ayrı rehberimize bakabilirsiniz.)</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>“Belgem yok” diye itiraz etmemek: </strong>İlamsız takipte itiraz için başta belge/ispat gerekmez; süreyi kaçırmak asıl hatadır.</li><li><strong>Yanlış yere/yanlış sürede itiraz: </strong>İtiraz doğru icra dairesine ve süresinde yapılmalı.</li><li><strong>İmzaya itirazı unutmak: </strong>Senetteki imza size ait değilse, imzaya itirazı ayrıca ve açıkça belirtmek gerekir.</li><li><strong>Sahte borçta yalnız itirazla yetinmek: </strong>Dolandırıcılık şüphesinde ayrıca suç duyurusu yapılmalı.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Ödeme emrinin tebliğ tarihini ve 7 günlük sürenin durumunu belirledim.</li><li>Takibin dosya no ve icra dairesini tespit ettim (e-Devlet/UYAP).</li><li>Borcun bana ait olmadığını düşündüğüm nedeni (ödenmiş, sahte, zamanaşımı, karışıklık) netleştirdim.</li><li>Süre içindeysem borca (gerekirse imzaya/yetkiye) itiraz ettim.</li><li>Sahte/dolandırıcılık şüphesi varsa suç duyurusunda bulundum.</li><li>Süreyi kaçırdıysam menfi tespit/istirdat için avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>İtiraz etmek için belge sunmak zorunda mıyım? </strong>Hayır. İlamsız takipte süresinde “borca itiraz ediyorum” demeniz takibi durdurmaya yeter; ispat yükü sonra alacaklıya geçer.</p>
     <p><strong>İtiraz edince ne olur? </strong>Takip durur. Alacaklı devam etmek isterse mahkemeye başvurmak (itirazın iptali/kaldırılması) zorundadır.</p>
     <p><strong>7 günü kaçırdım, artık yapabileceğim bir şey yok mu? </strong>Var. Menfi tespit davasıyla borçlu olmadığınızı, ödeme yaptıysanız istirdat davasıyla parayı geri almayı ileri sürebilirsiniz. Bu davalar süreye bağlıdır; gecikmeyin.</p>
     <p><strong>Kimliğim kullanılarak sahte borç açılmış, ne yapmalıyım? </strong>Süresinde itiraz edin ve ayrıca savcılığa suç duyurusunda bulunun. Senede dayalıysa imzaya itiraz ve imza incelemesi önemli olabilir.</p>
     <p><strong>İtiraz ücretli mi? </strong>İcra dairesine yapılan itirazın kendisi için ayrı bir harç aranmaz; ancak süreç mahkemeye taşınırsa yargılama gideri ve vekâlet ücreti gündeme gelebilir.</p>
     <p><strong>Avukat şart mı? </strong>Basit bir borca itirazı kişi kendi yapabilir. Ancak imzaya itiraz, sahte borç, menfi tespit veya süre kaçmışsa avukatla ilerlemek çok daha güvenlidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Adınıza haksız bir icra takibi açıldıysa paniğe değil, hızlı ve doğru harekete ihtiyacınız var. Süre içindeyseniz itiraz edip takibi durdurun; süreyi kaçırdıysanız menfi tespit gibi yolları değerlendirin; sahte borç varsa suç duyurusunu ihmal etmeyin. En kritik nokta, günlerin işlediğidir — bu yüzden şüphelendiğiniz anda bir avukata danışmak, hakkınızı korumanın en güvenli yoludur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

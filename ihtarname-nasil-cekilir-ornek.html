@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,18 +207,30 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#ihtarname-nedir-ne-ise-yarar">İhtarname nedir, ne işe yarar?</a></li>
+      <li><a href="#ihtarname-nasil-cekilir-yollar">İhtarname nasıl çekilir? (yollar)</a></li>
+      <li><a href="#ihtarnamede-bulunmasi-gerekenler">İhtarnamede bulunması gerekenler</a></li>
+      <li><a href="#ornek-ihtarname-taslak">Örnek İhtarname (Taslak)</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Bir alacağınızı tahsil etmek, kiracıyı uyarmak, ayıplı bir malı iade etmek ya da bir sözleşmeyi feshetmek istiyorsunuz. Çoğu zaman ilk ve en etkili adım bir ihtarnamedir: karşı tarafı resmen uyaran, tarih ve içerik olarak ispatlanabilir yazılı bir bildirim. Doğru hazırlanmış bir ihtarname, çoğu uyuşmazlığı dava aşamasına gelmeden çözer; çözemese bile davada güçlü bir delil olur.</p>
     <p>Bu rehberde ihtarnamenin ne işe yaradığını, nasıl çekildiğini, hangi unsurları içermesi gerektiğini ve sonunda kullanabileceğiniz bir örnek ihtarname iskeletini anlatıyoruz.</p>
-    <h2>İhtarname nedir, ne işe yarar?</h2>
+    <h2 id="ihtarname-nedir-ne-ise-yarar">İhtarname nedir, ne işe yarar?</h2>
     <p>İhtarname, bir kişinin diğerine belirli bir talebini (borcu öde, evi boşalt, ayıbı gider vb.) ve bu talep yerine getirilmezse başvuracağı hukuki yolları resmî biçimde bildirdiği yazıdır. Başlıca işlevleri: karşı tarafı temerrüde düşürmek (gecikme faizi/sorumluluk başlatmak), bazı davalar/işlemler için ön şart olan ‘uyarı’yı yapmak ve ileride mahkemede ‘haber verdim’ ispatını sağlamaktır.</p>
     <div class="callout"><p><strong>İlgili mevzuat — TBK m.117 (Borçlu temerrüdü / ihtar)</strong></p>
     <p>“Muaccel bir borcun borçlusu, alacaklının ihtarıyla temerrüde düşer. Borcun ifa edileceği gün birlikte belirlenmiş veya sözleşmede saklı tutulan bir hakka dayanarak taraflardan biri usulüne uygun bir bildirimde bulunmak suretiyle belirlemişse, bu günün geçmesiyle; haksız fiilde fiilin işlendiği, sebepsiz zenginleşmede ise zenginleşmenin gerçekleştiği tarihte borçlu temerrüde düşmüş olur…”</p></div>
-    <h2>İhtarname nasıl çekilir? (yollar)</h2>
+    <h2 id="ihtarname-nasil-cekilir-yollar">İhtarname nasıl çekilir? (yollar)</h2>
     <ul><li><strong>Noter aracılığıyla (en güçlü yol): </strong>Noter, ihtarın içeriğini ve karşı tarafa tebliğ edildiğini resmen belgeler. İspat gücü en yüksek yöntemdir; kira ve alacak işlerinde tavsiye edilir.</li><li><strong>İadeli taahhütlü posta / APS: </strong>Daha ucuzdur; gönderildiği ve teslim edildiği belgelenir, ancak içerik noter kadar güçlü kayıt altına alınmaz.</li><li><strong>KEP (Kayıtlı Elektronik Posta): </strong>Özellikle tacirler arasında; gönderim ve içerik hukuken kayıt altına alınır.</li></ul>
     <p>Hangi yolu seçerseniz seçin, amaç aynıdır: ‘neyi, kime, ne zaman bildirdiğinizi’ tartışmasız biçimde ispatlayabilmek.</p>
-    <h2>İhtarnamede bulunması gerekenler</h2>
+    <h2 id="ihtarnamede-bulunmasi-gerekenler">İhtarnamede bulunması gerekenler</h2>
     <ul><li>Gönderen ve muhatabın kimlik/adres bilgileri;</li><li>Talebin konusu ve dayanağı (sözleşme, fatura, kira ilişkisi vb.) açık biçimde;</li><li>Net bir talep ve ödeme/ifa için süre (ör. ‘7 gün içinde’);</li><li>Süre sonunda başvurulacak hukuki yolların bildirilmesi (icra takibi, dava, fesih vb.);</li><li>Tarih ve imza; noter yolunda noter onayı.</li></ul>
-    <h2>Örnek İhtarname (Taslak)</h2>
+    <h2 id="ornek-ihtarname-taslak">Örnek İhtarname (Taslak)</h2>
     <p>Aşağıdaki iskelet genel bir alacak/uyarı ihtarnamesi içindir; kira, iş veya tahliye gibi konulara göre uyarlanmalıdır. Köşeli parantezli alanlar ([……]) doldurulur.</p>
     <div class="dilekce">
   <p class="mahkeme">İHTARNAME</p>
@@ -232,15 +252,15 @@
   </div>
   <p style="font-size:13px;color:var(--text-muted);margin-top:12px">Sayın Noter: İşbu ihtarnamenin bir nüshasının muhataba tebliğini, bir nüshasının dairenizde saklanmasını ve tebliğ şerhli bir nüshasının tarafıma verilmesini talep ederim.</p>
 </div>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Sözlü uyarıyla yetinmek: </strong>İspatı zordur; yazılı ve tebliği belgelenen bir ihtar şarttır.</li><li><strong>Süre vermemek: </strong>Net bir ödeme/ifa süresi verilmeyen ihtar, temerrüt ve sonraki adımlar için zayıf kalır.</li><li><strong>Muhatap/adres bilgisini eksik yazmak: </strong>Tebligat yapılamazsa ihtar amacına ulaşmaz.</li><li><strong>Talebi ve dayanağı belirsiz bırakmak: </strong>Neyi, hangi ilişkiye dayanarak istediğinizi açıkça yazın.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>İhtarname mutlaka noterden mi olmalı? </strong>Zorunlu değildir; ancak noter ihtarnamesi, içerik ve tebliğ bakımından en güçlü ispatı sağlar. Alacak ve kira işlerinde noter önerilir.</p>
     <p><strong>İhtarname çekmek dava şartı mı? </strong>Her davada değil; ancak bazı hâllerde (ör. temerrüt, kira, ayıp bildirimi) ihtar hukuken önem taşır ya da zorunlu olabilir. Konunuza göre değerlendirin.</p>
     <p><strong>Kaç gün süre vermeliyim? </strong>Konuya göre değişir; uygulamada çoğunlukla 7 veya 15 gün gibi makul bir süre verilir.</p>
     <p><strong>İhtar sonrası ne olur? </strong>Verilen sürede talep yerine getirilmezse icra takibi veya dava gibi yollara geçilebilir; ihtar bu aşamada güçlü bir delil olur.</p>
     <p><strong>İhtarname masrafı ne kadar? </strong>Noter yolunda sayfa sayısı ve tebligata göre değişen bir masraf çıkar; posta/KEP yolları daha ucuzdur.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>İhtarname, hakkınızı aramanın hem en hızlı hem de çoğu zaman en etkili ilk adımıdır: karşı tarafı resmen uyarır, temerrüde düşürür ve ileride güçlü bir delil oluşturur. Doğru hazırlanmış, süreli ve tebliği belgelenen bir ihtar, birçok uyuşmazlığı dava aşamasına gelmeden çözer. İçeriğin konunuza tam uyması için bir avukattan destek almanız, hem hak kaybını önler hem de sürecin lehinize işlemesini sağlar.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

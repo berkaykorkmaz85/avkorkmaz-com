@@ -160,6 +160,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -200,11 +208,25 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#ilk-adim-nafaka-ilamiyla-icra-takibi">İlk adım: nafaka ilamıyla icra takibi</a></li>
+      <li><a href="#kritik-ayrim-cari-nafaka-mi-birikmis-nafaka-mi">Kritik ayrım: cari nafaka mı, birikmiş nafaka mı?</a></li>
+      <li><a href="#maas-haczi-nafakanin-onceligi">Maaş haczi: nafakanın önceliği</a></li>
+      <li><a href="#emekli-veya-kamu-maasindan-nafaka-alinir-mi">Emekli veya kamu maaşından nafaka alınır mı?</a></li>
+      <li><a href="#nafaka-artirimi-ve-odeme-gucu-ayri-bir-konudur">Nafaka artırımı ve ödeme gücü ayrı bir konudur</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Mahkeme nafakaya hükmetti ama karşı taraf ödemiyor. Her ay “bu ay yatar mı” diye beklemek yorucu ve haksız bir durum. İyi haber şu: elinizde bir mahkeme kararı (ilam) varsa, nafakayı tahsil etmek için güçlü araçlarınız var — üstelik bunlardan biri, ödemeyen tarafı hapisle karşı karşıya bırakabilir.</p>
     <p>Bu rehberde nafakanın icra yoluyla nasıl tahsil edileceğini, maaş haczinde nafakaya tanınan ayrıcalığı ve tazyik hapsinin nasıl işlediğini en sade haliyle anlatıyoruz.</p>
-    <h2>İlk adım: nafaka ilamıyla icra takibi</h2>
+    <h2 id="ilk-adim-nafaka-ilamiyla-icra-takibi">İlk adım: nafaka ilamıyla icra takibi</h2>
     <p>Nafaka bir mahkeme kararına (ilama) dayandığı için, tahsili “ilamlı icra takibi” ile yapılır. İcra dairesine başvurup kararı eklersiniz; borçluya icra emri tebliğ edilir. Ödeme yapılmazsa haciz aşamasına geçilir. Bunun için çoğu zaman en pratik yol, borçlunun maaşına haciz koydurmaktır.</p>
-    <h2>Kritik ayrım: cari nafaka mı, birikmiş nafaka mı?</h2>
+    <h2 id="kritik-ayrim-cari-nafaka-mi-birikmis-nafaka-mi">Kritik ayrım: cari nafaka mı, birikmiş nafaka mı?</h2>
     <p>Nafakada iki kavramı ayırmak, haklarınızı doğru kullanmanın anahtarıdır:</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -219,24 +241,24 @@
     <p>Nafaka kararının gereğini yerine getirmeyen borçlu, alacaklının şikâyeti üzerine icra ceza mahkemesince üç aya kadar tazyik hapsi ile cezalandırılabilir. Buradaki amaç ceza vermek değil, ödemeye zorlamaktır: borçlu birikmiş cari nafakayı öderse hapis kararı kalkar/uygulanmaz.</p>
     <p><strong>Şartları özetle: </strong>Geçerli bir nafaka ilamı ve buna dayalı icra takibi olmalı; icra emri tebliğ edilmiş olmalı; ödeme yapılmamalı ve süresinde şikâyet edilmelidir.</p>
     <p><strong>Süre: </strong>Şikâyet, ödenmediğinin öğrenilmesinden itibaren kısa bir süre içinde yapılmalıdır (kanuni süreler kaçırılmamalı). Tazyik hapsi kural olarak işleyen (cari) nafaka için uygulanır.</p></div>
-    <h2>Maaş haczi: nafakanın önceliği</h2>
+    <h2 id="maas-haczi-nafakanin-onceligi">Maaş haczi: nafakanın önceliği</h2>
     <p>Borçlu çalışıyorsa, en etkili tahsil yolu maaş haczidir. Normalde maaşın en fazla dörtte biri haczedilebilir; ancak işleyen (cari) nafaka bu sınırın istisnasıdır ve gerektiğinde maaştan tam olarak kesilebilir. Ayrıca birden fazla haciz varsa, nafaka alacaklarının sırası bakımından koruyucu düzenlemeler vardır. Bu ayrıcalığın sebebi, nafakanın çoğu zaman bir çocuğun ya da geçimi zor durumda olan bir eşin temel ihtiyacı olmasıdır.</p>
-    <h2>Emekli veya kamu maaşından nafaka alınır mı?</h2>
+    <h2 id="emekli-veya-kamu-maasindan-nafaka-alinir-mi">Emekli veya kamu maaşından nafaka alınır mı?</h2>
     <p>Kural olarak emekli maaşı haczedilemez; fakat nafaka alacakları bunun açık istisnasıdır. Yani borçlu emekliyse dahi, nafaka için emekli maaşına haciz uygulanabilir. Bu da nafaka alacaklısını koruyan önemli bir kuraldır.</p>
-    <h2>Nafaka artırımı ve ödeme gücü ayrı bir konudur</h2>
+    <h2 id="nafaka-artirimi-ve-odeme-gucu-ayri-bir-konudur">Nafaka artırımı ve ödeme gücü ayrı bir konudur</h2>
     <p>Borçlu “ödeyemiyorum” diyorsa, bunun yeri icra dosyası değil, nafakanın azaltılması/uyarlanması davasıdır ve bu ayrı bir süreçtir. Siz alacaklı olarak, şartlar oluştuğunda nafakanın artırılmasını da ayrıca isteyebilirsiniz. Tahsil süreci ile artırım/azaltım davaları birbirine karıştırılmamalıdır.</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Cari ve birikmiş nafakayı karıştırmak: </strong>Haciz sınırı ve tazyik hapsi bakımından ikisi farklı işler.</li><li><strong>Tazyik hapsi şikâyetinde süreyi kaçırmak: </strong>Şikâyet için kanuni süreler vardır; geç kalınırsa hak düşebilir.</li><li><strong>İlamsız yol denemek: </strong>Nafaka ilama dayanır; ilamlı takip yolu izlenmelidir.</li><li><strong>Belgeleri toplamamak: </strong>Karar, takip evrakı ve ödenmediğine dair kayıtlar süreçte gereklidir.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Nafaka kararını (ilamı) ve varsa değişiklik kararlarını topladım.</li><li>Ödenmeyen ayları (birikmiş) ve işleyen (cari) nafakayı ayrı ayrı hesapladım.</li><li>İlamlı icra takibi başlattım / başlatacağım; icra emrinin tebliğini takip ettim.</li><li>Borçlu çalışıyorsa maaş haczi, emekliyse nafaka istisnasını değerlendirdim.</li><li>Ödeme yoksa tazyik hapsi şikâyeti için süreleri kaçırmadan avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Nafakayı ödemeyen hapse girer mi? </strong>Şartları oluşursa, şikâyet üzerine icra ceza mahkemesince üç aya kadar tazyik hapsi verilebilir. Borçlu öderse bu hapis uygulanmaz/kalkar.</p>
     <p><strong>Maaşının tamamı nafaka için kesilebilir mi? </strong>İşleyen (cari) nafaka, dörtte bir sınırının istisnasıdır ve gerektiğinde maaştan tam kesilebilir. Birikmiş nafaka ise dörtte bir sınırına tabidir.</p>
     <p><strong>Borçlu emekli, yine de alabilir miyim? </strong>Evet. Emekli maaşı kural olarak haczedilemese de nafaka bunun açık istisnasıdır.</p>
     <p><strong>Birikmiş nafaka için de hapis olur mu? </strong>Tazyik hapsi kural olarak işleyen (cari) nafaka içindir; birikmiş nafaka için haciz yoluyla tahsil izlenir.</p>
     <p><strong>Borçlu “param yok” diyor, ne yapmalıyım? </strong>Ödeme gücü tartışması nafakanın azaltılması davasının konusudur; tahsil sürecini durdurmaz. Siz haciz ve tazyik hapsi yollarını kullanmaya devam edebilirsiniz.</p>
     <p><strong>Avukat şart mı? </strong>Süreler ve tazyik hapsi usulü teknik olduğundan, hak kaybı yaşamamak için avukatla ilerlemek güçlü şekilde önerilir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Nafaka, çoğu zaman bir çocuğun ya da zor durumdaki bir eşin temel geçim kaynağıdır; bu yüzden kanun onu güçlü şekilde korur. Elinizde bir mahkeme kararı varsa, ödemeyen tarafa karşı hem maaş haczi hem de tazyik hapsi gibi etkili araçlarınız vardır. Önemli olan doğru yolu seçmek ve süreleri kaçırmamaktır. Emin olmadığınız noktada bir avukattan destek almak, hakkınıza en kısa yoldan kavuşmanızı sağlar.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

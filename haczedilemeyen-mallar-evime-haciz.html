@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,16 +207,29 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#eve-haciz-nasil-isler-korkuldugu-gibi-degil">Eve haciz nasıl işler? (Korkulduğu gibi değil)</a></li>
+      <li><a href="#haczedilemeyen-mallar-ve-haklar-iik-m-82">Haczedilemeyen mallar ve haklar (İİK m.82)</a></li>
+      <li><a href="#haczedilemeyen-gelirler-maas-emekli-maasi-nafaka">Haczedilemeyen gelirler: maaş, emekli maaşı, nafaka</a></li>
+      <li><a href="#haczedilemez-bir-mal-gelir-haczedilirse-ne-yapmali">Haczedilemez bir mal/gelir haczedilirse ne yapmalı?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>İcra dosyanız olduğunu öğrenince akla ilk gelen korku genellikle aynıdır: “Eve icra gelip her şeyi götürürler mi?” Gerçek, filmlerdeki kadar acımasız değildir. Kanun, borçlunun ve ailesinin insan onuruna yaraşır biçimde yaşamını sürdürebilmesi için bazı eşya ve gelirleri haczedilemez kabul eder; yani bunlara dokunulamaz.</p>
     <p>Bu rehberde eve haczin gerçekte nasıl işlediğini, hangi malların ve gelirlerin haczedilemeyeceğini (İİK m.82-83) ve haksız bir haciz durumunda ne yapmanız gerektiğini en sade haliyle anlatıyoruz.</p>
-    <h2>Eve haciz nasıl işler? (Korkulduğu gibi değil)</h2>
+    <h2 id="eve-haciz-nasil-isler-korkuldugu-gibi-degil">Eve haciz nasıl işler? (Korkulduğu gibi değil)</h2>
     <p>Bir borç için takip kesinleştiğinde alacaklı haciz talep edebilir. Ancak icra memuru eve geldiğinde “gördüğü her şeyi” alamaz. Önce haczedilebilir bir mal olup olmadığına bakılır; ev eşyalarının önemli bölümü kanunen haciz dışıdır. Uygulamada da artık ev eşyaları çoğu zaman haczedilmez; haciz daha çok araç, banka hesabı, maaş (dörtte biri) ve gayrimenkul gibi kalemlere yönelir.</p>
-    <h2>Haczedilemeyen mallar ve haklar (İİK m.82)</h2>
+    <h2 id="haczedilemeyen-mallar-ve-haklar-iik-m-82">Haczedilemeyen mallar ve haklar (İİK m.82)</h2>
     <p>Kanunun saydığı başlıca haczedilemez mal ve haklar şunlardır:</p>
     <ul><li>Borçlunun kendisi ve ailesi için gerekli tüm ev eşyası (yatak, buzdolabı, çamaşır makinesi, fırın, mutfak eşyaları, oturma grubu gibi temel eşyalar);</li><li>Ailenin bir aylık yiyecek ve yakacak ihtiyacı;</li><li>Borçlunun mesleğini/sanatını sürdürebilmesi için gerekli temel araç ve gereçler;</li><li>Çiftçilikle geçinen borçlunun geçimi için zorunlu arazi, hayvan ve ekipmanı;</li><li>Öğrenim/öğretim için gerekli kitap ve eşyalar; ibadet eşyaları;</li><li>Aile için gerekli olup lüks sayılmayan eşyalar; nafaka olarak bağlanmış paralar.</li></ul>
     <div class="callout"><p><strong>Aynı işlevi gören eşyanın ‘lüks’ olanı haczedilebilir</strong></p>
     <p>Kural şudur: bir ihtiyacı karşılayan eşyanın sıradan/mütevazı olanı haczedilemez. Ancak aynı işlevi gören birden fazla eşya varsa ya da eşya lüks/kıymetli sayılıyorsa, haczedilip yerine daha mütevazısı bırakılabilir. Örneğin bir televizyon haczedilmezken, evde birden çok kıymetli eşyanın fazlası haczedilebilir.</p></div>
-    <h2>Haczedilemeyen gelirler: maaş, emekli maaşı, nafaka</h2>
+    <h2 id="haczedilemeyen-gelirler-maas-emekli-maasi-nafaka">Haczedilemeyen gelirler: maaş, emekli maaşı, nafaka</h2>
     <p>Eşyalar kadar önemli olan bir konu da gelirlerdir. Burada maaş ve emekli maaşı için özel koruma vardır:</p>
     <div style="overflow-x:auto">
     <table class="data">
@@ -223,22 +244,22 @@
     <div class="callout"><p><strong>İlgili mevzuat — İİK m.83 (Kısmen haczi caiz olan şeyler)</strong></p>
     <p>“Maaşlar, tahsisat ve her nevi ücretler, intifa hakları ve hasılatı, ilama müstenit olmayan nafakalar, tekaüt maaşları, sigortalar veya tekaüt sandıkları tarafından tahsis edilen iratlar, borçlu ve ailesinin geçinmeleri için icra müdürünce lüzumlu olarak takdir edilen miktar tenzil edildikten sonra haczolunabilir. Ancak haczolunacak miktar bunların dörtte birinden az olamaz. Birden fazla haciz varsa sıraya konur…”</p></div>
     <p>Maaş haczinde “dörtte bir” sınırı, kişinin ve ailesinin asgari geçimini korur. Bir istisna vardır: nafaka alacakları için maaşın dörtte birini aşan kısım da haczedilebilir. Konunun ayrıntısı için sitemizdeki “Maaş Haczi Nasıl Kaldırılır?” rehberine bakabilirsiniz.</p>
-    <h2>Haczedilemez bir mal/gelir haczedilirse ne yapmalı?</h2>
+    <h2 id="haczedilemez-bir-mal-gelir-haczedilirse-ne-yapmali">Haczedilemez bir mal/gelir haczedilirse ne yapmalı?</h2>
     <p>Haciz sırasında kanunen dokunulamayacak bir eşya ya da gelir haczedilirse, bunu düzeltmenin yolu şikâyettir:</p>
     <ol><li>Haczedilen malın/gelirin haczedilemez olduğunu belirleyin (ev eşyası, maaşın dörtte biri aşan kısmı, emekli maaşı vb.).</li><li>Öğrendiğiniz tarihten itibaren süresi içinde icra (hukuk) mahkemesine ‘haczedilmezlik şikâyeti’ yapın.</li><li>Gerekli belgeleri (maaş bordrosu, hesabın maaş hesabı olduğu yazısı, eşyanın niteliği vb.) sunun.</li></ol>
     <div class="callout"><p><strong>Maaşta ‘dörtte bir’ şikâyetinde süre işlemez</strong></p>
     <p>Maaşın dörtte birini aşan kısmın haczi gibi, kişinin geçimini doğrudan ilgilendiren hâllerde yerleşik uygulamaya göre şikâyet süreye bağlı değildir; yani gecikseniz bile hakkınızı arayabilirsiniz. Yine de vakit kaybetmeden başvurmak lehinizedir.</p></div>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>“Her şeyimi alırlar” paniğiyle hareket etmek: </strong>Temel ev eşyalarının çoğu zaten haczedilemez.</li><li><strong>Maaş hesabını belgelememek: </strong>Dörtte bir korumasından yararlanmak için hesabın maaş hesabı olduğunu ispat gerekir.</li><li><strong>Emekli maaşında peşin muvafakate güvenmek: </strong>Kredi sırasında önceden verilen muvafakat çoğu zaman koruma sağlamaz.</li><li><strong>Şikâyet yolunu kullanmamak: </strong>Haczedilemez mal haczedildiyse icra mahkemesine şikâyet edin.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Hangi malın/gelirin haczedildiğini ve haczedilemez olup olmadığını belirledim.</li><li>Maaş/emekli hesabıysa bunu belgeleyecek evrakı hazırladım.</li><li>Gerekliyse icra mahkemesine haczedilmezlik şikâyeti yaptım.</li><li>Emin olmadığım noktada avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Evime gelip buzdolabı, çamaşır makinesi alırlar mı? </strong>Kural olarak hayır. Ailenin temel ihtiyacını karşılayan ev eşyaları haczedilemez.</p>
     <p><strong>Maaşımın tamamı haczedilebilir mi? </strong>Hayır. Çalışan maaşının en fazla dörtte biri haczedilir; nafaka alacakları bunun istisnasıdır.</p>
     <p><strong>Emekli maaşıma haciz gelir mi? </strong>Kural olarak hayır; istisnaları nafaka ve SGK alacaklarıdır.</p>
     <p><strong>Haczedilemez bir eşyam haczedildi, ne yaparım? </strong>İcra (hukuk) mahkemesine haczedilmezlik şikâyetinde bulunun; belgelerinizle destekleyin.</p>
     <p><strong>Kirada oturuyorum, ev sahibinin eşyaları haczedilir mi? </strong>Haciz borçlunun malları için yapılır. Başkasına ait mal haczedilmişse istihkak iddiasıyla itiraz edilebilir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Eve haciz, çoğu kişinin korktuğu kadar yıkıcı değildir; kanun, temel ev eşyalarını ve geçim gelirlerini koruma altına alır. Önemli olan, neyin haczedilebilir neyin haczedilemez olduğunu bilmek ve haksız bir hacizde şikâyet yolunu zamanında kullanmaktır. Tereddüt ettiğiniz noktada bir avukattan destek almak, hem eşyanızı hem gelirinizi korur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">

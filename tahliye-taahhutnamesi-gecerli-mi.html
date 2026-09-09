@@ -159,6 +159,14 @@
   .cta{background:var(--ink); color:var(--text-on-ink); border-radius:4px; padding:36px 32px; margin-top:52px; text-align:center;}
   .cta h3{color:var(--text-on-ink); font-size:22px;}
   .cta p{color:var(--text-on-ink-muted); margin:12px 0 22px; font-size:15px;}
+  html{scroll-behavior:smooth;}
+  .prose h2{scroll-margin-top:88px;}
+  .toc{margin:8px 0 30px; padding:18px 22px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:3px;}
+  .toc-baslik{margin:0 0 10px; font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:17px; color:var(--text);}
+  .toc ol{margin:0; padding-left:22px; display:grid; gap:6px;}
+  .toc li{font-size:15px; line-height:1.5;}
+  .toc a{color:var(--bronze-deep); text-decoration:none;}
+  .toc a:hover{text-decoration:underline; text-underline-offset:2px;}
   .related{margin-top:48px; padding-top:24px; border-top:1px solid var(--paper-line);}
   .related h2{font-size:20px; border:0; padding:0; margin:0 0 14px;}
   .related ul{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
@@ -199,19 +207,33 @@
   </div>
 
   <div class="wrap prose">
+    <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#tahliye-taahhutnamesi-nedir">Tahliye taahhütnamesi nedir?</a></li>
+      <li><a href="#gecerlilik-sartlari-dordu-birlikte-gerekir">Geçerlilik şartları (dördü birlikte gerekir)</a></li>
+      <li><a href="#kacirilmamasi-gereken-sure-1-ay-tbk-m-352-1">Kaçırılmaması gereken süre: 1 ay (TBK m.352/1)</a></li>
+      <li><a href="#nasil-uygulanir-iki-yol">Nasıl uygulanır? İki yol</a></li>
+      <li><a href="#kiraci-taahhutnameye-karsi-ne-yapabilir">Kiracı taahhütnameye karşı ne yapabilir?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
     <p>Kira sözleşmesi yapılırken ev sahibi çoğu zaman bir de “tahliye taahhütnamesi” imzalatır. Kiracı için bu belge “ne zaman çıkarılırım” endişesi, ev sahibi için ise “evi zamanında geri alabilir miyim” güvencesidir. Ancak bu belgenin geçerli olması sıkı şartlara bağlıdır; şartları taşımayan bir taahhüt kâğıt üzerinde kalır.</p>
     <p>Bu rehberde tahliye taahhütnamesinin ne olduğunu, hangi hâllerde geçerli sayıldığını, uygulanınca ne olduğunu ve kaçırılmaması gereken 1 aylık süreyi hem ev sahibi hem kiracı gözünden anlatıyoruz.</p>
-    <h2>Tahliye taahhütnamesi nedir?</h2>
+    <h2 id="tahliye-taahhutnamesi-nedir">Tahliye taahhütnamesi nedir?</h2>
     <p>Tahliye taahhütnamesi, kiracının kiralananı belirli bir tarihte boşaltacağını yazılı olarak üstlendiği belgedir (TBK m.352/1). Kiracı taahhüt ettiği tarihte çıkmazsa, ev sahibi bu belgeye dayanarak kiracıyı tahliye ettirebilir. Yani ev sahibine, dava sürecini kısaltan güçlü bir imkân sağlar.</p>
-    <h2>Geçerlilik şartları (dördü birlikte gerekir)</h2>
+    <h2 id="gecerlilik-sartlari-dordu-birlikte-gerekir">Geçerlilik şartları (dördü birlikte gerekir)</h2>
     <ul><li><strong>Yazılı olmalı: </strong>Sözlü taahhüt geçersizdir. (Noterde düzenlenmesi zorunlu değildir; ancak noter, ispat gücünü artırır.)</li><li><strong>Teslimden sonraki bir tarihte düzenlenmeli: </strong>Taahhüt, kiralananın kiracıya tesliminden SONRA verilmiş olmalıdır. Sözleşmeyle aynı anda/önce alınan taahhüt geçersiz sayılır.</li><li><strong>Kiracı (veya temsilcisi) imzalamalı: </strong>Taahhüt bizzat kiracı ya da yetkili temsilcisi tarafından imzalanmalıdır.</li><li><strong>Tahliye tarihi belli olmalı: </strong>Boşaltma tarihi açık ve belirli olmalıdır.</li></ul>
     <div class="callout"><p><strong>En kritik nokta: “teslimden sonra” tarih</strong></p>
     <p>Uygulamada taahhütnamelerin en sık geçersiz sayılma sebebi, kira sözleşmesiyle aynı anda (ev tutulurken) imzalatılmasıdır. Kanun, kiracıyı korumak için taahhüdün ‘teslimden sonra’ verilmesini arar. Boş (tarihsiz) imzalatılıp sonradan doldurulan taahhütler de ciddi tartışma yaratır. Ev sahibi için doğru yol: taahhüdü teslimden sonra, tarihli ve eksiksiz almak.</p></div>
     <div class="callout"><p><strong>İlgili mevzuat — TBK m.352/1 (Kiracıdan kaynaklanan sebeplerle tahliye)</strong></p>
     <p>“Kiracı, kiralananın teslim edilmesinden sonra, kiraya verene karşı, kiralananı belli bir tarihte boşaltmayı yazılı olarak üstlendiği hâlde boşaltmamışsa kiraya veren, kira sözleşmesini bu tarihten başlayarak bir ay içinde icraya başvurmak veya dava açmak suretiyle sona erdirebilir.”</p></div>
-    <h2>Kaçırılmaması gereken süre: 1 ay (TBK m.352/1)</h2>
+    <h2 id="kacirilmamasi-gereken-sure-1-ay-tbk-m-352-1">Kaçırılmaması gereken süre: 1 ay (TBK m.352/1)</h2>
     <p>Kiracı taahhüt ettiği tarihte evi boşaltmazsa, ev sahibi bu tarihten başlayarak bir ay içinde harekete geçmelidir: ya icra takibi başlatmalı (icra yoluyla tahliye) ya da tahliye davası açmalıdır. Bu bir aylık süre uygulamada hak düşürücü kabul edilir; süre kaçarsa, geçerli bir taahhüt olsa bile o dönem için tahliye hakkı kullanılamaz hale gelebilir.</p>
-    <h2>Nasıl uygulanır? İki yol</h2>
+    <h2 id="nasil-uygulanir-iki-yol">Nasıl uygulanır? İki yol</h2>
     <div style="overflow-x:auto">
     <table class="data">
       <thead><tr><th>Yol</th><th>Nasıl işler?</th></tr></thead>
@@ -221,19 +243,19 @@
       </tbody>
     </table>
     </div>
-    <h2>Kiracı taahhütnameye karşı ne yapabilir?</h2>
+    <h2 id="kiraci-taahhutnameye-karsi-ne-yapabilir">Kiracı taahhütnameye karşı ne yapabilir?</h2>
     <p>Kiracı, taahhüdün geçerlilik şartlarını taşımadığını ileri sürebilir. En sık kullanılan savunmalar: taahhüdün kira sözleşmesiyle aynı anda (teslimden önce) alınmış olması, imzanın veya iradenin sakatlığı (baskı/hile), tarihin sonradan doldurulduğu iddiası ya da ev sahibinin 1 aylık süreyi kaçırmış olması. Bu savunmalar teknik olduğundan, tahliye baskısıyla karşılaşan kiracının bir avukata danışması önemlidir.</p>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul><li><strong>Sözleşmeyle birlikte taahhüt almak (ev sahibi): </strong>Teslimden önce alınan taahhüt geçersiz sayılabilir.</li><li><strong>1 aylık süreyi kaçırmak (ev sahibi): </strong>Süre geçince o dönem için tahliye hakkı kullanılamayabilir.</li><li><strong>Boş/tarihsiz belge imzalamak (kiracı): </strong>Sonradan doldurulabilir; imzaladığınız belgenin tam ve tarihli olmasına dikkat edin.</li><li><strong>Taahhüdü ‘nasılsa geçersiz’ sayıp oturmaya devam etmek (kiracı): </strong>Geçerli çıkarsa hızla tahliye edilebilirsiniz; durumu önceden değerlendirin.</li></ul>
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul class="checklist"><li>Taahhüt yazılı mı, kiracı imzalı mı, tahliye tarihi belli mi kontrol ettim.</li><li>Taahhüt teslimden sonraki bir tarihte mi düzenlenmiş, teyit ettim.</li><li>(Ev sahibi) Tahliye tarihinden itibaren 1 aylık süreyi takip ediyorum.</li><li>(Kiracı) Geçerlilik şartlarını ve savunma imkânlarımı değerlendirdim.</li><li>Emin olmadığım noktada avukata danıştım.</li></ul>
-    <h2>Sık Sorulan Sorular</h2>
+    <h2 id="sik-sorulan-sorular">Sık Sorulan Sorular</h2>
     <p><strong>Tahliye taahhütnamesi noterden mi olmalı? </strong>Zorunlu değildir; yazılı olması yeterlidir. Ancak noter onayı ispat ve ‘tarih’ tartışmalarını büyük ölçüde önler.</p>
     <p><strong>Sözleşmeyle birlikte imzaladığım taahhüt geçerli mi? </strong>Kural olarak hayır. Taahhüt, kiralananın tesliminden sonraki bir tarihte verilmiş olmalıdır.</p>
     <p><strong>Ev sahibi süreyi kaçırırsa ne olur? </strong>Tahliye tarihinden itibaren 1 ay içinde icra/dava açılmazsa, o dönem için taahhüde dayalı tahliye hakkı kullanılamayabilir.</p>
     <p><strong>Taahhüt varsa kiracı kesin çıkar mı? </strong>Taahhüt geçerliyse tahliye güçlü ihtimaldir; ancak şartları taşımıyorsa kiracı geçersizliğini ileri sürebilir.</p>
     <p><strong>İcra mı dava mı daha hızlı? </strong>Genellikle icra yoluyla tahliye daha hızlıdır; ancak somut duruma göre değerlendirilmelidir.</p>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Tahliye taahhütnamesi, ev sahibi için güçlü ama şartlara sıkı biçimde bağlı bir araçtır; kiracı için ise geçerlilik şartlarını bilmek büyük fark yaratır. ‘Teslimden sonra tarih’ ve ‘1 aylık süre’ bu belgenin iki can alıcı noktasıdır. İster taahhüt alın ister imzalayın, belgeyi hukuka uygun düzenlemek/değerlendirmek için bir avukattan destek almak en güvenli yoldur.</p>
     <div class="callout"><p style="font-style:italic"><strong>Yasal uyarı:</strong> Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık yerine geçmez. Her dosyanın kendine özgü koşulları vardır.</p></div>
     <div class="cta">
