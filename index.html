@@ -327,6 +327,13 @@
   /* articles */
   .articles-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;}
   .articles-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:40px;}
+  .tevkil-band{background:var(--ink); color:var(--text-on-ink); padding-block:44px;}
+  .tevkil-band .eyebrow{color:var(--bronze);}
+  .tevkil-band h2{color:var(--text-on-ink); font-size:clamp(22px,3vw,30px); margin-top:10px; line-height:1.2;}
+  .tevkil-desc{color:var(--text-on-ink-muted); margin-top:14px; max-width:60ch; font-size:15.5px; line-height:1.7;}
+  .tevkil-inner{display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;}
+  .tevkil-inner .btn{flex:none;}
+  @media (max-width:720px){ .tevkil-inner{flex-direction:column; align-items:flex-start;} }
   .article-card{border-top:1px solid var(--paper-line); padding-top:20px;}
   .article-card .eyebrow{display:flex; gap:10px; align-items:center;}
   .article-card .eyebrow .dot{width:4px;height:4px;background:var(--bronze-deep);border-radius:50%;}
@@ -666,6 +673,19 @@
         <h3>Bölgesel Bilgi</h3>
         <p>Denizli'nin tekstil ve sanayi ağırlıklı ticari yapısını, gayrimenkul piyasasını ve yerel uygulamaları yakından takip ediyoruz.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="tevkil-band" aria-label="Meslektaşlara tevkil hizmeti">
+  <div class="wrap">
+    <div class="tevkil-inner">
+      <div>
+        <p class="eyebrow">Meslektaşlara Hizmet</p>
+        <h2>Denizli'de tevkil: duruşma, keşif ve icra takibi.</h2>
+        <p class="tevkil-desc">Başka ildeki bir dosyanız Denizli'de mi görülüyor? Duruşma, keşif, icra işlemleri, dosya inceleme ve tebligat için meslektaşlarımıza tevkil hizmeti veriyoruz. e-Tevkil (UYAP) ile hızlı süreç, aynı gün geri bildirim.</p>
+      </div>
+      <a class="btn btn-primary" href="denizli-tevkil-avukati.html">Tevkil Hizmeti Detayları</a>
     </div>
   </div>
 </section>
