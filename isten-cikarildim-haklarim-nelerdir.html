@@ -181,6 +181,32 @@
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
+  .toc-rail{display:none;}
+  @media (min-width:1400px){
+    .toc{display:none;}
+    .toc-rail{display:block; position:fixed; top:110px; left:28px; width:250px; max-height:78vh; overflow:auto; z-index:15; padding:16px 18px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+    .toc-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 12px; color:var(--text);}
+    .toc-rail ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:t;}
+    .toc-rail li{counter-increment:t; font-size:13px; line-height:1.35;}
+    .toc-rail a{color:var(--text-muted); text-decoration:none; display:block; padding-left:20px; position:relative;}
+    .toc-rail a::before{content:counter(t); position:absolute; left:0; top:0; color:var(--bronze-deep); font-weight:600; font-size:11px;}
+    .toc-rail a:hover{color:var(--text);}
+    .toc-rail a.active{color:var(--bronze-deep); font-weight:600;}
+  }
+  .side-rail{display:none;}
+  @media (min-width:1400px){
+    .side-rail{display:block; position:fixed; top:110px; right:28px; width:250px; z-index:15;}
+    .side-rail .box{background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px; padding:16px 18px; margin-bottom:16px;}
+    .side-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 10px; color:var(--text);}
+    .side-rail ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+    .side-rail a{font-size:13.5px; color:var(--bronze-deep); text-decoration:none; line-height:1.4;}
+    .side-rail a:hover{text-decoration:underline; text-underline-offset:2px;}
+    .side-rail .cta-box{background:var(--ink); border-left-color:var(--bronze);}
+    .side-rail .cta-box h4{color:var(--text-on-ink);}
+    .side-rail .cta-box p{font-size:13px; color:var(--text-on-ink-muted); margin:0 0 12px; line-height:1.5;}
+    .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
+    .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
+  }
 </style>
 <script>/* Yenilemede basa don, geri/ileri konumu koru */(function(){try{if("scrollRestoration" in history){var n=performance.getEntriesByType("navigation");history.scrollRestoration=(n&&n[0]&&n[0].type==="reload")?"manual":"auto";}}catch(e){}})();</script>
 </head>
@@ -289,6 +315,57 @@
   </div>
 </article>
 
+<nav class="toc-rail" aria-label="İçindekiler">
+  <h4>İçindekiler</h4>
+  <ol>
+      <li><a href="#once-en-kritik-ayrim-nasil-cikarildiniz">Önce en kritik ayrım: nasıl çıkarıldınız?</a></li>
+      <li><a href="#1-kidem-tazminati">1) Kıdem tazminatı</a></li>
+      <li><a href="#2-ihbar-tazminati">2) İhbar tazminatı</a></li>
+      <li><a href="#3-ise-iade-davasi">3) İşe iade davası</a></li>
+      <li><a href="#4-kullanilmayan-yillik-izin-ucreti">4) Kullanılmayan yıllık izin ücreti</a></li>
+      <li><a href="#5-issizlik-maasi-iskur">5) İşsizlik maaşı (İŞKUR)</a></li>
+      <li><a href="#6-fazla-mesai-ve-diger-alacaklar">6) Fazla mesai ve diğer alacaklar</a></li>
+      <li><a href="#ne-yapmaliyim-surec">Ne yapmalıyım? Süreç</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular">Sık Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+</nav>
+
+<aside class="side-rail" aria-label="İlgili içerikler">
+  <div class="box">
+    <h4>İlgili İçerikler</h4>
+    <ul>
+      <li><a href="arac-haczi-nasil-kaldirilir.html">Araç Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="maas-haczi-nasil-kaldirilir.html">Maaş Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="icra-takibi-geldi-ne-yapmaliyim.html">İcra Takibi Geldi, Ne Yapmalıyım?</a></li>
+      <li><a href="makaleler.html">Tüm Rehberler &rarr;</a></li>
+    </ul>
+  </div>
+  <div class="box cta-box">
+    <h4>Hukuki destek</h4>
+    <p>Denizli'de durumunuzu birlikte değerlendirelim.</p>
+    <a class="btn" href="index.html#iletisim">Ön Görüşme</a>
+  </div>
+</aside>
+
+<script>
+/* Sol İçindekiler rayı: aktif bölümü vurgula (scrollspy) */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc-rail a'));
+  if(!links.length){ return; }
+  var map=links.map(function(a){ var el=document.getElementById(a.getAttribute('href').slice(1)); return {a:a, el:el}; }).filter(function(x){ return x.el; });
+  function onScroll(){
+    var y=window.scrollY+120, cur=map[0];
+    for(var i=0;i<map.length;i++){ if(map[i].el.offsetTop<=y){ cur=map[i]; } }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(cur){ cur.a.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-word">KORKMAZ <span>HUKUK</span></div>
