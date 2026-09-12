@@ -133,6 +133,32 @@
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
+  .toc-rail{display:none;}
+  @media (min-width:1400px){
+    .toc{display:none;}
+    .toc-rail{display:block; position:fixed; top:110px; left:28px; width:250px; max-height:78vh; overflow:auto; z-index:15; padding:16px 18px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+    .toc-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 12px; color:var(--text);}
+    .toc-rail ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:t;}
+    .toc-rail li{counter-increment:t; font-size:13px; line-height:1.35;}
+    .toc-rail a{color:var(--text-muted); text-decoration:none; display:block; padding-left:20px; position:relative;}
+    .toc-rail a::before{content:counter(t); position:absolute; left:0; top:0; color:var(--bronze-deep); font-weight:600; font-size:11px;}
+    .toc-rail a:hover{color:var(--text);}
+    .toc-rail a.active{color:var(--bronze-deep); font-weight:600;}
+  }
+  .side-rail{display:none;}
+  @media (min-width:1400px){
+    .side-rail{display:block; position:fixed; top:110px; right:28px; width:250px; z-index:15;}
+    .side-rail .box{background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px; padding:16px 18px; margin-bottom:16px;}
+    .side-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 10px; color:var(--text);}
+    .side-rail ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+    .side-rail a{font-size:13.5px; color:var(--bronze-deep); text-decoration:none; line-height:1.4;}
+    .side-rail a:hover{text-decoration:underline; text-underline-offset:2px;}
+    .side-rail .cta-box{background:var(--ink); border-left-color:var(--bronze);}
+    .side-rail .cta-box h4{color:var(--text-on-ink);}
+    .side-rail .cta-box p{font-size:13px; color:var(--text-on-ink-muted); margin:0 0 12px; line-height:1.5;}
+    .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
+    .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -200,10 +226,25 @@
   </div>
 
   <div class="wrap prose">
-    <h2>Araç haczi tam olarak ne demek?</h2>
+  <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#arac-haczi-tam-olarak-ne-demek">Araç haczi tam olarak ne demek?</a></li>
+      <li><a href="#30-saniyede-durumunuzu-anlayin-3-tur-haciz">30 saniyede durumunuzu anlayın: 3 tür haciz</a></li>
+      <li><a href="#aracimda-haciz-var-mi-e-devletten-1-dakikada-kontrol">Aracımda haciz var mı? e-Devlet’ten 1 dakikada kontrol</a></li>
+      <li><a href="#haczi-kaldirmanin-5-yolu">Haczi kaldırmanın 5 yolu</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
+
+    
+    <h2 id="arac-haczi-tam-olarak-ne-demek">Araç haczi tam olarak ne demek?</h2>
     <p>Kısaca: bir borcunuz yüzünden alacaklı taraf, icra dairesi aracılığıyla aracınızın kaydına &ldquo;bu araç borç nedeniyle bloke&rdquo; notu düşürür. Bu not, trafik/EGM kayıtlarında tutulur. Amaç, siz borcu ödeyene kadar aracı elden çıkarmanızı engellemek, gerekirse sattırarak alacağı tahsil etmektir. Ama her haciz aynı değildir; hangi türle karşı karşıya olduğunuzu bilmek ne yapmanız gerektiğini de belirler.</p>
 
-    <h2>30 saniyede durumunuzu anlayın: 3 tür haciz</h2>
+    <h2 id="30-saniyede-durumunuzu-anlayin-3-tur-haciz">30 saniyede durumunuzu anlayın: 3 tür haciz</h2>
     <p>Aşağıdaki tabloda kendi durumunuzu bulun. Çoğu kişide en hafifi olan &ldquo;kayden haciz&rdquo; vardır.</p>
     <div style="overflow-x:auto">
     <table style="width:100%;border-collapse:collapse;margin:16px 0">
@@ -240,7 +281,7 @@
     </table>
     </div>
 
-    <h2>Aracımda haciz var mı? e-Devlet’ten 1 dakikada kontrol</h2>
+    <h2 id="aracimda-haciz-var-mi-e-devletten-1-dakikada-kontrol">Aracımda haciz var mı? e-Devlet’ten 1 dakikada kontrol</h2>
     <ol>
       <li>e-Devlet&rsquo;e (turkiye.gov.tr) TC kimlik ve şifrenizle girin.</li>
       <li>Arama kutusuna &ldquo;araç plakasına kayıtlı&rdquo; veya &ldquo;EGM araç &hellip; sorgulama&rdquo; yazın; araç/rehin-haciz sorgulama hizmetini açın.</li>
@@ -248,7 +289,7 @@
     </ol>
     <div class="callout"><p><strong>İpucu:</strong> Haczi koyan icra dairesini ve dosya numarasını mutlaka not alın; kaldırma işlemi için bunlar şarttır. Birden fazla dosya olabilir — hepsini not edin.</p></div>
 
-    <h2>Haczi kaldırmanın 5 yolu</h2>
+    <h2 id="haczi-kaldirmanin-5-yolu">Haczi kaldırmanın 5 yolu</h2>
     <p>Durumunuza göre izlenecek yol değişir. En yaygını borcu ödeyip &ldquo;fek&rdquo; (kaldırma) istemektir.</p>
 
     <h3>1) Borcu ödeyin — ama iş orada bitmiyor: fek isteyin</h3>
@@ -269,7 +310,7 @@
 
     <div class="callout"><p><strong>&ldquo;Ödedim ama haciz hâlâ duruyor!&rdquo; — Neden?</strong><br>En sık yaşanan kafa karışıklığı budur. Ödeme borcu bitirir ama kaydı otomatik temizlemez. Mutlaka icra dosyasından fek talep edin ve trafiğe müzekkere yazılmasını takip edin. Bazen müzekkere yazılır ama EGM&rsquo;ye işlemesi 1&ndash;2 gün gecikebilir; e-Devlet&rsquo;ten tekrar kontrol edin.</p></div>
 
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul>
       <li><strong>Borcu ödeyip fek istememek</strong> — haciz kayıtta olduğu gibi kalır.</li>
       <li><strong>Yanlış icra dosyasına ödeme yapmak</strong> — birden fazla dosya olabilir.</li>
@@ -278,7 +319,7 @@
       <li><strong>Dekont ve dosya numarası gibi belgeleri saklamamak.</strong></li>
     </ul>
 
-    <h2>Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
+    <h2 id="hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</h2>
     <ul>
       <li>e-Devlet&rsquo;ten haczi ve icra dosyasını tespit edin.</li>
       <li>Haciz türünü belirleyin (kayden / yakalama / fiili).</li>
@@ -289,7 +330,7 @@
       <li>İtiraz, istihkak veya zamanaşımı gibi bir durum varsa avukata danışın.</li>
     </ul>
 
-    <h2>Sık Sorulan Sorular (SSS)</h2>
+    <h2 id="sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</h2>
     <h3>Araç haczi arabayı kullanmama engel mi?</h3>
     <p>Kayden hacizde hayır, kullanabilirsiniz; yalnızca satış/devir yapamazsınız. Yakalama şerhi veya fiili hacizde ise kullanmayın — araç yolda çekilebilir.</p>
     <h3>Hacizli araç satılır mı?</h3>
@@ -303,7 +344,7 @@
     <h3>Araç haczini kaldırmak için avukat şart mı?</h3>
     <p>Basit ödeme + fek işini çoğu kişi kendi yapabilir. Ama itiraz, istihkak, zamanaşımı veya birden fazla dosya varsa bir avukatla ilerlemek daha güvenlidir.</p>
 
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Araç haczi, doğru adımlar izlendiğinde çoğu zaman hızlı çözülen bir konudur. Önce haczin türünü ve dosyayı tespit edin, borç doğruysa ödeyip fek isteyin, doğru değilse itiraz edin. Emin olamadığınız noktada bir avukattan destek almak, hem zaman hem para kaybını önler.</p>
 
     <div class="cta">
@@ -312,8 +353,67 @@
       <a class="btn btn-primary" href="index.html#iletisim">Ön Görüşme Talep Edin</a>
     </div>
   </div>
+  <div class="wrap">
+    <div class="related">
+      <h2 id="ilgili-rehberler">İlgili Rehberler</h2>
+      <ul>
+      <li><a class="inline" href="maas-haczi-nasil-kaldirilir.html">Maaş Haczi Nasıl Kaldırılır?</a></li>
+      <li><a class="inline" href="banka-hesabi-haczi-nasil-kaldirilir.html">Banka Hesabı Haczi Nasıl Kaldırılır?</a></li>
+      <li><a class="inline" href="haczedilemeyen-mallar-evime-haciz.html">Haczedilemeyen Mallar — Evime Haciz</a></li>
+      <li><a class="inline" href="icra-takibi-geldi-ne-yapmaliyim.html">İcra Takibi Geldi, Ne Yapmalıyım?</a></li>
+      </ul>
+    </div>
+  </div>
 </article>
 
+<nav class="toc-rail" aria-label="İçindekiler">
+  <h4>İçindekiler</h4>
+  <ol>
+      <li><a href="#arac-haczi-tam-olarak-ne-demek">Araç haczi tam olarak ne demek?</a></li>
+      <li><a href="#30-saniyede-durumunuzu-anlayin-3-tur-haciz">30 saniyede durumunuzu anlayın: 3 tür haciz</a></li>
+      <li><a href="#aracimda-haciz-var-mi-e-devletten-1-dakikada-kontrol">Aracımda haciz var mı? e-Devlet’ten 1 dakikada kontrol</a></li>
+      <li><a href="#haczi-kaldirmanin-5-yolu">Haczi kaldırmanın 5 yolu</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#hemen-ne-yapmaliyim-kontrol-listesi">Hemen Ne Yapmalıyım? (Kontrol Listesi)</a></li>
+      <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+</nav>
+
+<aside class="side-rail" aria-label="İlgili içerikler">
+  <div class="box">
+    <h4>İlgili İçerikler</h4>
+    <ul>
+      <li><a href="maas-haczi-nasil-kaldirilir.html">Maaş Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="banka-hesabi-haczi-nasil-kaldirilir.html">Banka Hesabı Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="haczedilemeyen-mallar-evime-haciz.html">Haczedilemeyen Mallar — Evime Haciz</a></li>
+      <li><a href="makaleler.html">Tüm Rehberler &rarr;</a></li>
+    </ul>
+  </div>
+  <div class="box cta-box">
+    <h4>Hukuki destek</h4>
+    <p>Denizli'de durumunuzu birlikte değerlendirelim.</p>
+    <a class="btn" href="index.html#iletisim">Ön Görüşme</a>
+  </div>
+</aside>
+
+<script>
+/* Sol İçindekiler rayı: aktif bölümü vurgula (scrollspy) */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc-rail a'));
+  if(!links.length){ return; }
+  var map=links.map(function(a){ var el=document.getElementById(a.getAttribute('href').slice(1)); return {a:a, el:el}; }).filter(function(x){ return x.el; });
+  function onScroll(){
+    var y=window.scrollY+120, cur=map[0];
+    for(var i=0;i<map.length;i++){ if(map[i].el.offsetTop<=y){ cur=map[i]; } }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(cur){ cur.a.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-word">KORKMAZ <span>HUKUK</span></div>

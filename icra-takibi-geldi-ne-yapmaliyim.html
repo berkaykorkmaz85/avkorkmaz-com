@@ -129,6 +129,32 @@
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
+  .toc-rail{display:none;}
+  @media (min-width:1400px){
+    .toc{display:none;}
+    .toc-rail{display:block; position:fixed; top:110px; left:28px; width:250px; max-height:78vh; overflow:auto; z-index:15; padding:16px 18px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+    .toc-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 12px; color:var(--text);}
+    .toc-rail ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:t;}
+    .toc-rail li{counter-increment:t; font-size:13px; line-height:1.35;}
+    .toc-rail a{color:var(--text-muted); text-decoration:none; display:block; padding-left:20px; position:relative;}
+    .toc-rail a::before{content:counter(t); position:absolute; left:0; top:0; color:var(--bronze-deep); font-weight:600; font-size:11px;}
+    .toc-rail a:hover{color:var(--text);}
+    .toc-rail a.active{color:var(--bronze-deep); font-weight:600;}
+  }
+  .side-rail{display:none;}
+  @media (min-width:1400px){
+    .side-rail{display:block; position:fixed; top:110px; right:28px; width:250px; z-index:15;}
+    .side-rail .box{background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px; padding:16px 18px; margin-bottom:16px;}
+    .side-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 10px; color:var(--text);}
+    .side-rail ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+    .side-rail a{font-size:13.5px; color:var(--bronze-deep); text-decoration:none; line-height:1.4;}
+    .side-rail a:hover{text-decoration:underline; text-underline-offset:2px;}
+    .side-rail .cta-box{background:var(--ink); border-left-color:var(--bronze);}
+    .side-rail .cta-box h4{color:var(--text-on-ink);}
+    .side-rail .cta-box p{font-size:13px; color:var(--text-on-ink-muted); margin:0 0 12px; line-height:1.5;}
+    .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
+    .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -181,13 +207,27 @@
   </div>
 
   <div class="wrap prose">
+  <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#icra-takibi-nedir">İcra Takibi Nedir?</a></li>
+      <li><a href="#odeme-emri-elinize-ulastiginda-ne-anlama-gelir">Ödeme Emri Elinize Ulaştığında Ne Anlama Gelir?</a></li>
+      <li><a href="#kritik-ilk-sure-itiraz-hakki">Kritik İlk Süre: İtiraz Hakkı</a></li>
+      <li><a href="#borcu-kabul-ediyorsaniz-ne-yapabilirsiniz">Borcu Kabul Ediyorsanız Ne Yapabilirsiniz?</a></li>
+      <li><a href="#borcu-kabul-etmiyorsaniz-ne-yapmalisiniz">Borcu Kabul Etmiyorsanız Ne Yapmalısınız?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
+
+    
     <p>Elinize bir icra dairesinden ödeme emri ulaştıysa yalnız değilsiniz — Türkiye genelinde aktif icra takip dosyası sayısı 25 milyonu aşmış durumda ve bu sayı hızla artıyor. Denizli'deki icra dairelerine ait dosya sayısı da bu ulusal artışa paralel şekilde yükseliyor. Bu yazıda ödeme emrinin ne anlama geldiğini, yedi günlük kritik itiraz süresini ve hem borcu kabul eden hem de itiraz etmek isteyen kişilerin izlemesi gereken adımları, hukuk bilmeyen birinin de anlayabileceği şekilde anlatıyoruz.</p>
 
-    <h2>İcra Takibi Nedir?</h2>
+    <h2 id="icra-takibi-nedir">İcra Takibi Nedir?</h2>
     <p>İcra takibi, alacaklının icra dairesine sunduğu bir takip talebiyle başlar. Takip talebini alan icra dairesi, borçluya bu talebe uygun bir ödeme emri gönderir. Ödeme emri; borç miktarını, borcun sebebini ve alacaklının kimliğini bildirirken, borçlunun borcunu ödemesini veya itirazı varsa bunu bildirmesini, aksi takdirde mallarının haczedileceğini ihtar eder.</p>
     <p>Ödeme emri borçluya tebliğ edildikten sonra yedi gün içinde itiraz edilmezse, alacaklının başlattığı icra takibi kesinleşir ve alacaklı borçlunun mallarını haczettirebilir hale gelir. Bu nedenle ödeme emri, icra takibinin temelini oluşturur.</p>
 
-    <h2>Ödeme Emri Elinize Ulaştığında Ne Anlama Gelir?</h2>
+    <h2 id="odeme-emri-elinize-ulastiginda-ne-anlama-gelir">Ödeme Emri Elinize Ulaştığında Ne Anlama Gelir?</h2>
     <p>Alacaklının talebi doğrultusunda geçerli bir takip talebi alan icra dairesi, borçluya ödeme emri göndermek zorundadır. İcra dairesi, ödeme emrini göndermeden önce alacaklı tarafından talep edilen alacağın geçerli olup olmadığını, zamanaşımına uğrayıp uğramadığını veya vadesinin gelip gelmediğini incelemekle yetkili değildir.</p>
     <p>İşte bu nedenle kendisine ödeme emri tebliğ edilen kişinin, öncelikle alacaklının kimliğini, kendisinden talep edilen alacağı ve bu alacağın sebebini incelemesi; eğer böyle bir borcu yoksa yedi gün içinde ödeme emrini gönderen icra dairesine itiraz etmesi gerekir. Aksi takdirde alacaklının başlattığı icra takibi kesinleşir ve borçlu, haciz ile ilerleyen aşamalarda malvarlığına dahil taşınır ve taşınmazların ihale yoluyla satılması riskiyle karşı karşıya kalır.</p>
     <p>Uygulamada sıklıkla, kendisine ödeme emri tebliğ edilen kişiler panik ve korku duygusuyla, borçlu olmasalar bile ödeme emrindeki tutarı ödemektedir. Böyle bir durumda yedi günlük itiraz süresi olduğu unutulmamalıdır.</p>
@@ -198,23 +238,23 @@
     </figure>
     <p>Elinize geçen ödeme emrinde yukarıdaki gibi işaretlenmiş bilgileri dikkatle kontrol etmeniz gerekir: hangi icra dairesinden geldiği, size karşı hangi alacak için ve hangi tutarda takip başlatıldığı, ve bu alacağın hangi belgeye (senet, sözleşme, mahkeme kararı) dayandığı.</p>
 
-    <h2>Kritik İlk Süre: İtiraz Hakkı</h2>
+    <h2 id="kritik-ilk-sure-itiraz-hakki">Kritik İlk Süre: İtiraz Hakkı</h2>
     <p>İtiraz süresi, ödeme emrinin tebliğ edildiği günden itibaren yedi gündür. Örneğin ödeme emri 1 Ocak 2026 Pazartesi günü tebliğ edilen bir kişi, itirazını en geç 8 Ocak 2026 Pazartesi gününe kadar, kendisine ödeme emrini gönderen icra dairesine bildirmelidir.</p>
     <p>Eğer ödeme emrindeki borç bir adi yazılı senede dayanıyorsa ve senedin altındaki imza kendisine ait değilse, borçlu imzaya itiraz ederek takibe itiraz edebilir; buna imzaya itiraz denir. Ayrıca borçlu, borcun tamamına, bir kısmına veya kendisine karşı takip başlatan kişinin bu takibi başlatmaya yetkili olmadığına da itiraz edebilir; buna da borca itiraz denir.</p>
     <p>Kendisine ödeme emri tebliğ edilen kişi yedi günlük süre içinde itiraz etmezse, alacaklının başlattığı takip kesinleşir. Borçlu bu durumda gecikmiş itirazda bulunabilir ya da menfi tespit veya istirdat davası açabilir. Gecikmiş itiraz için, kusuru olmaksızın bir mazeret nedeniyle yedi gün içinde itiraz edememiş olması gerekir — örneğin yataktan kalkamayacak kadar ağır bir hastalık geçirmiş olması gibi.</p>
     <div class="callout"><p>Özetle: ödeme emrini tebliğ alan ve borçlu olmadığını düşünen kişinin yedi gün içinde itiraz etmesi gerekir; aksi takdirde ancak şartları taşıması halinde gecikmiş itirazda bulunabilir veya menfi tespit ile istirdat davalarını açabilir.</p></div>
 
-    <h2>Borcu Kabul Ediyorsanız Ne Yapabilirsiniz?</h2>
+    <h2 id="borcu-kabul-ediyorsaniz-ne-yapabilirsiniz">Borcu Kabul Ediyorsanız Ne Yapabilirsiniz?</h2>
     <p>Ödeme emrini tebliğ alan borçlu, hacizden sonra alacaklının alacağını karşılamaya yetecek malvarlığı haczedilmişse, satıştan önce düzenli taksitlerle ödemeyi taahhüt edip ilk taksidi derhal öderse icra takibi durur. Her taksidin borcun dörtte birinden aşağı olmaması, aydan aya ödenmesi ve toplam sürenin üç ayı geçmemesi şarttır.</p>
     <p>Ayrıca alacaklı ile borçlu, borcun vadelere bağlandığı bir sözleşme yaparak da anlaşabilir. Bu sözleşme gereğince borç vaktinde yerine getirilmezse, alacaklının şikayeti üzerine borçluya 3 aya kadar tazyik (zorlama) hapsi verilebilir. Bu hapis bir disiplin hapsidir, ceza hukuku anlamında bir suç cezası değildir. Örneğin hakkında HAGB (hükmün açıklanmasının geri bırakılması) kararı verilmiş bir kişi, alacaklıya verdiği taahhüdü ihlal etmesi nedeniyle 2 ay tazyik hapsi alırsa, bu durum HAGB kararını bozmaz.</p>
 
-    <h2>Borcu Kabul Etmiyorsanız Ne Yapmalısınız?</h2>
+    <h2 id="borcu-kabul-etmiyorsaniz-ne-yapmalisiniz">Borcu Kabul Etmiyorsanız Ne Yapmalısınız?</h2>
     <p>Tarafınıza gönderilen ödeme emrindeki borcu kabul etmiyorsanız, en kısa sürede bir avukata başvurup itiraz sürecini ivedilikle başlatmalısınız. Aksi takdirde, yukarıda değindiğimiz gibi dava açmak zorunda kalabilirsiniz. Ülkemizde yargılamaların uzun sürmesi, dava açılırken harç ve giderlerin davacı üzerinde olması ve itiraz süresinin bir hafta gibi kısa olması nedeniyle, itiraz sürecinin ertelenmemesi gerekir.</p>
     <p>Avukatınız aracılığıyla ya da kendi yapacağınız bir itirazla takip durur. Bu durumda alacaklının, itirazın kaldırılmasını veya itirazın iptalini dava yoluyla talep etmesi gerekir. İtirazın kaldırılması davası İcra Hukuk Mahkemesinde açılır; dava alacaklı lehine sonuçlanırsa icra takibine kaldığı yerden devam edilir, borçlu lehine sonuçlanırsa takip durmaya devam eder. İcra Hukuk Mahkemesi kararları maddi anlamda kesin hüküm niteliği taşımadığından — yani alacağın olup olmadığı veya miktarı hakkında detaylı bir inceleme yapılmadığından — alacaklının genel mahkemelerde tekrar dava açma hakkı bulunur.</p>
     <p>Alacaklı ayrıca doğrudan genel mahkemelerde itirazın iptali davası da açabilir. Dava sonunda itirazın iptaline karar verilirse icra takibine kaldığı yerden devam edilir. Ancak dava borçlu lehine sonuçlanır ve bu karar kanun yollarından da onanırsa, karar artık kesindir ve aynı takibe dayalı yeni bir dava açılamaz.</p>
     <p>Görüleceği üzere ödeme emrine itiraz, icra takibinin en temel ve en başlangıç noktalarından biridir. Bu süreçte bir <a class="inline" href="index.html#alanlar">icra ve iflas hukuku</a> alanında deneyimli bir avukattan destek almak, sürecin en iyi şekilde yönetilmesini sağlar.</p>
 
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul>
       <li>Ödeme emrini tebliğ alan kişi, malvarlığının hemen haczedileceği ve satılacağı düşüncesiyle, borçlu olmasa bile ivedilikle borcu ödeme eğilimi gösterebilir.</li>
       <li>Borçlu olmadığını düşünen bir tacir ödeme emrine itiraz eder, ancak sonraki yargılamada ticari defterleri incelendiğinde aslında borçlu olduğu ortaya çıkabilir.</li>
@@ -222,7 +262,7 @@
     </ul>
     <p>İcra takibinin temeli olması nedeniyle, ileride daha büyük hak kayıplarına uğramamak için bu sürecin bir avukat tarafından yönetilmesini veya en azından bu konuda danışmanlık alınmasını tavsiye ederiz.</p>
 
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Ödeme emrinin elinize geçmesiyle karşılaşabileceklerinizi, itiraz sürecini ve istisnai durumları, hukuk bilmeyen birinin de anlayabileceği şekilde anlatmaya çalıştık. İcra takibi aslında Denizli dahil ülke genelinde oldukça sık karşılaşılan bir durum — ama hayatında ilk kez karşılaşan biri için can sıkıcı olabilir. Bu konuyu tek başınıza dert etmek yerine, bizimle iletişime geçip ön görüşme talep edebilirsiniz.</p>
 
     <div class="cta">
@@ -231,8 +271,66 @@
       <a class="btn btn-primary" href="index.html#iletisim">Ön Görüşme Talep Edin</a>
     </div>
   </div>
+  <div class="wrap">
+    <div class="related">
+      <h2 id="ilgili-rehberler">İlgili Rehberler</h2>
+      <ul>
+      <li><a class="inline" href="itirazin-iptali-davasi.html">İtirazın İptali Davası Nedir?</a></li>
+      <li><a class="inline" href="itirazin-kaldirilmasi-nedir.html">İtirazın Kaldırılması Nedir?</a></li>
+      <li><a class="inline" href="hakkimda-icra-takibi-var-mi.html">Hakkımda İcra Takibi Var mı?</a></li>
+      <li><a class="inline" href="menfi-tespit-davasi-nedir.html">Menfi Tespit Davası Nedir?</a></li>
+      </ul>
+    </div>
+  </div>
 </article>
 
+<nav class="toc-rail" aria-label="İçindekiler">
+  <h4>İçindekiler</h4>
+  <ol>
+      <li><a href="#icra-takibi-nedir">İcra Takibi Nedir?</a></li>
+      <li><a href="#odeme-emri-elinize-ulastiginda-ne-anlama-gelir">Ödeme Emri Elinize Ulaştığında Ne Anlama Gelir?</a></li>
+      <li><a href="#kritik-ilk-sure-itiraz-hakki">Kritik İlk Süre: İtiraz Hakkı</a></li>
+      <li><a href="#borcu-kabul-ediyorsaniz-ne-yapabilirsiniz">Borcu Kabul Ediyorsanız Ne Yapabilirsiniz?</a></li>
+      <li><a href="#borcu-kabul-etmiyorsaniz-ne-yapmalisiniz">Borcu Kabul Etmiyorsanız Ne Yapmalısınız?</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+</nav>
+
+<aside class="side-rail" aria-label="İlgili içerikler">
+  <div class="box">
+    <h4>İlgili İçerikler</h4>
+    <ul>
+      <li><a href="itirazin-iptali-davasi.html">İtirazın İptali Davası Nedir?</a></li>
+      <li><a href="itirazin-kaldirilmasi-nedir.html">İtirazın Kaldırılması Nedir?</a></li>
+      <li><a href="hakkimda-icra-takibi-var-mi.html">Hakkımda İcra Takibi Var mı?</a></li>
+      <li><a href="makaleler.html">Tüm Rehberler &rarr;</a></li>
+    </ul>
+  </div>
+  <div class="box cta-box">
+    <h4>Hukuki destek</h4>
+    <p>Denizli'de durumunuzu birlikte değerlendirelim.</p>
+    <a class="btn" href="index.html#iletisim">Ön Görüşme</a>
+  </div>
+</aside>
+
+<script>
+/* Sol İçindekiler rayı: aktif bölümü vurgula (scrollspy) */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc-rail a'));
+  if(!links.length){ return; }
+  var map=links.map(function(a){ var el=document.getElementById(a.getAttribute('href').slice(1)); return {a:a, el:el}; }).filter(function(x){ return x.el; });
+  function onScroll(){
+    var y=window.scrollY+120, cur=map[0];
+    for(var i=0;i<map.length;i++){ if(map[i].el.offsetTop<=y){ cur=map[i]; } }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(cur){ cur.a.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-word">KORKMAZ <span>HUKUK</span></div>

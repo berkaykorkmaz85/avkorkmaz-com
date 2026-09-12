@@ -174,6 +174,32 @@
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
+  .toc-rail{display:none;}
+  @media (min-width:1400px){
+    .toc{display:none;}
+    .toc-rail{display:block; position:fixed; top:110px; left:28px; width:250px; max-height:78vh; overflow:auto; z-index:15; padding:16px 18px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+    .toc-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 12px; color:var(--text);}
+    .toc-rail ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:t;}
+    .toc-rail li{counter-increment:t; font-size:13px; line-height:1.35;}
+    .toc-rail a{color:var(--text-muted); text-decoration:none; display:block; padding-left:20px; position:relative;}
+    .toc-rail a::before{content:counter(t); position:absolute; left:0; top:0; color:var(--bronze-deep); font-weight:600; font-size:11px;}
+    .toc-rail a:hover{color:var(--text);}
+    .toc-rail a.active{color:var(--bronze-deep); font-weight:600;}
+  }
+  .side-rail{display:none;}
+  @media (min-width:1400px){
+    .side-rail{display:block; position:fixed; top:110px; right:28px; width:250px; z-index:15;}
+    .side-rail .box{background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px; padding:16px 18px; margin-bottom:16px;}
+    .side-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 10px; color:var(--text);}
+    .side-rail ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+    .side-rail a{font-size:13.5px; color:var(--bronze-deep); text-decoration:none; line-height:1.4;}
+    .side-rail a:hover{text-decoration:underline; text-underline-offset:2px;}
+    .side-rail .cta-box{background:var(--ink); border-left-color:var(--bronze);}
+    .side-rail .cta-box h4{color:var(--text-on-ink);}
+    .side-rail .cta-box p{font-size:13px; color:var(--text-on-ink-muted); margin:0 0 12px; line-height:1.5;}
+    .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
+    .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -227,6 +253,24 @@
   </div>
 
   <div class="wrap prose">
+  <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#itirazin-iptali-davasi-nedir">İtirazın İptali Davası Nedir?</a></li>
+      <li><a href="#itirazin-iptali-ile-itirazin-kaldirilmasi-arasindaki-fark">İtirazın İptali ile İtirazın Kaldırılması Arasındaki Fark</a></li>
+      <li><a href="#dava-sartlari-ve-arabuluculuk">Dava Şartları ve Arabuluculuk</a></li>
+      <li><a href="#sure-1-yillik-hak-dusurucu-sure">Süre: 1 Yıllık Hak Düşürücü Süre</a></li>
+      <li><a href="#gorevli-ve-yetkili-mahkeme">Görevli ve Yetkili Mahkeme</a></li>
+      <li><a href="#icra-inkar-tazminati">İcra İnkar Tazminatı</a></li>
+      <li><a href="#dava-sureci-masraf-ve-harc">Dava Süreci, Masraf ve Harç</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#ornek-dava-dilekcesi-taslak">Örnek Dava Dilekçesi (Taslak)</a></li>
+      <li><a href="#sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
+
+    
     <p class="post-lead">
       İtirazın iptali davası, alacaklının başlattığı bir icra takibine borçlunun yaptığı itirazı ortadan
       kaldırmak için genel mahkemede açtığı bir davadır. Dava alacaklı lehine sonuçlanırsa icra takibine
@@ -236,7 +280,7 @@
     </p>
 
     <section>
-    <h2>İtirazın İptali Davası Nedir?</h2>
+    <h2 id="itirazin-iptali-davasi-nedir">İtirazın İptali Davası Nedir?</h2>
     <p>
       İtirazın iptali davası, alacaklının başlattığı icra takibine itiraz eden borçlunun yaptığı itirazın
       iptali için genel mahkemelerde açtığı bir davadır. Alacaklı, borcun varlığını ve miktarını ispatlarsa
@@ -255,7 +299,7 @@
   </section>
 
   <section>
-    <h2>İtirazın İptali ile İtirazın Kaldırılması Arasındaki Fark</h2>
+    <h2 id="itirazin-iptali-ile-itirazin-kaldirilmasi-arasindaki-fark">İtirazın İptali ile İtirazın Kaldırılması Arasındaki Fark</h2>
     <p>
       İtirazın iptali davası, alacaklı tarafından genel mahkemelerde açılan ve borçlunun icra takibine
       yaptığı itirazın iptal edilerek takibe devam edilmesini sağlayan bir maddi hukuk davasıdır. Bu davada
@@ -298,7 +342,7 @@
   </section>
 
   <section>
-    <h2>Dava Şartları ve Arabuluculuk</h2>
+    <h2 id="dava-sartlari-ve-arabuluculuk">Dava Şartları ve Arabuluculuk</h2>
     <p>
       İtirazın iptali davası açabilmek için, alacaklı tarafından başlatılmış bir icra takibine borçlu
       tarafından itiraz edilmiş olması ve bu itirazın alacaklıya tebliğinden itibaren bir yıl içinde
@@ -315,7 +359,7 @@
   </section>
 
   <section>
-    <h2>Süre: 1 Yıllık Hak Düşürücü Süre</h2>
+    <h2 id="sure-1-yillik-hak-dusurucu-sure">Süre: 1 Yıllık Hak Düşürücü Süre</h2>
     <p>
       İtirazın iptali davası, icra takibine borçlu tarafından yapılan itirazın alacaklıya tebliğinden
       itibaren bir yıl içinde açılmalıdır; bu süre hak düşürücü bir süredir. Süre kaçırılırsa, yani
@@ -333,7 +377,7 @@
   </section>
 
   <section>
-    <h2>Görevli ve Yetkili Mahkeme</h2>
+    <h2 id="gorevli-ve-yetkili-mahkeme">Görevli ve Yetkili Mahkeme</h2>
     <p>
       İtirazın iptali davasında görevli mahkeme, icra takibine konu alacağın türüne göre değişir. Alacak
       ticari ilişkiden kaynaklanıyorsa dava ticaret mahkemesinde; işçi-işveren ilişkisinden kaynaklanan
@@ -349,7 +393,7 @@
   </section>
 
   <section>
-    <h2>İcra İnkar Tazminatı</h2>
+    <h2 id="icra-inkar-tazminati">İcra İnkar Tazminatı</h2>
     <p>
       İcra hukukunda alacaklının takip başlatabilmesi için elinde borçlu tarafından imzalanmış bir borç
       ikrarı belgesi bulunması gerekmez; ilamsız icra takibi bu kolaylıkla başlatılabilir. Bu kolaylığın
@@ -383,7 +427,7 @@
   </section>
 
   <section>
-    <h2>Dava Süreci, Masraf ve Harç</h2>
+    <h2 id="dava-sureci-masraf-ve-harc">Dava Süreci, Masraf ve Harç</h2>
     <p>
       İtirazın iptali davası nispi harca tabidir; harç miktarı alacağın miktarına göre değişir. Dava
       değerinin (asıl alacak, faiz ve masraflar hariç) binde 68,31'i oranında nispi harç uygulanır; bunun
@@ -411,7 +455,7 @@
   </section>
 
   <section>
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <p>
       İtirazın iptali davasında en sık karşılaşılan hatalar şunlardır: davanın, itirazın alacaklıya
       tebliğinden itibaren bir yıllık süre içinde açılmaması; alacağın türüne göre görevli mahkemenin doğru
@@ -424,7 +468,7 @@
   </section>
 
   <section>
-    <h2>Örnek Dava Dilekçesi (Taslak)</h2>
+    <h2 id="ornek-dava-dilekcesi-taslak">Örnek Dava Dilekçesi (Taslak)</h2>
     <p>
       Aşağıda itirazın iptali davası için detaylı bir dilekçe iskeleti yer almaktadır. Bu, dosyanıza özel
       olarak uyarlanması gereken bir taslaktır; doğrudan mahkemeye sunulmaya hazır değildir.
@@ -496,7 +540,7 @@
   </section>
 
   <section>
-    <h2>Sıkça Sorulan Sorular</h2>
+    <h2 id="sikca-sorulan-sorular">Sıkça Sorulan Sorular</h2>
 
     <h3>İtirazın iptali davası kime karşı açılır?</h3>
     <p>İtirazın iptali davası, icra takibini başlatan alacaklı tarafından, takibe itiraz eden borçluya karşı açılır.</p>
@@ -518,7 +562,7 @@
   </section>
 
   <section>
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>
       İtirazın iptali davası, borçlunun icra takibine yaptığı itirazı ortadan kaldırmak için alacaklının
       başvurabileceği en temel yollardan biridir; alacaklının alacağına bir an önce kavuşması veya
@@ -543,8 +587,70 @@
     <p><em>Av. Berkay Korkmaz — Denizli Barosu</em></p>
   </footer>
   </div>
+  <div class="wrap">
+    <div class="related">
+      <h2 id="ilgili-rehberler">İlgili Rehberler</h2>
+      <ul>
+      <li><a class="inline" href="itirazin-kaldirilmasi-nedir.html">İtirazın Kaldırılması Nedir?</a></li>
+      <li><a class="inline" href="icra-takibi-geldi-ne-yapmaliyim.html">İcra Takibi Geldi, Ne Yapmalıyım?</a></li>
+      <li><a class="inline" href="menfi-tespit-davasi-nedir.html">Menfi Tespit Davası Nedir?</a></li>
+      <li><a class="inline" href="cek-senet-kambiyo-icra-takibi-itiraz.html">Çek-Senet (Kambiyo) İcra Takibine İtiraz</a></li>
+      </ul>
+    </div>
+  </div>
 </article>
 
+<nav class="toc-rail" aria-label="İçindekiler">
+  <h4>İçindekiler</h4>
+  <ol>
+      <li><a href="#itirazin-iptali-davasi-nedir">İtirazın İptali Davası Nedir?</a></li>
+      <li><a href="#itirazin-iptali-ile-itirazin-kaldirilmasi-arasindaki-fark">İtirazın İptali ile İtirazın Kaldırılması Arasındaki Fark</a></li>
+      <li><a href="#dava-sartlari-ve-arabuluculuk">Dava Şartları ve Arabuluculuk</a></li>
+      <li><a href="#sure-1-yillik-hak-dusurucu-sure">Süre: 1 Yıllık Hak Düşürücü Süre</a></li>
+      <li><a href="#gorevli-ve-yetkili-mahkeme">Görevli ve Yetkili Mahkeme</a></li>
+      <li><a href="#icra-inkar-tazminati">İcra İnkar Tazminatı</a></li>
+      <li><a href="#dava-sureci-masraf-ve-harc">Dava Süreci, Masraf ve Harç</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#ornek-dava-dilekcesi-taslak">Örnek Dava Dilekçesi (Taslak)</a></li>
+      <li><a href="#sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+</nav>
+
+<aside class="side-rail" aria-label="İlgili içerikler">
+  <div class="box">
+    <h4>İlgili İçerikler</h4>
+    <ul>
+      <li><a href="itirazin-kaldirilmasi-nedir.html">İtirazın Kaldırılması Nedir?</a></li>
+      <li><a href="icra-takibi-geldi-ne-yapmaliyim.html">İcra Takibi Geldi, Ne Yapmalıyım?</a></li>
+      <li><a href="menfi-tespit-davasi-nedir.html">Menfi Tespit Davası Nedir?</a></li>
+      <li><a href="makaleler.html">Tüm Rehberler &rarr;</a></li>
+    </ul>
+  </div>
+  <div class="box cta-box">
+    <h4>Hukuki destek</h4>
+    <p>Denizli'de durumunuzu birlikte değerlendirelim.</p>
+    <a class="btn" href="index.html#iletisim">Ön Görüşme</a>
+  </div>
+</aside>
+
+<script>
+/* Sol İçindekiler rayı: aktif bölümü vurgula (scrollspy) */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc-rail a'));
+  if(!links.length){ return; }
+  var map=links.map(function(a){ var el=document.getElementById(a.getAttribute('href').slice(1)); return {a:a, el:el}; }).filter(function(x){ return x.el; });
+  function onScroll(){
+    var y=window.scrollY+120, cur=map[0];
+    for(var i=0;i<map.length;i++){ if(map[i].el.offsetTop<=y){ cur=map[i]; } }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(cur){ cur.a.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-word">KORKMAZ <span>HUKUK</span></div>

@@ -133,6 +133,32 @@
   .wordmark-logo{height:30px; width:auto; display:block; flex:none;}
   @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .wordmark-logo{filter:invert(1);} }
   :root[data-theme="dark"] .wordmark-logo{filter:invert(1);}
+  .toc-rail{display:none;}
+  @media (min-width:1400px){
+    .toc{display:none;}
+    .toc-rail{display:block; position:fixed; top:110px; left:28px; width:250px; max-height:78vh; overflow:auto; z-index:15; padding:16px 18px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+    .toc-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 12px; color:var(--text);}
+    .toc-rail ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:t;}
+    .toc-rail li{counter-increment:t; font-size:13px; line-height:1.35;}
+    .toc-rail a{color:var(--text-muted); text-decoration:none; display:block; padding-left:20px; position:relative;}
+    .toc-rail a::before{content:counter(t); position:absolute; left:0; top:0; color:var(--bronze-deep); font-weight:600; font-size:11px;}
+    .toc-rail a:hover{color:var(--text);}
+    .toc-rail a.active{color:var(--bronze-deep); font-weight:600;}
+  }
+  .side-rail{display:none;}
+  @media (min-width:1400px){
+    .side-rail{display:block; position:fixed; top:110px; right:28px; width:250px; z-index:15;}
+    .side-rail .box{background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px; padding:16px 18px; margin-bottom:16px;}
+    .side-rail h4{font-family:"Newsreader",Georgia,serif; font-size:15px; margin:0 0 10px; color:var(--text);}
+    .side-rail ul{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
+    .side-rail a{font-size:13.5px; color:var(--bronze-deep); text-decoration:none; line-height:1.4;}
+    .side-rail a:hover{text-decoration:underline; text-underline-offset:2px;}
+    .side-rail .cta-box{background:var(--ink); border-left-color:var(--bronze);}
+    .side-rail .cta-box h4{color:var(--text-on-ink);}
+    .side-rail .cta-box p{font-size:13px; color:var(--text-on-ink-muted); margin:0 0 12px; line-height:1.5;}
+    .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
+    .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -234,9 +260,23 @@
   </div>
 
   <div class="wrap prose">
+  <nav class="toc" aria-label="İçindekiler">
+    <p class="toc-baslik">İçindekiler</p>
+    <ol>
+      <li><a href="#maasin-ne-kadarina-haciz-konulabilir">Maaşın Ne Kadarına Haciz Konulabilir?</a></li>
+      <li><a href="#maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</a></li>
+      <li><a href="#maas-haczi-nasil-kaldirilir">Maaş Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="#istisnalar-ve-ozel-durumlar">İstisnalar ve Özel Durumlar</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+  </nav>
+
+    
     <p>Maaş haczi; hakkında icra takibi kesinleşmiş bir borçlunun maaş veya ücretinin belirli bir kısmının, işveren tarafından kesilip icra dairesine gönderilmesidir. İcra ve İflas Kanunu&rsquo;nun 83. maddesi gereğince işçinin ya da memurun net ücreti, primi, fazla mesai alacağı, ikramiyesi ve benzeri ödemelerinin kural olarak dörtte biri kesilir. Kıdem ve ihbar tazminatı ise ücret ödemesi sayılmadığından, yerleşik Yargıtay uygulamasına göre tamamı haczedilebilir. Bu rehberde, hem maaşına haciz gelen çalışanlar hem de alacağını tahsil etmek isteyen alacaklılar için maaş haczinin nasıl işlediğini ve nasıl kaldırılabileceğini adım adım açıklıyoruz.</p>
 
-    <h2>Maaşın Ne Kadarına Haciz Konulabilir?</h2>
+    <h2 id="maasin-ne-kadarina-haciz-konulabilir">Maaşın Ne Kadarına Haciz Konulabilir?</h2>
     <p>Maaşın ne kadarının haczedileceği iki temel hükme dayanır ve bu iki madde çoğu zaman birbirine karıştırılır. Oysa biri alt sınırı (taban), diğeri üst sınırı (tavan) belirler:</p>
     <div class="callout"><p><strong>İcra ve İflas Kanunu m.83/2 (taban):</strong> <em>&ldquo;Ancak haczolunacak miktar bunların dörtte birinden az olamaz.&rdquo;</em><br>&rarr; Alacaklı lehine asgari güvence: kesinti dörtte birden aşağı olamaz.</p></div>
     <div class="callout"><p><strong>İş Kanunu m.35 (tavan):</strong> <em>&ldquo;İşçilerin aylık ücretlerinin dörtte birinden fazlası haczedilemez veya başkasına devir ve temlik olunamaz.&rdquo;</em><br>&rarr; Borçlu lehine üst sınır: dörtte birden fazlası haczedilemez.</p></div>
@@ -245,29 +285,29 @@
     <h3>Nafaka Alacaklarında Durum: Cari ve Birikmiş Ayrımı</h3>
     <p>Dörtte bir sınırının önemli bir istisnası nafaka alacaklarıdır; ancak burada <strong>işleyen (cari) nafaka</strong> ile <strong>birikmiş (geçmiş dönem) nafaka</strong>yı ayırmak gerekir. Hükmedilen aylık (cari) nafaka, borçlunun maaşının dörtte birini aşsa dahi, dörtte bir sınırına tabi olmaksızın tam olarak kesilebilir. Buna karşılık birikmiş (geçmiş dönem) nafaka alacağı adi alacak sayıldığından dörtte bir sınırına tabidir ve diğer hacizlerle aynı sıraya girer. Nafakanın bu ayrıcalığının sebebi, borçlunun bakmakla yükümlü olduğu kişilerin korunmasıdır.</p>
 
-    <h2>Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</h2>
+    <h2 id="maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</h2>
     <p>Süreç, alacaklının icra dairesinden borçlunun çalıştığı işyerine maaş haczi ihbarnamesi gönderilmesini talep etmesiyle başlar. İcra dairesi, posta veya elektronik tebligat yoluyla işverene bir ihbarname gönderir. Bu ihbarnamede; borçlunun ücretinin kural olarak dörtte birinin haczedildiği, borçlunun aldığı ücret tutarının <strong>bir hafta içinde</strong> icra dairesine bildirilmesi ve borç bitene kadar kesintilerin yapılıp icra dairesine gönderilmesi ihtar edilir. İş ilişkisi devam ediyorsa işveren, ilk ödenecek ücretten kesintiye başlamak zorundadır.</p>
     <p>İhbarnamenin gereklerini yerine getirmeyen işverenin, kesmediği tutar kendi malvarlığından tahsil edilir (İİK m.356). Bu durumda işverenin, şahsi malvarlığından yaptığı ödeme için işçiye rücu hakkı saklıdır. Eğer ihbarname tebliğ edildiğinde borçlu işten ayrılmışsa, işverenin bu durumu icra dairesine bildirmesi gerekir.</p>
 
-    <h2>Maaş Haczi Nasıl Kaldırılır?</h2>
+    <h2 id="maas-haczi-nasil-kaldirilir">Maaş Haczi Nasıl Kaldırılır?</h2>
     <p>Maaş haczi, kesintilerle alacaklının alacağı tamamen karşılanıp dosya borcu sona erdiğinde icra dairesi tarafından kaldırılır. Uygulamada icra dairelerinin bu durumu gözden kaçırıp kesinti almaya devam ettiği görülebildiğinden, borçlunun da dosya borcunu takip edip borç bittiğinde icra dairesine başvurarak haczin kaldırılmasını istemesi yerinde olur.</p>
     <p>Borçlu, alacaklıyla borcun taksitle ödenmesi ve taksitler bitene kadar haciz uygulanmaması konusunda anlaşarak da maaş haczini engelleyebilir; ancak bunun için tarafların karşılıklı olarak anlaşması şarttır.</p>
     <p>Haciz usulsüz veya haksızsa (örneğin dörtte birden fazla kesinti yapılmışsa ya da haczedilmemesi gereken bir gelire haciz konmuşsa), borçlu önce icra dairesinden kararın düzeltilmesini ister; icra dairesi direnirse karar icra (hukuk) mahkemesine şikayet yoluyla taşınabilir. Bu tür şikayetlerde süre yoktur: dörtte bir sınırı, borçlunun ve ailesinin asgari geçimini koruyan emredici bir düzenleme olup yerleşik içtihatta kamu düzenine ilişkin kabul edildiğinden şikayet süreye bağlı değildir. Mahkeme talebi haklı bulursa icra dairesinin kararını düzeltir ve icra dairesi buna uymak zorundadır. Şikayet reddedilirse borçlu; yargılama gideri, harç ve karşı taraf avukatla temsil ediliyorsa vekâlet ücreti ile karşılaşabilir. Bu nedenle başvurudan önce bir avukattan destek almanız yerinde olur.</p>
 
-    <h2>İstisnalar ve Özel Durumlar</h2>
+    <h2 id="istisnalar-ve-ozel-durumlar">İstisnalar ve Özel Durumlar</h2>
     <h3>Emekli Maaşına Haciz Konulabilir mi?</h3>
     <p>Emekli maaşı kural olarak haczedilemez (<strong>5510 sayılı Kanun m.93</strong>). Bunun iki istisnası vardır: nafaka alacakları ile Sosyal Güvenlik Kurumu&rsquo;nun kendi alacakları (prim vb.) bakımından emekli maaşına haciz uygulanabilir. Bu istisnalar dışında kalan borçlar için ise emekli maaşına ancak borçlunun muvafakatiyle haciz konulabilir. Üstelik Yargıtay uygulamasına göre bu muvafakatin geçerli olabilmesi için haciz konulduktan sonra icra dosyasında verilmiş olması gerekir; kredi veya benzeri bir sözleşme imzalanırken önceden alınan muvafakatler bu korumayı ortadan kaldırmaz.</p>
     <h3>Birden Fazla Haciz Geldiğinde Öncelik</h3>
     <p>Aynı borçlunun ücretine birden fazla dosyadan haciz gelirse, hacizler konuluş tarihine göre sıraya girer. Halihazırda bir dosyaya kesinti yapan işveren, yeni bir ihbarname aldığında; mevcut bir dosyaya ödeme yapıldığını, sıradaki yerini ve ödediği dosyanın borç miktarını yeni ihbarnameyi gönderen icra dairesine bildirmelidir.</p>
 
-    <h2>Sık Yapılan Hatalar</h2>
+    <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul>
       <li><strong>İş değiştirerek kesintiden kurtulacağını sanmak:</strong> Borçlu yeni işe girdiğinde SGK işe giriş bildirgesi sebebiyle nerede çalıştığı kolayca öğrenilir; alacaklı yeni işyerinden yeniden haciz talep edebileceğinden iş değiştirmenin gerçek bir yararı yoktur.</li>
       <li><strong>İşverenle gereksiz tartışmaya girmek:</strong> İşveren yalnızca yasal yükümlülüğünü yerine getirmektedir; çözüm işverende değil, icra dosyasındadır.</li>
       <li><strong>İhbarnameyi ciddiye almamak (işveren tarafında):</strong> Maaş haczi ihbarnamesi çoğu zaman işyeri adresine tebliğ olur; dikkate alınmazsa bir haftalık bildirim süresi kaçırıldığından işverenin şahsi sorumluluğu doğar.</li>
     </ul>
 
-    <h2>Sık Sorulan Sorular (SSS)</h2>
+    <h2 id="sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</h2>
     <h3>İşverenim haciz yazısını görmezden gelirse ne olur?</h3>
     <p>İşvereniniz maaş haczi ihbarnamesini görmezden gelirse, maaşınızdan yapılamayan kesintiden işvereniniz şahsen sorumlu olur.</p>
     <h3>Haciz kesintisi bordromda nasıl görünmeli, işveren fazla keserse ne yapmalıyım?</h3>
@@ -279,7 +319,7 @@
     <h3>Bu süreç toplamda ne kadar sürer?</h3>
     <p>Kesinti, icra dosya borcunun sona ermesiyle kalkar. Birden fazla dosyadan haciz varsa, borçların tamamı bitmeden kesinti sona ermez.</p>
 
-    <h2>Sonuç</h2>
+    <h2 id="sonuc">Sonuç</h2>
     <p>Bu rehberde maaş haczini ana hatlarıyla açıklamaya çalıştık. Bu konuda hukuki destek almak; işveren iseniz şahsi sorumluluğunuzun doğmamasına, alacaklı iseniz alacağınıza kavuşmanıza, borçlu iseniz fazla kesinti veya hukuka aykırı işlemlere karşı korunmanıza yardımcı olur.</p>
 
     <div class="cta">
@@ -288,8 +328,66 @@
       <a class="btn btn-primary" href="index.html#iletisim">Ön Görüşme Talep Edin</a>
     </div>
   </div>
+  <div class="wrap">
+    <div class="related">
+      <h2 id="ilgili-rehberler">İlgili Rehberler</h2>
+      <ul>
+      <li><a class="inline" href="haczedilemeyen-mallar-evime-haciz.html">Haczedilemeyen Mallar — Evime Haciz</a></li>
+      <li><a class="inline" href="banka-hesabi-haczi-nasil-kaldirilir.html">Banka Hesabı Haczi Nasıl Kaldırılır?</a></li>
+      <li><a class="inline" href="arac-haczi-nasil-kaldirilir.html">Araç Haczi Nasıl Kaldırılır?</a></li>
+      <li><a class="inline" href="icra-takibi-geldi-ne-yapmaliyim.html">İcra Takibi Geldi, Ne Yapmalıyım?</a></li>
+      </ul>
+    </div>
+  </div>
 </article>
 
+<nav class="toc-rail" aria-label="İçindekiler">
+  <h4>İçindekiler</h4>
+  <ol>
+      <li><a href="#maasin-ne-kadarina-haciz-konulabilir">Maaşın Ne Kadarına Haciz Konulabilir?</a></li>
+      <li><a href="#maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</a></li>
+      <li><a href="#maas-haczi-nasil-kaldirilir">Maaş Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="#istisnalar-ve-ozel-durumlar">İstisnalar ve Özel Durumlar</a></li>
+      <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
+      <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
+      <li><a href="#sonuc">Sonuç</a></li>
+    </ol>
+</nav>
+
+<aside class="side-rail" aria-label="İlgili içerikler">
+  <div class="box">
+    <h4>İlgili İçerikler</h4>
+    <ul>
+      <li><a href="haczedilemeyen-mallar-evime-haciz.html">Haczedilemeyen Mallar — Evime Haciz</a></li>
+      <li><a href="banka-hesabi-haczi-nasil-kaldirilir.html">Banka Hesabı Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="arac-haczi-nasil-kaldirilir.html">Araç Haczi Nasıl Kaldırılır?</a></li>
+      <li><a href="makaleler.html">Tüm Rehberler &rarr;</a></li>
+    </ul>
+  </div>
+  <div class="box cta-box">
+    <h4>Hukuki destek</h4>
+    <p>Denizli'de durumunuzu birlikte değerlendirelim.</p>
+    <a class="btn" href="index.html#iletisim">Ön Görüşme</a>
+  </div>
+</aside>
+
+<script>
+/* Sol İçindekiler rayı: aktif bölümü vurgula (scrollspy) */
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.toc-rail a'));
+  if(!links.length){ return; }
+  var map=links.map(function(a){ var el=document.getElementById(a.getAttribute('href').slice(1)); return {a:a, el:el}; }).filter(function(x){ return x.el; });
+  function onScroll(){
+    var y=window.scrollY+120, cur=map[0];
+    for(var i=0;i<map.length;i++){ if(map[i].el.offsetTop<=y){ cur=map[i]; } }
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(cur){ cur.a.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
 <footer>
   <div class="wrap">
     <div class="footer-word">KORKMAZ <span>HUKUK</span></div>
