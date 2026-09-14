@@ -891,7 +891,7 @@
 
 <section class="stats" aria-label="Büro künyesi">
   <div class="wrap stats-grid">
-    <div class="stat"><div class="stat-num" data-count="4">0</div><div class="stat-label">Yıllık Deneyim</div></div>
+    <div class="stat"><div class="stat-num" data-count="5" data-suffix="+">0</div><div class="stat-label">Yıllık Deneyim</div></div>
     <div class="stat"><div class="stat-num" id="stat-alan" data-count="8">0</div><div class="stat-label">Hukuk Alanı</div></div>
     <div class="stat"><div class="stat-num" id="stat-makale" data-count="3">0</div><div class="stat-label">Rehber Makale</div></div>
   </div>
@@ -1086,13 +1086,18 @@
 
   function animate(el){
     var hedef = parseInt(el.getAttribute('data-count'),10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
     var sure = 1100, bas = null;
+    function bitir(){
+      if(suffix){ el.innerHTML = hedef + '<span class="plus">' + suffix + '</span>'; }
+      else { el.textContent = hedef; }
+    }
     function step(t){
       if(!bas) bas = t;
       var p = Math.min((t-bas)/sure, 1);
       var eased = 1 - Math.pow(1-p, 3);
       el.textContent = Math.round(eased*hedef);
-      if(p < 1) requestAnimationFrame(step); else el.textContent = hedef;
+      if(p < 1) requestAnimationFrame(step); else bitir();
     }
     requestAnimationFrame(step);
   }
