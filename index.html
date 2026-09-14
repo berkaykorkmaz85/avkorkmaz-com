@@ -1174,5 +1174,49 @@ document.querySelectorAll('.navlinks a').forEach(function(a){
   }, true);
 })();
 </script>
+
+<style>
+  #fraudAlert{position:fixed; inset:0; z-index:2000; display:flex; align-items:center; justify-content:center; padding:20px; background:rgba(10,16,22,.62); backdrop-filter:blur(6px);}
+  #fraudAlert[hidden]{display:none!important;}
+  #fraudAlert .fa-card{position:relative; max-width:560px; width:100%; max-height:90vh; overflow:auto; background:var(--paper-high); color:var(--text); border:1px solid var(--paper-line); border-top:4px solid var(--bronze); border-radius:8px; box-shadow:0 24px 64px rgba(0,0,0,.4); padding:30px 32px 22px;}
+  #fraudAlert h2{font-family:"Newsreader",Georgia,serif; font-weight:600; font-size:22px; letter-spacing:.02em; text-align:center; color:var(--bronze-deep); margin:0 4px;}
+  #fraudAlert .fa-rule{height:1px; background:var(--paper-line); margin:16px 0 18px;}
+  #fraudAlert p{font-size:15px; line-height:1.7; color:var(--text); margin:0 0 12px; text-align:center;}
+  #fraudAlert p.fa-sign{margin-top:16px; font-weight:600; color:var(--ink);}
+  #fraudAlert strong{color:var(--bronze-deep);}
+  #fraudAlert .fa-close{position:absolute; top:12px; right:14px; width:34px; height:34px; border:0; background:transparent; color:var(--text-muted); font-size:26px; line-height:1; cursor:pointer; border-radius:50%; transition:background .15s,color .15s;}
+  #fraudAlert .fa-close:hover{color:var(--ink); background:var(--paper);}
+  #fraudAlert .fa-count{margin-top:14px; text-align:center; font-size:12.5px; color:var(--text-muted);}
+  @media (max-width:640px){ #fraudAlert .fa-card{padding:26px 20px 18px;} #fraudAlert h2{font-size:19px;} }
+</style>
+<div id="fraudAlert" hidden role="dialog" aria-modal="true" aria-labelledby="fraudAlertTitle">
+  <div class="fa-card">
+    <button class="fa-close" type="button" aria-label="Kapat">&times;</button>
+    <h2 id="fraudAlertTitle">DOLANDIRICILIK UYARISI</h2>
+    <div class="fa-rule"></div>
+    <p>Sayın ziyaretçilerimiz,</p>
+    <p>Son dönemde büromuzun adı (<strong>&ldquo;Korkmaz Hukuk Bürosu&rdquo; / &ldquo;Av. Berkay Korkmaz&rdquo;</strong>) kullanılarak; kişilerden hukuki takip ya da borç adı altında <strong>para talep edildiği</strong> yönünde sahte arama, mesaj ve bildirimler yapıldığı tarafımıza ulaşmıştır.</p>
+    <p>Bu tür arama, mesaj ve bildirimlerin <strong>büromuzla hiçbir ilgisi bulunmamaktadır</strong>. Büromuz hiçbir şekilde bu yolla ödeme talep etmez, hesap/IBAN bilgisi paylaşmaz.</p>
+    <p>Böyle bir iletişimle karşılaşırsanız lütfen <strong>itibar etmeyiniz, ödeme yapmayınız</strong> ve durumu Cumhuriyet Başsavcılığına bildiriniz. Doğrulama için yalnızca bu sitedeki resmî telefon ve e-posta adresimizi kullanınız.</p>
+    <p>Konuyla ilgili gerekli yasal yollara başvurulmaktadır.</p>
+    <p class="fa-sign">Saygılarımızla,<br>Korkmaz Hukuk Bürosu</p>
+    <p class="fa-count">Bu uyarı <b>14</b> saniye içinde kapanacak.</p>
+  </div>
+</div>
+<script>
+(function(){
+  var el=document.getElementById('fraudAlert'); if(!el) return;
+  var gosterildi=null; try{gosterildi=sessionStorage.getItem('fraudAlertShown');}catch(e){}
+  if(gosterildi==='1'){ el.parentNode && el.parentNode.removeChild(el); return; }
+  var cntEl=el.querySelector('.fa-count b'); var kalan=14; var timer=null;
+  function kapat(){ if(el.hidden) return; el.hidden=true; if(timer){clearInterval(timer);} try{sessionStorage.setItem('fraudAlertShown','1');}catch(e){} document.removeEventListener('keydown',esc); }
+  function esc(e){ if(e.key==='Escape'||e.keyCode===27) kapat(); }
+  el.hidden=false;
+  var btn=el.querySelector('.fa-close'); if(btn) btn.addEventListener('click',kapat);
+  el.addEventListener('click',function(e){ if(e.target===el) kapat(); });
+  document.addEventListener('keydown',esc);
+  timer=setInterval(function(){ kalan--; if(cntEl){cntEl.textContent=kalan;} if(kalan<=0){ kapat(); } },1000);
+})();
+</script>
 </body>
 </html>
