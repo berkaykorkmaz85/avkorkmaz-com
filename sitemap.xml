@@ -200,7 +200,25 @@
   </url>
   <url>
     <loc>https://avkorkmaz.com/hakaret-sucu-ve-cezasi.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avkorkmaz.com/supheli-sanik-haklari-ifade-verme.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avkorkmaz.com/uzlasma-nedir-hangi-suclarda.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://avkorkmaz.com/adli-kontrol-ve-tutukluluk.html</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
