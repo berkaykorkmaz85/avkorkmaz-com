@@ -385,7 +385,7 @@
 
   footer{background:var(--ink); color:var(--text-on-ink-muted); padding-block:52px 28px;}
   .footer-grid{display:grid; grid-template-columns:1.4fr .8fr .8fr .8fr; gap:40px;}
-  .footer-grid h4{
+  .footer-grid h4, .footer-grid .rail-h{
     font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.08em;
     text-transform:uppercase; color:var(--text-on-ink); margin-bottom:14px; font-weight:500;
   }
@@ -1054,7 +1054,7 @@
       <p class="footer-desc">Denizli merkezli, sekiz hukuk alanında danışmanlık ve dava takibi.</p>
     </div>
     <div>
-      <h4>Alanlar</h4>
+      <h2 class="rail-h">Alanlar</h2>
       <ul>
         <li><a href="#alanlar">Gayrimenkul / İş Hukuku</a></li>
         <li><a href="#alanlar">Aile Hukuku</a></li>
@@ -1067,7 +1067,7 @@
       </ul>
     </div>
     <div>
-      <h4>Büro</h4>
+      <h2 class="rail-h">Büro</h2>
       <ul>
         <li><a href="#hakkimizda">Hakkımızda</a></li>
         <li><a href="#makaleler">Makaleler</a></li>
@@ -1087,7 +1087,7 @@
 </ul>
     </div>
     <div>
-      <h4>İletişim</h4>
+      <h2 class="rail-h">İletişim</h2>
       <ul>
         <li>info@avkorkmaz.com</li>
         <li>+90 507 194 55 50</li>
@@ -1284,6 +1284,15 @@ document.querySelectorAll('.navlinks a').forEach(function(a){
   #fraudAlert .fa-close:hover{color:var(--ink); background:var(--paper);}
   #fraudAlert .fa-count{margin-top:14px; text-align:center; font-size:12.5px; color:var(--text-muted);}
   @media (max-width:640px){ #fraudAlert .fa-card{padding:26px 20px 18px;} #fraudAlert h2{font-size:19px;} }
+
+  /* Erisilebilirlik (WCAG AA): buton ve tablo basligi kontrasti */
+  :root{--btn:#BD8A45; --btn-h:#C9975A;}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--btn:#c9975a; --btn-h:#e0b17c;} }
+  :root[data-theme="dark"]{--btn:#c9975a; --btn-h:#e0b17c;}
+  .btn-primary, .hero .btn-primary, .side-rail .cta-box a.btn, #cookieAccept, .nl-row button{background:var(--btn); color:var(--ink);}
+  .btn-primary:hover, .hero .btn-primary:hover, .side-rail .cta-box a.btn:hover, #cookieAccept:hover, .nl-row button:hover{background:var(--btn-h);}
+  .art-more button:hover{background:var(--btn); color:var(--ink);}
+  table.data th{background:var(--btn); color:var(--ink);}
 </style>
 <div id="fraudAlert" hidden role="dialog" aria-modal="true" aria-labelledby="fraudAlertTitle">
   <div class="fa-card">

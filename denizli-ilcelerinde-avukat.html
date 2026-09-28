@@ -305,6 +305,15 @@
   #cookieReject{background:transparent;color:var(--text-on-ink);border-color:#3c4c5c;}
   #cookieReject:hover{border-color:var(--bronze);}
   @media(max-width:640px){#cookieBanner{flex-direction:column;align-items:stretch;text-align:center;}#cookieBanner .cookie-actions{justify-content:center;}}
+
+  /* Erisilebilirlik (WCAG AA): buton ve tablo basligi kontrasti */
+  :root{--btn:#BD8A45; --btn-h:#C9975A;}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--btn:#c9975a; --btn-h:#e0b17c;} }
+  :root[data-theme="dark"]{--btn:#c9975a; --btn-h:#e0b17c;}
+  .btn-primary, .hero .btn-primary, .side-rail .cta-box a.btn, #cookieAccept, .nl-row button{background:var(--btn); color:var(--ink);}
+  .btn-primary:hover, .hero .btn-primary:hover, .side-rail .cta-box a.btn:hover, #cookieAccept:hover, .nl-row button:hover{background:var(--btn-h);}
+  .art-more button:hover{background:var(--btn); color:var(--ink);}
+  table.data th{background:var(--btn); color:var(--ink);}
 </style>
 <div id="cookieBanner" hidden role="dialog" aria-label="Çerez tercihi">
   <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz. <a href="cerez-politikasi.html" style="color:var(--bronze);text-decoration:underline;">Çerez Politikası</a></p>

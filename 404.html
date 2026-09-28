@@ -43,6 +43,15 @@
   .btn-primary:hover{background:var(--bronze-deep);}
   .btn-ghost:hover{border-color:var(--bronze);}
   footer{border-top:1px solid var(--paper-line); text-align:center; padding:20px; font-size:13px; color:var(--text-muted);}
+
+  /* Erisilebilirlik (WCAG AA): buton ve tablo basligi kontrasti */
+  :root{--btn:#BD8A45; --btn-h:#C9975A;}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--btn:#c9975a; --btn-h:#e0b17c;} }
+  :root[data-theme="dark"]{--btn:#c9975a; --btn-h:#e0b17c;}
+  .btn-primary, .hero .btn-primary, .side-rail .cta-box a.btn, #cookieAccept, .nl-row button{background:var(--btn); color:var(--ink);}
+  .btn-primary:hover, .hero .btn-primary:hover, .side-rail .cta-box a.btn:hover, #cookieAccept:hover, .nl-row button:hover{background:var(--btn-h);}
+  .art-more button:hover{background:var(--btn); color:var(--ink);}
+  table.data th{background:var(--btn); color:var(--ink);}
 </style>
 </head>
 <body>
