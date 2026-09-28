@@ -297,6 +297,11 @@
   .principle p{margin-top:6px; font-size:14.5px; color:var(--text-muted);}
 
   /* practice areas */
+  .area-card{text-decoration:none; color:inherit; display:block; transition:border-color .15s, transform .15s;}
+  .area-card:hover{border-color:var(--bronze); transform:translateY(-2px);}
+  .area-card:focus-visible{outline:2px solid var(--focus); outline-offset:3px;}
+  .area-card h3{text-decoration:none;}
+  .areas-more{display:flex; justify-content:center; margin-top:26px;}
   .areas-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--paper-line); border:1px solid var(--paper-line);}
   .area-card{background:var(--paper); padding:30px 26px; display:flex; flex-direction:column; min-height:230px; position:relative; transition:background .18s;}
   .area-card::before{content:""; position:absolute; top:-1px; left:0; height:2px; width:0; background:var(--bronze); transition:width .28s ease;}
@@ -607,56 +612,57 @@
   </div>
   <div class="wrap" style="padding:0;">
     <div class="areas-grid">
-      <div class="area-card">
+      <a class="area-card" href="calisma-alanlari.html#gayrimenkul-is">
         <span class="mark">01 — GAYRİMENKUL / İŞ HUKUKU</span>
         <h3>Gayrimenkul ve İş Hukuku</h3>
         <p>Tapu ve kira uyuşmazlıkları, kat mülkiyeti, kamulaştırma; işe iade, kıdem-ihbar tazminatı ve iş sözleşmesi uyuşmazlıkları.</p>
         <span class="tag">Denizli · Konut &amp; İşyeri</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#aile">
         <span class="mark">02 — AİLE HUKUKU</span>
         <h3>Aile Hukuku</h3>
         <p>Boşanma (anlaşmalı ve çekişmeli), velayet, nafaka, mal paylaşımı ve aile içi uyuşmazlıkların çözümünde danışmanlık.</p>
         <span class="tag">Denizli Aile Mahkemeleri</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#ticaret">
         <span class="mark">03 — TİCARET / ŞİRKETLER HUKUKU</span>
         <h3>Ticaret ve Şirketler Hukuku</h3>
         <p>Şirket kuruluşu, ortaklık sözleşmeleri, ticari alacak takibi ve Denizli'nin sanayi/ticaret bölgelerine yönelik uyuşmazlık yönetimi.</p>
         <span class="tag">KOBİ &amp; Ticari İşletmeler</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#ceza">
         <span class="mark">04 — CEZA HUKUKU</span>
         <h3>Ceza Hukuku</h3>
         <p>Soruşturma ve kovuşturma aşamalarında savunma, şüpheli/sanık ve mağdur vekilliği, itiraz ve temyiz süreçleri.</p>
         <span class="tag">Denizli Ağır Ceza &amp; Asliye</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#icra">
         <span class="mark">05 — İCRA VE İFLAS HUKUKU</span>
         <h3>İcra ve İflas Hukuku</h3>
         <p>Alacak takibi, icra takipleri, haciz işlemleri, itirazın iptali/kaldırılması ve iflas süreçlerinin yönetimi.</p>
         <span class="tag">Denizli İcra Daireleri</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#idare">
         <span class="mark">06 — İDARE HUKUKU</span>
         <h3>İdare Hukuku</h3>
         <p>Kamu kurumlarına karşı davalar, idari işlemlerin iptali, imar ve ruhsat uyuşmazlıkları, disiplin cezalarına itiraz.</p>
         <span class="tag">İdare Mahkemesi</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#miras">
         <span class="mark">07 — MİRAS HUKUKU</span>
         <h3>Miras Hukuku</h3>
         <p>Veraset ilamı, miras paylaşımı, tenkis ve mirasın reddi davaları, vasiyetname uyuşmazlıklarının çözümü.</p>
         <span class="tag">Veraset &amp; İntikal</span>
-      </div>
-      <div class="area-card">
+      </a>
+      <a class="area-card" href="calisma-alanlari.html#sigorta">
         <span class="mark">08 — SİGORTA / TAZMİNAT HUKUKU</span>
         <h3>Sigorta ve Tazminat Hukuku</h3>
         <p>Trafik kazası, iş kazası ve malpraktis davaları; sigorta şirketlerine karşı maddi ve manevi tazminat talepleri.</p>
         <span class="tag">Kaza &amp; Tazminat</span>
-      </div>
+      </a>
     </div>
   </div>
+  <div class="wrap areas-more"><a class="btn btn-primary" href="calisma-alanlari.html">Tüm Çalışma Alanları ve Rehberler &rarr;</a></div>
 </section>
 
 <section class="local">
@@ -704,6 +710,18 @@
       <a class="btn btn-outline" href="makaleler.html">Tüm Makaleler</a>
     </div>
     <div class="articles-grid">
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>Aile Hukuku · Yurt Dışı</p>
+        <h3>Tanıma ve Tenfiz: Yurt Dışı Boşanmanın Türkiye'de Geçerliliği</h3>
+        <p>Yurt dışında boşandınız ama Türkiye'de hâlâ evli mi görünüyorsunuz? Tanıma–tenfiz farkı, MÖHUK şartları, apostil ve kesinleşme şerhi, nüfus müdürlüğünden idari tescil yolu — vekâletle, Türkiye'ye gelmeden.</p>
+        <a class="readmore" href="tanima-ve-tenfiz-davasi.html">Devamını Oku →</a>
+      </article>
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>İş Hukuku</p>
+        <h3>İşe İade Davası: Şartları, Süreleri ve Sonuçları</h3>
+        <p>İş güvencesi kapsamında mısınız? 30 işçi ve 6 ay kıdem şartı, geçerli–haklı sebep farkı, 1 aylık arabuluculuk ve 2 haftalık dava süresi, ispat yükü ve 4-8 aylık iş güvencesi tazminatı (İş K. m.18-21).</p>
+        <a class="readmore" href="ise-iade-davasi.html">Devamını Oku →</a>
+      </article>
       <article class="article-card">
         <p class="eyebrow"><span class="dot"></span>Aylık Bülten · Eylül 2026</p>
         <h3>Hukuk Bülteni — Eylül 2026</h3>
@@ -787,6 +805,12 @@
         <h3>Denizli Ceza Avukatı</h3>
         <p>Soruşturma ve kovuşturmada şüpheli/sanık müdafiliği, mağdur vekilliği, ifade/sorgu, uzlaşma ve tutukluluk-adli kontrol süreçlerinde savunma ve danışmanlık.</p>
         <a class="readmore" href="denizli-ceza-avukati.html">Devamını Oku →</a>
+      </article>
+      <article class="article-card">
+        <p class="eyebrow"><span class="dot"></span>İş Hukuku · Denizli</p>
+        <h3>Denizli İş Avukatı</h3>
+        <p>İşçi ve işveren için kıdem-ihbar tazminatı, işe iade davası, fazla mesai ve ücret alacakları, haklı nedenle fesih, mobbing ve iş kazası süreçlerinde danışmanlık ve dava takibi.</p>
+        <a class="readmore" href="denizli-is-avukati.html">Devamını Oku →</a>
       </article>
       <article class="article-card">
         <p class="eyebrow"><span class="dot"></span>Ceza Hukuku</p>
@@ -1053,7 +1077,14 @@
         <li><a href="english-speaking-lawyer-denizli.html" hreflang="en" lang="en">English</a></li>
         <li><a href="anwalt-denizli-tuerkei.html" hreflang="de" lang="de">Deutsch</a></li>
         <li><a href="#iletisim">İletişim</a></li>
-      </ul>
+      
+        <li><a href="calisma-alanlari.html">Çalışma Alanları</a></li>
+        <li><a href="av-berkay-korkmaz.html">Av. Berkay Korkmaz</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li>
+        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+        <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+</ul>
     </div>
     <div>
       <h4>İletişim</h4>
@@ -1116,7 +1147,7 @@
   @media(max-width:640px){#cookieBanner{flex-direction:column;align-items:stretch;text-align:center;}#cookieBanner .cookie-actions{justify-content:center;}}
 </style>
 <div id="cookieBanner" hidden role="dialog" aria-label="Çerez tercihi">
-  <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz.</p>
+  <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz. <a href="cerez-politikasi.html" style="color:var(--bronze);text-decoration:underline;">Çerez Politikası</a></p>
   <div class="cookie-actions">
     <button id="cookieReject" type="button">Reddet</button>
     <button id="cookieAccept" type="button">Kabul Et</button>
