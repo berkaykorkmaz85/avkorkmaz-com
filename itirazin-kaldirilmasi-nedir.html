@@ -247,7 +247,7 @@
     <a class="wordmark" href="index.html" style="text-decoration:none" aria-label="Ana sayfa"><img src="/bk-logo.png" alt="Korkmaz Hukuk Bürosu amblemi" class="wordmark-logo">KORKMAZ <span>HUKUK BÜROSU</span></a>
     <ul class="navlinks">
       <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
-      <li><a href="index.html#alanlar">Çalışma Alanları</a></li>
+      <li class="has-sub"><a href="calisma-alanlari.html">Çalışma Alanları</a><ul class="subnav"><li><a href="denizli-icra-avukati.html">Denizli İcra Avukatı</a></li><li><a href="denizli-bosanma-aile-avukati.html">Denizli Boşanma ve Aile Avukatı</a></li><li><a href="denizli-ceza-avukati.html">Denizli Ceza Avukatı</a></li><li><a href="denizli-is-avukati.html">Denizli İş Avukatı</a></li><li><a href="denizli-ilcelerinde-avukat.html">Denizli İlçeleri</a></li></ul></li>
       <li><a href="index.html#makaleler">Makaleler</a></li>
       <li><a href="index.html#iletisim">İletişim</a></li>
     </ul>
@@ -499,6 +499,17 @@
   .btn-primary:hover, .hero .btn-primary:hover, .side-rail .cta-box a.btn:hover, #cookieAccept:hover, .nl-row button:hover{background:var(--btn-h);}
   .art-more button:hover{background:var(--btn); color:var(--ink);}
   table.data th{background:var(--btn); color:var(--ink);}
+
+  /* Hizmetler alt menusu */
+  .navlinks .has-sub{position:relative;}
+  .navlinks .subnav{display:none; position:absolute; top:100%; left:-16px; min-width:260px; list-style:none; margin:0; padding:8px 0; background:var(--paper-high); border:1px solid var(--paper-line); border-radius:6px; box-shadow:var(--card-shadow); z-index:60;}
+  .navlinks .subnav a{display:block; padding:9px 18px; white-space:nowrap;}
+  .navlinks .has-sub:hover .subnav, .navlinks .has-sub:focus-within .subnav{display:block;}
+  @media (max-width:860px){
+    .navlinks .subnav{display:block; position:static; min-width:0; padding:0 0 8px 14px; border:0; border-radius:0; box-shadow:none; background:none;}
+    .navlinks .subnav li{border-bottom:0;}
+    .navlinks .subnav a{padding:9px 2px; font-size:14.5px;}
+  }
 </style>
 <div id="cookieBanner" hidden role="dialog" aria-label="Çerez tercihi">
   <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz. <a href="cerez-politikasi.html" style="color:var(--bronze);text-decoration:underline;">Çerez Politikası</a></p>
