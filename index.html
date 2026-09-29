@@ -343,6 +343,9 @@
   .tevkil-inner{display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap;}
   .tevkil-inner .btn{flex:none;}
   @media (max-width:720px){ .tevkil-inner{flex-direction:column; align-items:flex-start;} }
+  .articles-grid.is-limited .article-card.is-hidden{display:none;}
+  .articles-more{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:36px;}
+  .articles-more[hidden]{display:none;}
   .article-card{border-top:1px solid var(--paper-line); padding-top:20px;}
   .article-card .eyebrow{display:flex; gap:10px; align-items:center;}
   .article-card .eyebrow .dot{width:4px;height:4px;background:var(--bronze-deep);border-radius:50%;}
@@ -909,8 +912,34 @@
         <a class="readmore" href="maasimi-odemeyen-isveren-ne-yapabilirim.html">Devamını Oku →</a>
       </article>
     </div>
+    <div class="articles-more" id="artMoreHome" hidden>
+      <button type="button" class="btn btn-outline" aria-controls="artGridHome">Devamını gör</button>
+      <a class="btn btn-outline" href="makaleler.html">Tüm makaleler ve arama</a>
+    </div>
   </div>
 </section>
+<script>
+(function(){
+  var grid=document.querySelector('#makaleler .articles-grid'), box=document.getElementById('artMoreHome');
+  if(!grid||!box) return;
+  grid.id='artGridHome';
+  var cards=[].slice.call(grid.querySelectorAll('.article-card')), btn=box.querySelector('button');
+  var mq=window.matchMedia('(max-width:860px)'), step=function(){return mq.matches?4:6;}, shown=step();
+  function render(){
+    grid.classList.add('is-limited');
+    cards.forEach(function(c,i){ c.classList.toggle('is-hidden', i>=shown); });
+    var rest=cards.length-shown;
+    btn.hidden=rest<=0;
+    btn.textContent='Devamını gör ('+Math.max(rest,0)+' makale daha)';
+    box.hidden=false;
+  }
+  btn.addEventListener('click',function(){
+    var first=shown; shown+=step(); render();
+    var t=cards[first]; if(t){ var l=t.querySelector('a'); if(l) l.focus({preventScroll:true}); }
+  });
+  render();
+})();
+</script>
 
 <section id="sss">
   <div class="wrap">
