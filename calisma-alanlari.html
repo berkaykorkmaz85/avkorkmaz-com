@@ -228,6 +228,9 @@
       <li><a href="index.html#iletisim">İletişim</a></li>
     </ul>
     <a class="btn btn-primary" href="index.html#iletisim">Randevu Alın</a>
+    <button class="menu-toggle" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" onclick="toggleMobileNav(this)">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
   </div>
 </header>
 
@@ -438,6 +441,17 @@
     .navlinks .subnav li{border-bottom:0;}
     .navlinks .subnav a{padding:9px 2px; font-size:14.5px;}
   }
+
+  /* Mobil menu (alt sayfalar) */
+  .menu-toggle{display:none;}
+  @media (max-width:720px){
+    .nav{flex-wrap:wrap;}
+    .menu-toggle{display:inline-flex; align-items:center; justify-content:center; width:44px; height:40px; margin-left:8px; background:none; border:1px solid var(--paper-line); border-radius:4px; color:var(--text); cursor:pointer; flex:none;}
+    .navlinks{display:none; flex-direction:column; align-items:stretch; gap:0; flex-basis:100%; order:5; margin-top:8px; border-top:1px solid var(--paper-line);}
+    .nav.open .navlinks{display:flex;}
+    .navlinks > li{border-bottom:1px solid var(--paper-line);}
+    .navlinks > li > a{display:block; padding:13px 2px; font-size:15.5px;}
+  }
 </style>
 <div id="cookieBanner" hidden role="dialog" aria-label="Çerez tercihi">
   <p>Bu sitede, ziyaret istatistiklerini anlamak için yalnızca <strong>onayınızla</strong> Google Analytics çerezleri kullanmak istiyoruz. Tercihiniz cihazınızda saklanır, dilediğinizde değiştirebilirsiniz. <a href="cerez-politikasi.html" style="color:var(--bronze);text-decoration:underline;">Çerez Politikası</a></p>
@@ -516,6 +530,10 @@
   }
   q.addEventListener('input', render); render();
 })();
+</script>
+<script>
+function toggleMobileNav(btn){var nav=document.querySelector('.nav');var open=nav.classList.toggle('open');if(btn)btn.setAttribute('aria-expanded',String(open));}
+document.querySelectorAll('.navlinks a').forEach(function(a){a.addEventListener('click',function(){var n=document.querySelector('.nav');if(n)n.classList.remove('open');var t=document.querySelector('.menu-toggle');if(t)t.setAttribute('aria-expanded','false');});});
 </script>
 </body>
 </html>
