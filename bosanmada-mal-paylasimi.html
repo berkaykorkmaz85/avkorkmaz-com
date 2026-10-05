@@ -643,5 +643,20 @@
 function toggleMobileNav(btn){var nav=document.querySelector('.nav');var open=nav.classList.toggle('open');if(btn)btn.setAttribute('aria-expanded',String(open));}
 document.querySelectorAll('.navlinks a').forEach(function(a){a.addEventListener('click',function(){var n=document.querySelector('.nav');if(n)n.classList.remove('open');var t=document.querySelector('.menu-toggle');if(t)t.setAttribute('aria-expanded','false');});});
 </script>
+<script>
+/* İletişim tıklama takibi — GA4 dönüşüm eventi (yalnızca çerez onayından sonra, gtag varken çalışır) */
+(function(){
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var a = (t && t.closest) ? t.closest('a[href^="tel:"], a[href*="wa.me"]') : null;
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    var yontem = href.indexOf('tel:') === 0 ? 'telefon' : 'whatsapp';
+    if(typeof window.gtag === 'function'){
+      window.gtag('event','iletisim_tikla',{ yontem: yontem });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>
