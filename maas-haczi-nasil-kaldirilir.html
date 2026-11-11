@@ -42,7 +42,7 @@
     "@id": "https://avkorkmaz.com/#buro"
   },
   "datePublished": "2026-08-31",
-  "dateModified": "2026-08-31",
+  "dateModified": "2026-11-11",
   "mainEntityOfPage": "https://avkorkmaz.com/maas-haczi-nasil-kaldirilir.html",
   "articleSection": "İcra ve İflas Hukuku",
   "inLanguage": "tr"
@@ -191,12 +191,19 @@
     .side-rail .cta-box a.btn{display:block; text-align:center; background:var(--bronze); color:var(--ink); font-weight:600; font-size:13.5px; padding:10px; border-radius:3px; text-decoration:none;}
     .side-rail .cta-box a.btn:hover{background:var(--bronze-deep);}
   }
+  .kt-calc{margin:28px 0; padding:24px; background:var(--paper-high); border:1px solid var(--paper-line); border-left:3px solid var(--bronze); border-radius:4px;}
+  .kt-calc label{display:flex; flex-direction:column; gap:6px; font-size:14px; font-weight:600; margin-bottom:14px; max-width:320px;}
+  .kt-calc input{font-family:inherit; font-size:15px; padding:10px 12px; border:1px solid var(--paper-line); border-radius:3px; background:var(--paper); color:var(--text); width:100%;}
+  .kt-calc button{font-family:"Work Sans",sans-serif; font-weight:600; font-size:15px; padding:12px 26px; border:0; border-radius:3px; background:var(--bronze); color:var(--ink); cursor:pointer;}
+  .kt-sonuc{margin-top:16px; font-size:16px;}
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type":"Question","name":"Maaşa haciz gelirse işveren işten çıkarabilir mi?","acceptedAnswer":{"@type":"Answer","text":"Kural olarak hayır. Ücrete haciz gelmesi tek başına geçerli fesih nedeni değildir. Ancak sık sık gelen hacizler işyerini somut olarak olumsuz etkiliyorsa ve işçi önceden uyarılmışsa fesih geçerli sayılabilir."}},
+    {"@type":"Question","name":"Asgari ücretin ne kadarına haciz konur?","acceptedAnswer":{"@type":"Answer","text":"Asgari ücretle çalışanın da net ücretinin dörtte biri haczedilebilir. Kanun asgari ücret için ayrı bir koruma sınırı öngörmez."}},
     {
       "@type": "Question",
       "name": "İşverenim haciz yazısını görmezden gelirse ne olur?",
@@ -292,7 +299,7 @@
     <p class="eyebrow">İcra ve İflas Hukuku</p>
     <h1>Maaş Haczi Nasıl Kaldırılır? Maaşın Ne Kadarına Haciz Konur?</h1>
     <p>Maaşına haciz gelen çalışanlar ve alacağını tahsil etmek isteyen alacaklılar için: maaşın ne kadarı kesilir, süreç nasıl işler ve haciz nasıl kaldırılır?</p>
-    <p class="meta">Güncelleme: 31 Ağustos 2026<span class="dot"></span>Av. Berkay Korkmaz — Denizli Barosu · Sicil No: 3530</p>
+    <p class="meta">Güncelleme: 11 Kasım 2026<span class="dot"></span>Av. Berkay Korkmaz — Denizli Barosu · Sicil No: 3530</p>
   </div>
 
   <div class="wrap prose">
@@ -300,9 +307,11 @@
     <p class="toc-baslik">İçindekiler</p>
     <ol>
       <li><a href="#maasin-ne-kadarina-haciz-konulabilir">Maaşın Ne Kadarına Haciz Konulabilir?</a></li>
+      <li><a href="#maas-haczi-hesaplama">Maaş haczi hesaplama</a></li>
       <li><a href="#maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</a></li>
       <li><a href="#maas-haczi-nasil-kaldirilir">Maaş Haczi Nasıl Kaldırılır?</a></li>
       <li><a href="#istisnalar-ve-ozel-durumlar">İstisnalar ve Özel Durumlar</a></li>
+      <li><a href="#maasima-haciz-geldi-isten-cikarilir-miyim">Maaşıma haciz geldi, işten çıkarılır mıyım?</a></li>
       <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
       <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
       <li><a href="#sonuc">Sonuç</a></li>
@@ -321,6 +330,17 @@
     <h3>Nafaka Alacaklarında Durum: Cari ve Birikmiş Ayrımı</h3>
     <p>Dörtte bir sınırının önemli bir istisnası nafaka alacaklarıdır; ancak burada <strong>işleyen (cari) nafaka</strong> ile <strong>birikmiş (geçmiş dönem) nafaka</strong>yı ayırmak gerekir. Hükmedilen aylık (cari) nafaka, borçlunun maaşının dörtte birini aşsa dahi, dörtte bir sınırına tabi olmaksızın tam olarak kesilebilir. Buna karşılık birikmiş (geçmiş dönem) nafaka alacağı adi alacak sayıldığından dörtte bir sınırına tabidir ve diğer hacizlerle aynı sıraya girer. Nafakanın bu ayrıcalığının sebebi, borçlunun bakmakla yükümlü olduğu kişilerin korunmasıdır.</p>
 
+    <h2 id="maas-haczi-hesaplama">Maaş haczi hesaplama: Maaşımdan ne kadar kesilir?</h2>
+    <p>Net maaşınızı yazın; araç, kural olarak kesilecek tutarı ve elinize geçecek tutarı gösterir. Hesap, İİK m.83 ve İş Kanunu m.35'teki dörtte bir oranına göre yapılır.</p>
+    <div class="kt-calc">
+      <label for="mhNet">Aylık net maaş (TL)<input id="mhNet" type="number" min="0" step="1" inputmode="decimal" placeholder="ör. 30000"></label>
+      <button type="button" id="mhBtn">Hesapla</button>
+      <div class="kt-sonuc" id="mhSonuc" aria-live="polite"></div>
+    </div>
+    <p>Cari nafaka borcunda dörtte bir sınırı uygulanmaz; emekli maaşı da kural olarak haczedilemez. Birden fazla dosya varsa kesinti artmaz; dosyalar sıraya girer ve önceki dosya bitince sonrakine geçilir.</p>
+    <script>
+    (function(){var b=document.getElementById('mhBtn');if(!b)return;b.addEventListener('click',function(){var n=parseFloat(document.getElementById('mhNet').value);var o=document.getElementById('mhSonuc');if(!(n>0)){o.textContent='Lütfen net maaşınızı girin.';return;}var f=function(x){return x.toLocaleString('tr-TR',{minimumFractionDigits:2,maximumFractionDigits:2})+' TL';};o.innerHTML='Aylık kesinti (1/4): <strong>'+f(n/4)+'</strong><br>Elinize geçecek tutar: <strong>'+f(n-n/4)+'</strong>';});})();
+    </script>
     <h2 id="maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</h2>
     <p>Süreç, alacaklının icra dairesinden borçlunun çalıştığı işyerine maaş haczi ihbarnamesi gönderilmesini talep etmesiyle başlar. İcra dairesi, posta veya elektronik tebligat yoluyla işverene bir ihbarname gönderir. Bu ihbarnamede; borçlunun ücretinin kural olarak dörtte birinin haczedildiği, borçlunun aldığı ücret tutarının <strong>bir hafta içinde</strong> icra dairesine bildirilmesi ve borç bitene kadar kesintilerin yapılıp icra dairesine gönderilmesi ihtar edilir. İş ilişkisi devam ediyorsa işveren, ilk ödenecek ücretten kesintiye başlamak zorundadır.</p>
     <p>İhbarnamenin gereklerini yerine getirmeyen işverenin, kesmediği tutar kendi malvarlığından tahsil edilir (İİK m.356). Bu durumda işverenin, şahsi malvarlığından yaptığı ödeme için işçiye rücu hakkı saklıdır. Eğer ihbarname tebliğ edildiğinde borçlu işten ayrılmışsa, işverenin bu durumu icra dairesine bildirmesi gerekir.</p>
@@ -336,6 +356,10 @@
     <h3>Birden Fazla Haciz Geldiğinde Öncelik</h3>
     <p>Aynı borçlunun ücretine birden fazla dosyadan haciz gelirse, hacizler konuluş tarihine göre sıraya girer. Halihazırda bir dosyaya kesinti yapan işveren, yeni bir ihbarname aldığında; mevcut bir dosyaya ödeme yapıldığını, sıradaki yerini ve ödediği dosyanın borç miktarını yeni ihbarnameyi gönderen icra dairesine bildirmelidir.</p>
 
+    <h2 id="maasima-haciz-geldi-isten-cikarilir-miyim">Maaşıma haciz geldi, işten çıkarılır mıyım?</h2>
+    <p>Maaşa haciz gelmesi tek başına işten çıkarma sebebi değildir. Yargıtay'a göre işçinin borcu nedeniyle ücretinin haczedilmesi, kural olarak işverene geçerli nedenle fesih hakkı vermez (Yargıtay 9. Hukuk Dairesi, E. 2015/30854, K. 2015/31326, T. 05.11.2015).</p>
+    <p>Ancak ücrete sık sık haciz geliyorsa ve bu durum işyerinin muhasebe ya da hukuk biriminde ciddi zaman kaybına yol açıyorsa, işveren geçerli nedenle fesih yapabilir. Bunun için işverenin önce işçiyi yazılı olarak uyarması ve olumsuz etkiyi somut olarak ortaya koyması gerekir. Tek bir takip nedeniyle konan ve işyerini somut olarak etkilemeyen haciz yüzünden yapılan fesih ise geçersiz sayılmıştır (Yargıtay 9. Hukuk Dairesi, E. 2010/967, K. 2010/4281, T. 22.02.2010).</p>
+    <p>Haciz nedeniyle işten çıkarıldıysanız işe iade davası açma süreniz kısadır. Ayrıntıları <a class="inline" href="ise-iade-davasi.html">İşe İade Davası</a> rehberimizde bulabilirsiniz.</p>
     <h2 id="sik-yapilan-hatalar">Sık Yapılan Hatalar</h2>
     <ul>
       <li><strong>İş değiştirerek kesintiden kurtulacağını sanmak:</strong> Borçlu yeni işe girdiğinde SGK işe giriş bildirgesi sebebiyle nerede çalıştığı kolayca öğrenilir; alacaklı yeni işyerinden yeniden haciz talep edebileceğinden iş değiştirmenin gerçek bir yararı yoktur.</li>
@@ -355,6 +379,10 @@
     <h3>Bu süreç toplamda ne kadar sürer?</h3>
     <p>Kesinti, icra dosya borcunun sona ermesiyle kalkar. Birden fazla dosyadan haciz varsa, borçların tamamı bitmeden kesinti sona ermez.</p>
 
+    <h3>Maaşa haciz gelirse işveren işten çıkarabilir mi?</h3>
+    <p>Kural olarak hayır. Ücrete haciz gelmesi tek başına geçerli fesih nedeni değildir. Ancak sık sık gelen hacizler işyerini somut olarak olumsuz etkiliyorsa ve işçi önceden uyarılmışsa fesih geçerli sayılabilir.</p>
+    <h3>Asgari ücretin ne kadarına haciz konur?</h3>
+    <p>Asgari ücretle çalışanın da net ücretinin dörtte biri haczedilebilir. Kanun asgari ücret için ayrı bir koruma sınırı öngörmez.</p>
     <h2 id="sonuc">Sonuç</h2>
     <p>Bu rehberde maaş haczini ana hatlarıyla açıklamaya çalıştık. Bu konuda hukuki destek almak; işveren iseniz şahsi sorumluluğunuzun doğmamasına, alacaklı iseniz alacağınıza kavuşmanıza, borçlu iseniz fazla kesinti veya hukuka aykırı işlemlere karşı korunmanıza yardımcı olur.</p>
 
@@ -381,9 +409,11 @@
   <h2 class="rail-h">İçindekiler</h2>
   <ol>
       <li><a href="#maasin-ne-kadarina-haciz-konulabilir">Maaşın Ne Kadarına Haciz Konulabilir?</a></li>
+      <li><a href="#maas-haczi-hesaplama">Maaş haczi hesaplama</a></li>
       <li><a href="#maas-haczi-nasil-baslar-isverenin-yukumlulukleri">Maaş Haczi Nasıl Başlar? İşverenin Yükümlülükleri</a></li>
       <li><a href="#maas-haczi-nasil-kaldirilir">Maaş Haczi Nasıl Kaldırılır?</a></li>
       <li><a href="#istisnalar-ve-ozel-durumlar">İstisnalar ve Özel Durumlar</a></li>
+      <li><a href="#maasima-haciz-geldi-isten-cikarilir-miyim">Maaşıma haciz geldi, işten çıkarılır mıyım?</a></li>
       <li><a href="#sik-yapilan-hatalar">Sık Yapılan Hatalar</a></li>
       <li><a href="#sik-sorulan-sorular-sss">Sık Sorulan Sorular (SSS)</a></li>
       <li><a href="#sonuc">Sonuç</a></li>
